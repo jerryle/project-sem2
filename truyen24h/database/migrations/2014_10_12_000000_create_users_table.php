@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->unsignedTinyInteger('status')->default(1);
+            $table->unsignedTinyInteger('adminLevel')->default(0);
         });
     }
 
