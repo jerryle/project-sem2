@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.home.dashboard');
 });
 Route::get('/quanly', function() {
     return view('admin');

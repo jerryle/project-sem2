@@ -1,8 +1,9 @@
 .form-gradient .font-small {
 font-size: 0.8rem; }
 
-.form-gradient {
+.dashboard-main {
     padding-top: 100px;
+    padding-bottom: 60px;
 }
 
 .form-gradient .header {

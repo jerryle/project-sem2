@@ -1,4 +1,4 @@
-@extends('layouts.client.master')
+@extends('layouts.user.master')
 
 @section('content')
 <div class="container">
@@ -42,7 +42,7 @@
                             </div>
                     
                             <div class="md-form">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="password" required>
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" required>
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback" role="alert">

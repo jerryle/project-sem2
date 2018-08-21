@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
 
@@ -25,10 +25,10 @@ class HomeController extends Controller
     {
         if(auth()->user()->adminLevel == 0)
         {
-            return view('home');
+            return view('layouts.home.dashboard');
         }
         else {
-            return view('admin');
+            return view('layouts.admin.dashboard');
         }
     }
 }

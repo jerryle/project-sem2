@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}" defer></script>
@@ -21,6 +21,8 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!-- Styles -->
     <link href="{{ asset('mdb/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('mdb/css/mdb.min.css') }}" rel="stylesheet">
@@ -32,7 +34,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Truyen24h') }}
+                    {{ config('app.name') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -45,7 +47,7 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -55,9 +57,19 @@
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                            <form class="form-inline">
+                                <div class="md-form my-0">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                                </div>
+                            </form>
+                            {{-- <li class="nav-item avatar dropdown show">
+                                <a href="#" class="nav-link dropdown-toggle waves-effect waves-light">
+                                    <img src="{{asset('admin/img/faces/default.jpg')}}" alt="avatar" class="rounded-circle z-depth-0"> <span class="caret"></span>
+                                </a>
+                            </li> --}}
+                            <li class="nav-item avatar dropdown show">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle waves-effect waves-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        <img src="{{asset('admin/img/faces/default.jpg')}}" alt="avatar" class="rounded-circle z-depth-0"> {{ Auth::user()->name }} <span class="fa fa-caret-down"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -78,7 +90,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="dashboard-main">
             @yield('content')
         </main>
     </div>
