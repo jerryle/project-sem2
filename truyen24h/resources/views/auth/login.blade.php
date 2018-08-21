@@ -78,7 +78,7 @@
                     
                                 <!--Grid column-->
                                 <div class="col-md-7">
-                                    <p class="font-small grey-text d-flex justify-content-end mt-3">Don't have an account? <a href="#" class="dark-grey-text ml-1 font-weight-bold"> Sign up</a></p>
+                                <p class="font-small grey-text d-flex justify-content-end mt-3">Don't have an account? <a href="{{route('register')}}" class="dark-grey-text ml-1 font-weight-bold"> Sign up</a></p>
                                 </div>
                                 <!--Grid column-->
                     
