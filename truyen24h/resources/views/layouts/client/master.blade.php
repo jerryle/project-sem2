@@ -11,21 +11,28 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}" defer></script>
+    <script src="{{ asset('mdb/js/popper.min.js') }}" defer></script>
+    <script src="{{ asset('mdb/js/bootstrap.min.js') }}" defer></script>
+    <script src="{{ asset('mdb/js/mdb.min.js') }}" defer></script>
+    {{-- <script src="{{ asset('mdb/js/modules/cards.js') }}" defer></script> --}}
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('mdb/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('mdb/css/mdb.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/client.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Truyen24h') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

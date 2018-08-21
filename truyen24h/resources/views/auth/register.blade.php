@@ -1,48 +1,58 @@
-@extends('layouts.app')
+@extends('layouts.client.master')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+            <section class="form-gradient">
+                <div class="card">
+                    <div class="header pt-3 blue-gradient">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
-                        @csrf
+                        <div class="row d-flex justify-content-center">
+                            <h3 class="white-text mb-3 pt-3 font-weight-bold">{{ __('Register') }}</h3>
+                        </div>
+                
+                        {{-- <div class="row mt-2 mb-3 d-flex justify-content-center">
+                            <!--Facebook-->
+                            <a class="fa-lg p-2 m-2 fb-ic"><i class="fa fa-facebook white-text fa-lg"> </i></a>
+                            <!--Twitter-->
+                            <a class="fa-lg p-2 m-2 tw-ic"><i class="fa fa-twitter white-text fa-lg"> </i></a>
+                            <!--Google +-->
+                            <a class="fa-lg p-2 m-2 gplus-ic"><i class="fa fa-google-plus white-text fa-lg"> </i></a>
+                        </div> --}}
+                
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                    </div>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                    <div class="card-body mx-4 mt-4">
+                        <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
+                                @csrf
+                            <!--Body-->
+                            <div class="md-form">
+                                {{-- <input type="text" id="Form-email3" class="form-control"> --}}
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+
+                                    @if ($errors->has('email'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                    @endif
+                                <label for="email">{{ __('E-Mail Address') }}</label>
+
+                            </div>
+                    
+                            <div class="md-form">
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="password" required>
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('name') }}</strong>
                                     </span>
                                 @endif
+                                <label for="name">{{ __('Name') }}</label>
                             </div>
-                        </div>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
+                            <div class="md-form">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                                 @if ($errors->has('password'))
@@ -50,27 +60,39 @@
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
+                                <label for="password">{{ __('Password') }}</label>
                             </div>
-                        </div>
 
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
+                            <div class="md-form">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
+                                <label for="password-confirm">{{ __('Confirm Password') }}</label>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
                             </div>
-                        </div>
-                    </form>
+                    
+                    
+                            <!--Grid row-->
+                            <div class="row d-flex align-items-center mb-4">
+                    
+                                <!--Grid column-->
+                                <div class="col-md-1 col-md-5 d-flex align-items-start">
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-grey btn-rounded z-depth-1a">{{ __('Register') }}</button>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+                    
+                                <!--Grid column-->
+                                <div class="col-md-7">
+                                <p class="font-small grey-text d-flex justify-content-end mt-3">Already have an account? <a href="{{route('login')}}" class="dark-grey-text ml-1 font-weight-bold"> {{ __('Login') }}</a></p>
+                                </div>
+                                <!--Grid column-->
+                    
+                            </div>
+                            <!--Grid row-->
+                        </form>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </div>
