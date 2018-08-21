@@ -23,7 +23,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "Truyen24h\\": "app/"
         }
     },
     "autoload-dev": {
