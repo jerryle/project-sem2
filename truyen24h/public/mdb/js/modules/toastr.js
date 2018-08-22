@@ -55,7 +55,7 @@
 
             function getContainer(options, create) {
                 if (!options) { options = getOptions(); }
-                $container = $('#' + options.containerId + '[position = ' + options.positionClass + ']');
+                $container = $('#' + options.containerId);
                 if ($container.length) {
                     return $container;
                 }
@@ -144,7 +144,6 @@
             function createContainer(options) {
                 $container = $('<div/>')
                     .attr('id', options.containerId)
-                    .attr('position', options.positionClass)
                     .addClass(options.positionClass)
                     .attr('aria-live', 'polite')
                     .attr('role', 'alert');
