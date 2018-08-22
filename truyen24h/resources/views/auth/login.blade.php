@@ -9,7 +9,7 @@
                     <div class="header pt-3 blue-gradient">
 
                         <div class="row d-flex justify-content-center">
-                            <h3 class="white-text mb-3 pt-3 font-weight-bold">{{ __('Login') }}</h3>
+                            <h3 class="h3-reponsive white-text mb-3 pt-3 font-weight-bold text-uppercase">{{ __('auth.login') }}</h3>
                         </div>
                 
                         {{-- <div class="row mt-2 mb-3 d-flex justify-content-center">
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="card-body mx-4 mt-4">
-                        <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+                        <form method="POST" action="{{ route('login') }}" aria-label="{{ __('auth.login') }}">
                                 @csrf
                             <!--Body-->
                             <div class="md-form">
@@ -37,7 +37,7 @@
                                             <strong>{{ $errors->first('email') }}</strong>
                                         </span>
                                     @endif
-                                <label for="email">{{ __('E-Mail Address') }}</label>
+                                <label for="email">{{ __('auth.email') }}</label>
 
                             </div>
                     
@@ -49,17 +49,17 @@
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
-                                <label for="password">{{ __('Password') }}</label>
+                                <label for="password">{{ __('auth.password') }}</label>
         
                                 <div class="form-check my-4">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
+                                        {{ __('auth.rememberme') }}
                                     </label>
                                 </div>
 
-                                <p class="font-small grey-text d-flex justify-content-end">Forgot <a href="{{ route('password.request') }}" class="dark-grey-text ml-1 font-weight-bold"> Password?</a></p>
+                                <p class="font-small grey-text d-flex justify-content-end">{{__('auth.forgot')}} <a href="{{ route('password.request') }}" class="dark-grey-text ml-1 font-weight-bold"> {{__('auth.password')}}</a>?</p>
                                 
 
                             </div>
@@ -71,14 +71,14 @@
                                 <!--Grid column-->
                                 <div class="col-md-1 col-md-5 d-flex align-items-start">
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-grey btn-rounded z-depth-1a">{{ __('Login') }}</button>
+                                        <button type="submit" class="btn btn-grey btn-rounded z-depth-1a">{{ __('auth.login') }}</button>
                                     </div>
                                 </div>
                                 <!--Grid column-->
                     
                                 <!--Grid column-->
                                 <div class="col-md-7">
-                                <p class="font-small grey-text d-flex justify-content-end mt-3">Don't have an account? <a href="{{route('register')}}" class="dark-grey-text ml-1 font-weight-bold"> Sign up</a></p>
+                                <p class="font-small grey-text d-flex justify-content-end mt-3">{{ __('auth.user-new') }} <a href="{{route('register')}}" class="dark-grey-text ml-1 font-weight-bold"> {{ __('auth.register') }}</a></p>
                                 </div>
                                 <!--Grid column-->
                     

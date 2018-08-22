@@ -15,13 +15,13 @@
     <script src="{{ asset('mdb/js/popper.min.js') }}" defer></script>
     <script src="{{ asset('mdb/js/bootstrap.min.js') }}" defer></script>
     <script src="{{ asset('mdb/js/mdb.min.js') }}" defer></script>
-    {{-- <script src="{{ asset('mdb/js/modules/cards.js') }}" defer></script> --}}
+    <script src="{{ asset('mdb/js/modules/cards.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
     <!-- Styles -->
     <link href="{{ asset('mdb/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -31,7 +31,7 @@
 <body>
     <div id="app">
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar navbar-laravel">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue-gradient scrolling-navbar navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name') }}
@@ -49,19 +49,31 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto nav-flex-icons">
                         <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        @guest 
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{__('auth.account')}}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('login') }}">{{ __('auth.login') }}</a>
+                                    <a class="dropdown-item" href="{{ route('register') }}">{{ __('auth.register') }}</a>
+
+                                    
+                                </div>
+                            </li>
+                            {{-- <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('auth.login') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('auth.register') }}</a>
+                            </li> --}}
                         @else
-                            <form class="form-inline">
+                            {{-- <form class="form-inline">
                                 <div class="md-form my-0">
                                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                                 </div>
-                            </form>
+                            </form> --}}
                             {{-- <li class="nav-item avatar dropdown show">
                                 <a href="#" class="nav-link dropdown-toggle waves-effect waves-light">
                                     <img src="{{asset('admin/img/faces/default.jpg')}}" alt="avatar" class="rounded-circle z-depth-0"> <span class="caret"></span>
@@ -76,7 +88,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('auth.logout') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
