@@ -27,7 +27,7 @@
 
         </div>
 
-        <section class="magazine-section my-5">
+        <section class="magazine-section my-5 d-none d-lg-block">
             <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện hot <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
@@ -128,12 +128,10 @@
         </section>
         <section class="story_update my-5">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện Mới
                         Cập Nhật <i class="fab fa-gripfire"></i></h4>
                     <hr class="between-sections mt-0">
-                    <div class="row justify-content-left">
-                        <div class="col-md-12">
                             <div class="table-responsive">
                                 <!--Table-->
                                 <table class="table table-hover table-fixed">
@@ -312,11 +310,10 @@
 
                                 </table>
                                 <!--Table-->
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 d-none d-lg-block">
                     <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện
                         Đang Đọc <i class="fab fa-gripfire"></i></h4>
                     <hr class="between-sections mt-0">
@@ -394,242 +391,354 @@
 
         </section>
         <section class="story_full my-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện Đã
-                        Hoàn Thành <i
-                            class="fab fa-gripfire"></i></h4>
-                    <hr class="between-sections mt-0">
-                    <div class="row justify-content-center">
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+            <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện Đã
+                Hoàn Thành <i
+                    class="fab fa-gripfire"></i></h4>
+            <hr class="between-sections mt-0">
+            <div class="row justify-content-center">
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
                             </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+                            <a><i class="fa fa-angle-double-right"></i></a>
                         </div>
                     </div>
+                    <!-- Small news -->
                 </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                <div class="col-sm">
+                        <!-- Image -->
+                        <div class="view overlay rounded z-depth-2 mb-4">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                    alt="Sample image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a class="font-weight-bold">This is title</a>
+                            </div>
+                        </div>
+                        <!-- Featured news -->
+                        <!-- Small news -->
+                        <div class="single-news mb-3">
+                            <!-- Title -->
+                            <div class="d-flex justify-content-between">
+                                <div class="col-11 text-truncate pl-0 mb-3">
+                                    <a>Continue</a>
+                                </div>
+                                <a><i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Small news -->
+                    </div>
+    
             </div>
+            {{-- <div class="row justify-content-center">
+                <div class="col-2">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                <div class="col-2">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                <div class="col-2">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                <div class="col-2">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                
+                <div class="col-2">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+                    <!-- Small news -->
+                    <div class="single-news mb-3">
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a>Continue</a>
+                            </div>
+                            <a><i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Small news -->
+                </div>
+                <div class="col-2">
+                        <!-- Image -->
+                        <div class="view overlay rounded z-depth-2 mb-4">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                                    alt="Sample image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between">
+                            <div class="col-11 text-truncate pl-0 mb-3">
+                                <a class="font-weight-bold">This is title</a>
+                            </div>
+                        </div>
+                        <!-- Featured news -->
+                        <!-- Small news -->
+                        <div class="single-news mb-3">
+                            <!-- Title -->
+                            <div class="d-flex justify-content-between">
+                                <div class="col-11 text-truncate pl-0 mb-3">
+                                    <a>Continue</a>
+                                </div>
+                                <a><i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Small news -->
+                    </div>
+    
+            </div> --}}
         </section>
     </div>
 @endsection
