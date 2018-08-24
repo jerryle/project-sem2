@@ -1,4 +1,5 @@
-<!-- Footer Links -->
+<footer class="page-footer font-small blue pt-4">
+    <!-- Footer Links -->
     <div class="container text-center text-md-left">
 
         <!-- Grid row -->
@@ -24,10 +25,10 @@
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="#!">Trang Chủ</a>
                     </li>
                     <li>
-                        <a href="#!">Link 2</a>
+                        <a href="#!">Thể Loại</a>
                     </li>
                 </ul>
 
@@ -42,10 +43,10 @@
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="#!">Thông Tin</a>
                     </li>
                     <li>
-                        <a href="#!">Link 2</a>
+                        <a href="#!">Liên Hệ</a>
                     </li>
                 </ul>
 
@@ -60,6 +61,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+        <a href="#"> Truyen24h.</a>
     </div>
     <!-- Copyright -->
+</footer>
