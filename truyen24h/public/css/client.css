@@ -27,3 +27,26 @@ box-shadow: 0 1px 0 0 #fd9267; }
 color: #4f4f4f; }
 
 
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+
+  .card {
+    height: 100%;
+    display: flex;
+}
+
+.card-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card.card-footer {
+    align-self: flex-end;
+    flex: 1 1 auto;
+}
+.mt-s{margin-top:90%!important;}

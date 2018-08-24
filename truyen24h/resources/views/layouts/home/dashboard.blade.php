@@ -31,121 +31,97 @@
             <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện hot <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
+            
+            <div class="row row-eq-height mh-100" style="height:400px;">
+                <div class="col-md-4">
+                
+                        <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-            <div class="row">
-                <div class="col-md-5 p-1">
-                    <div class="mdb-lightbox no-margin">
-
-                        <figure class="col">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(121).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(121).jpg"
-                                     class="img-fluid">
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
-
-                    </div>
+                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                <h5 class="h5-reponsive"> Marketing</h5>
+                              </div>
+            
+                        </div>
+                    
                 </div>
-                <div class="col-md-7 p-1">
+                <div class="col-md-8">
+                    <div class="row row-eq-height mh-100" style="height:200px;">
+                        <div class="col-md-3">
+                            <div class="card card-image mb-3 pb-auto" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                    {{--<div id="mdb-lightbox-ui"></div>--}}
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                    <h5 class="h5-reponsive"> Marketing</h5>
+                                  </div>
+                
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                    <div class="mdb-lightbox no-margin">
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                    <h5 class="h5-reponsive"> Marketing</h5>
+                                  </div>
+                
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(121).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(121).jpg"
-                                     class="img-fluid">
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                    <h5 class="h5-reponsive"> Marketing</h5>
+                                  </div>
+                
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(96).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(96).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(104).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(104).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(45).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(122).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(122).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(125).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(125).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
-
-
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                    <h5 class="h5-reponsive"> Marketing</h5>
+                                  </div>
+                
+                            </div>
+                        </div>
                     </div>
+                    <div class="row row-eq-height mh-100" style="height:200px;">
+                        <div class="col-md-3">
+                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                    <h5 class="h5-reponsive"> Marketing</h5>
+                                  </div>
+                
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                    <h5 class="h5-reponsive"> Marketing</h5>
+                                  </div>
+                
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                    <h5 class="h5-reponsive"> Marketing</h5>
+                                  </div>
+                
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                    <h5 class="h5-reponsive"> Marketing</h5>
+                                  </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
 
