@@ -61,5 +61,13 @@ color: #4f4f4f; }
     color: #999;
     margin-right: 1rem;
 }
+#yourElement {
+    background: url("http://mdbootstrap.com/images/proffesions/reg/coach/img%20(1).jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+}
 /* .story_update table { table-layout: fixed; } */
 /* .story_update table th, .story_update table td { overflow: hidden; } */

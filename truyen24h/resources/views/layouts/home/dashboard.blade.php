@@ -34,12 +34,27 @@
 
             <div class="row row-eq-height mh-100" style="height:400px;">
                 <div class="col-md-4">
+                    {{-- <div class="card hoverable">
+                        <div class="card-image">
+                            <div class="view overlay hm-white-slight z-depth-1">
+                                <div id="yourElement"></div>
+                                <a href="#">
+                                    <div class="mask waves-effect"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h5>Card title</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda delectus officia quia, sequi eum perspiciatis architecto. Ullam voluptatum, facere nihil quidem.</p>
+                        </div>
+                    </div> --}}
+                    
 
-                    <div class="card card-image mb-3"
+                    <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
                         </div>
 
                     </div>
@@ -48,85 +63,86 @@
                 <div class="col-md-8">
                     <div class="row row-eq-height mh-100" style="height:200px;">
                         <div class="col-md-3">
-                            <div class="card card-image mb-3 pb-auto"
-                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                </div>
-                            </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+       
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+       
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3"
-                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                </div>
-
-                            </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+       
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+       
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3"
-                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                </div>
-
-                            </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+       
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+       
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3"
-                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                </div>
-
-                            </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+       
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+       
+                           </div>
                         </div>
                     </div>
                     <div class="row row-eq-height mh-100" style="height:200px;">
                         <div class="col-md-3">
-                            <div class="card card-image mb-3"
-                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                </div>
-
-                            </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+       
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+       
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3"
-                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                </div>
-
-                            </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+       
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+       
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3"
-                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                </div>
-
-                            </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+       
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+       
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3"
-                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                </div>
-
-                            </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+       
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+       
+                           </div>
                         </div>
                     </div>
 
