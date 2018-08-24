@@ -31,97 +31,105 @@
             <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện hot <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
-            
+
             <div class="row row-eq-height mh-100" style="height:400px;">
                 <div class="col-md-4">
-                
-                        <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                <h5 class="h5-reponsive"> Marketing</h5>
-                              </div>
-            
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    
+
+                    </div>
+
                 </div>
                 <div class="col-md-8">
                     <div class="row row-eq-height mh-100" style="height:200px;">
                         <div class="col-md-3">
-                            <div class="card card-image mb-3 pb-auto" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card card-image mb-3 pb-auto"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card card-image mb-3"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card card-image mb-3"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card card-image mb-3"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="row row-eq-height mh-100" style="height:200px;">
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card card-image mb-3"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card card-image mb-3"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card card-image mb-3"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card card-image mb-3"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
 
@@ -132,185 +140,185 @@
                     <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện Mới
                         Cập Nhật <i class="fab fa-gripfire"></i></h4>
                     <hr class="between-sections mt-0">
-                            <div class="table-responsive">
-                                <!--Table-->
-                                <table class="table table-hover table-fixed">
+                    <div class="table-responsive">
+                        <!--Table-->
+                        <table class="table table-hover table-fixed">
 
-                                    <!--Table head-->
-                                    <thead>
-                                    <tr>
-                                        <th class="th-lg">Tên Truyện</th>
-                                        <th class="th-sm">Thể Loại</th>
-                                        <th class="th-sm">Chương</th>
-                                        <th class="th-sm">Thời Gian</th>
-                                    </tr>
-                                    </thead>
-                                    <!--Table head-->
+                            <!--Table head-->
+                            <thead>
+                            <tr>
+                                <th class="th-lg">Tên Truyện</th>
+                                <th class="th-sm">Thể Loại</th>
+                                <th class="th-sm">Chương</th>
+                                <th class="th-sm">Thời Gian</th>
+                            </tr>
+                            </thead>
+                            <!--Table head-->
 
-                                    <!--Table body-->
-                                    <tbody>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    </tbody>
-                                    <!--Table body-->
+                            <!--Table body-->
+                            <tbody>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            <tr>
+                                <td>Trò chơi luân hồi</td>
+                                <td>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                        <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">Chương 1</a>
+                                </td>
+                                <td>1 phút trước</td>
+                            </tr>
+                            </tbody>
+                            <!--Table body-->
 
-                                </table>
-                                <!--Table-->
-                        
+                        </table>
+                        <!--Table-->
+
                     </div>
                 </div>
                 <div class="col-lg-4 d-none d-lg-block">
@@ -400,7 +408,7 @@
                     <!-- Image -->
                     <div class="view overlay rounded z-depth-2 mb-4">
                         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
+                             alt="Sample image">
                         <a>
                             <div class="mask rgba-white-slight"></div>
                         </a>
@@ -412,23 +420,13 @@
                         </div>
                     </div>
                     <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
+
                 </div>
                 <div class="col-sm">
                     <!-- Image -->
                     <div class="view overlay rounded z-depth-2 mb-4">
                         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
+                             alt="Sample image">
                         <a>
                             <div class="mask rgba-white-slight"></div>
                         </a>
@@ -440,23 +438,13 @@
                         </div>
                     </div>
                     <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
+
                 </div>
                 <div class="col-sm">
                     <!-- Image -->
                     <div class="view overlay rounded z-depth-2 mb-4">
                         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
+                             alt="Sample image">
                         <a>
                             <div class="mask rgba-white-slight"></div>
                         </a>
@@ -468,23 +456,13 @@
                         </div>
                     </div>
                     <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
+
                 </div>
                 <div class="col-sm">
                     <!-- Image -->
                     <div class="view overlay rounded z-depth-2 mb-4">
                         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
+                             alt="Sample image">
                         <a>
                             <div class="mask rgba-white-slight"></div>
                         </a>
@@ -496,24 +474,13 @@
                         </div>
                     </div>
                     <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
+
                 </div>
-                
                 <div class="col-sm">
                     <!-- Image -->
                     <div class="view overlay rounded z-depth-2 mb-4">
                         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
+                             alt="Sample image">
                         <a>
                             <div class="mask rgba-white-slight"></div>
                         </a>
@@ -525,220 +492,154 @@
                         </div>
                     </div>
                     <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
+
                 </div>
                 <div class="col-sm">
-                        <!-- Image -->
-                        <div class="view overlay rounded z-depth-2 mb-4">
-                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                    alt="Sample image">
-                            <a>
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a class="font-weight-bold">This is title</a>
-                            </div>
-                        </div>
-                        <!-- Featured news -->
-                        <!-- Small news -->
-                        <div class="single-news mb-3">
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a>Continue</a>
-                                </div>
-                                <a><i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- Small news -->
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                             alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
                     </div>
-    
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                             alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                             alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                             alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                             alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                             alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                             alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+
+                </div>
+                <div class="col-sm">
+                    <!-- Image -->
+                    <div class="view overlay rounded z-depth-2 mb-4">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
+                             alt="Sample image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-between">
+                        <div class="col-11 text-truncate pl-0 mb-3">
+                            <a class="font-weight-bold">This is title</a>
+                        </div>
+                    </div>
+                    <!-- Featured news -->
+
+                </div>
             </div>
-            {{-- <div class="row justify-content-center">
-                <div class="col-2">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
-                        </div>
-                    </div>
-                    <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
-                </div>
-                <div class="col-2">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
-                        </div>
-                    </div>
-                    <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
-                </div>
-                <div class="col-2">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
-                        </div>
-                    </div>
-                    <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
-                </div>
-                <div class="col-2">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
-                        </div>
-                    </div>
-                    <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
-                </div>
-                
-                <div class="col-2">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
-                        </div>
-                    </div>
-                    <!-- Featured news -->
-                    <!-- Small news -->
-                    <div class="single-news mb-3">
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a>Continue</a>
-                            </div>
-                            <a><i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Small news -->
-                </div>
-                <div class="col-2">
-                        <!-- Image -->
-                        <div class="view overlay rounded z-depth-2 mb-4">
-                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                    alt="Sample image">
-                            <a>
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                        <!-- Title -->
-                        <div class="d-flex justify-content-between">
-                            <div class="col-11 text-truncate pl-0 mb-3">
-                                <a class="font-weight-bold">This is title</a>
-                            </div>
-                        </div>
-                        <!-- Featured news -->
-                        <!-- Small news -->
-                        <div class="single-news mb-3">
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a>Continue</a>
-                                </div>
-                                <a><i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- Small news -->
-                    </div>
-    
-            </div> --}}
+
         </section>
     </div>
 @endsection
