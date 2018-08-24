@@ -31,121 +31,195 @@
             <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện hot <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
-
             <div class="row">
-                <div class="col-md-5 p-1">
-                    <div class="mdb-lightbox no-margin">
+                <div class="col-md-4">
+                    <!--Jumbotron-->
 
-                        <figure class="col">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(121).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(121).jpg"
-                                     class="img-fluid">
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                    <div class="card card-image"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                        <div class="text-white text-center rgba-stylish-strong py-6 px-4">
+                            <div class="py-6">
 
+                                <!--Content-->
+                                {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                {{--Odit sed qui, dolorum!</p>--}}
+                                {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                {{--<!--Content-->--}}
+
+                            </div>
+                        </div>
                     </div>
+
+                    <!--Jumbotron-->
                 </div>
-                <div class="col-md-7 p-1">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card card-image"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                                <div class="text-white text-center rgba-stylish-strong py-1 px-1">
+                                    <div class="py-0">
 
-                    {{--<div id="mdb-lightbox-ui"></div>--}}
+                                        <!--Content-->
+                                        {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                        <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                        {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                        {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                        {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                        {{--Odit sed qui, dolorum!</p>--}}
+                                        {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                        {{--<!--Content-->--}}
 
-                    <div class="mdb-lightbox no-margin">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                                <div class="text-white text-center rgba-stylish-strong py-1 px-1">
+                                    <div class="py-0">
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(121).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(121).jpg"
-                                     class="img-fluid">
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                        <!--Content-->
+                                        {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                        <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                        {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                        {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                        {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                        {{--Odit sed qui, dolorum!</p>--}}
+                                        {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                        {{--<!--Content-->--}}
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(96).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(96).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                                <div class="text-white text-center rgba-stylish-strong py-1 px-1">
+                                    <div class="py-0">
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(104).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(104).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                        <!--Content-->
+                                        {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                        <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                        {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                        {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                        {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                        {{--Odit sed qui, dolorum!</p>--}}
+                                        {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                        {{--<!--Content-->--}}
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(45).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                                <div class="text-white text-center rgba-stylish-strong py-1 px-1">
+                                    <div class="py-0">
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(122).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(122).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                        <!--Content-->
+                                        {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                        <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                        {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                        {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                        {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                        {{--Odit sed qui, dolorum!</p>--}}
+                                        {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                        {{--<!--Content-->--}}
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                                <div class="text-white text-center rgba-stylish-strong py-1 px-1">
+                                    <div class="py-0">
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(125).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(125).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                        <!--Content-->
+                                        {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                        <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                        {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                        {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                        {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                        {{--Odit sed qui, dolorum!</p>--}}
+                                        {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                        {{--<!--Content-->--}}
 
-                        <figure class="col-md-3">
-                            <a class="black-text"
-                               href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg"
-                               data-size="1600x1067">
-                                <img alt="picture"
-                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg"
-                                     class="img-fluid"/>
-                                <h3 class="text-center my-3">Photo title</h3>
-                            </a>
-                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                                <div class="text-white text-center rgba-stylish-strong py-1 px-1">
+                                    <div class="py-0">
 
+                                        <!--Content-->
+                                        {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                        <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                        {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                        {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                        {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                        {{--Odit sed qui, dolorum!</p>--}}
+                                        {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                        {{--<!--Content-->--}}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                                <div class="text-white text-center rgba-stylish-strong py-1 px-1">
+                                    <div class="py-0">
+
+                                        <!--Content-->
+                                        {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                        <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                        {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                        {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                        {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                        {{--Odit sed qui, dolorum!</p>--}}
+                                        {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                        {{--<!--Content-->--}}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-image"
+                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);">
+                                <div class="text-white text-center rgba-stylish-strong py-1 px-1">
+                                    <div class="py-0">
+
+                                        <!--Content-->
+                                        {{--<h6 class="orange-text font-bold"><i class="fa fa-camera-retro"></i> Photography</h6>--}}
+                                        <h2 class="card-title pt-3 mb-5 font-bold">Jumbotron with image overlay</h2>
+                                        {{--<p class="px-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat--}}
+                                        {{--fugiat, laboriosam, voluptatem, optio vero odio nam sit officia--}}
+                                        {{--accusamus minus error nisi architecto nulla ipsum dignissimos.--}}
+                                        {{--Odit sed qui, dolorum!</p>--}}
+                                        {{--<a class="btn peach-gradient"><i class="fa fa-clone left"></i> View project</a>--}}
+                                        {{--<!--Content-->--}}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-
                 </div>
             </div>
 
