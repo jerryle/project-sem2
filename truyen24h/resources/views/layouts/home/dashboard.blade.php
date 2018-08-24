@@ -403,241 +403,118 @@
                 Hoàn Thành <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
-            <div class="row justify-content-center">
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
-                        </div>
-                    </div>
-                    <!-- Featured news -->
+            <div class="row justify-content-left row-eq-height">
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
                     </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                    </div>
-                    <!-- Featured news -->
 
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <!-- Image -->
-                    <div class="view overlay rounded z-depth-2 mb-4">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                             alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!-- Title -->
-                    <div class="d-flex justify-content-between">
-                        <div class="col-11 text-truncate pl-0 mb-3">
-                            <a class="font-weight-bold">This is title</a>
-                        </div>
-                    </div>
-                    <!-- Featured news -->
 
-                </div>
             </div>
 
         </section>

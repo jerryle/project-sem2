@@ -51,3 +51,7 @@ color: #4f4f4f; }
     flex: 1 1 auto;
 }
 .mt-s{margin-top:90%!important;}
+
+.story_full .row .col-md-3 {
+    height: 200px;
+}
