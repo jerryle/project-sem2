@@ -31,18 +31,18 @@
             <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện hot <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
-            
+
             <div class="row row-eq-height mh-100" style="height:400px;">
                 <div class="col-md-4">
-                
+
                         <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
                             <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                 <h5 class="h5-reponsive"> Marketing</h5>
                               </div>
-            
+
                         </div>
-                    
+
                 </div>
                 <div class="col-md-8">
                     <div class="row row-eq-height mh-100" style="height:200px;">
@@ -52,7 +52,6 @@
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                   </div>
-                
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -61,7 +60,7 @@
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                   </div>
-                
+
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -70,7 +69,7 @@
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                   </div>
-                
+
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -79,7 +78,7 @@
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                   </div>
-                
+
                             </div>
                         </div>
                     </div>
@@ -90,7 +89,7 @@
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                   </div>
-                
+
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -99,7 +98,7 @@
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                   </div>
-                
+
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -108,7 +107,7 @@
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                   </div>
-                
+
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -117,11 +116,11 @@
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                   </div>
-                
+
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
 
@@ -418,15 +417,15 @@
                             </div>
                             <!-- Featured news -->
                             <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
+                            {{--<div class="single-news mb-3">--}}
+                                {{--<!-- Title -->--}}
+                                {{--<div class="d-flex justify-content-between">--}}
+                                    {{--<div class="col-11 text-truncate pl-0 mb-3">--}}
+                                        {{--<a>Continue</a>--}}
+                                    {{--</div>--}}
+                                    {{--<a><i class="fa fa-angle-double-right"></i></a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                             <!-- Small news -->
                         </div>
                         <div class="col-md-3">
@@ -445,17 +444,7 @@
                                 </div>
                             </div>
                             <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+
                         </div>
                         <div class="col-md-3">
                             <!-- Image -->
@@ -473,17 +462,7 @@
                                 </div>
                             </div>
                             <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+
                         </div>
                         <div class="col-md-3">
                             <!-- Image -->
@@ -501,17 +480,7 @@
                                 </div>
                             </div>
                             <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -531,17 +500,7 @@
                                 </div>
                             </div>
                             <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+
                         </div>
                         <div class="col-md-3">
                             <!-- Image -->
@@ -559,17 +518,7 @@
                                 </div>
                             </div>
                             <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+
                         </div>
                         <div class="col-md-3">
                             <!-- Image -->
@@ -587,17 +536,7 @@
                                 </div>
                             </div>
                             <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+
                         </div>
                         <div class="col-md-3">
                             <!-- Image -->
@@ -615,17 +554,7 @@
                                 </div>
                             </div>
                             <!-- Featured news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-3">
-                                <!-- Title -->
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-11 text-truncate pl-0 mb-3">
-                                        <a>Continue</a>
-                                    </div>
-                                    <a><i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Small news -->
+
                         </div>
                     </div>
                 </div>
