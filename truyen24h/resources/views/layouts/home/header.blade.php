@@ -1,11 +1,12 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue-gradient scrolling-navbar navbar-laravel">
     <div class="container">
-
-        <a class="navbar-brand" href="{{ url('/') }}">
-            {{--{{ config('app.name') }}--}}
-            <a href="#" class=""><img src="{{asset('logo.png')}}" alt=""></a>
-        </a>
-        <div class="">
+        <div class="logo">
+            <a class="navbar-brand" href="{{ url('/') }}">
+                {{--{{ config('app.name') }}--}}
+                <a href="#" class=""><img src="{{asset('logo.png')}}" alt=""></a>
+            </a>
+        </div>
+        <div class="search-form">
 
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

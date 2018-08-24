@@ -26,6 +26,7 @@ box-shadow: 0 1px 0 0 #fd9267; }
 .form-gradient input[type=password]:focus:not([readonly]) + label {
 color: #4f4f4f; }
 
+.py-6{padding-bottom:4.5rem!important}
 
 .row-eq-height {
     display: -webkit-box;
