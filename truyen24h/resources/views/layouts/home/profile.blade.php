@@ -14,14 +14,19 @@
             </div>
             <div class="row profile-photo">
                 <div class="col-md-2">
-
+                    <nav class="nav flex-column lighten-3 py-4 mb-r font-weight-bold z-depth-1">
+                        <a class="nav-link active indigo-text" href="#">Active</a>
+                        <a class="nav-link indigo-text" href="#">Link 1</a>
+                        <a class="nav-link indigo-text" href="#">Link 2</a>
+                        <a class="nav-link indigo-text" href="#">Link 3</a>
+                    </nav>
                 </div>
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-3">
 
                                 <!--Card-->
-                                <div class="card card-cascade mt-1">
+                                <div class="card card-cascade">
 
                                     <!--Card image-->
                                     <div class="view view-cascade">
@@ -51,36 +56,41 @@
                             </div>
 
                         <div class="col-md-9">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>Tên Người Dùng:</th>
-                                    <th>123456</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Tên:</th>
-                                    <td>Mark</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Email:</th>
-                                    <td>truyen@24h.vn</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Ngày Đăng Ký:</th>
-                                    <td>20/10/2018</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Nhóm:</th>
-                                    <td>Chưa tham gia</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Sinh Ngày:</th>
-                                    <td>20/10/1999</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs md-tabs nav-justified blue-gradient" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i class="fa fa-user"></i> Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fa fa-heart"></i> Follow</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-envelope"></i> Mail</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panels -->
+                            <div class="tab-content">
+                                <!--Panel 1-->
+                                <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                                </div>
+                                <!--/.Panel 1-->
+                                <!--Panel 2-->
+                                <div class="tab-pane fade" id="panel6" role="tabpanel">
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                                </div>
+                                <!--/.Panel 2-->
+                                <!--Panel 3-->
+                                <div class="tab-pane fade" id="panel7" role="tabpanel">
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                                </div>
+                                <!--/.Panel 3-->
+                            </div>
+
                             <div>
                                 <button class="btn blue-gradient">Cập Nhật Thông Tin</button>
                             </div>
