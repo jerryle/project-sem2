@@ -1,5 +1,4 @@
 @extends('layouts.user.master')
-
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -26,31 +25,24 @@
 
 
         </div>
-
         <section class="magazine-section my-5 d-none d-lg-block">
             <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện hot <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
-
             <div class="row row-eq-height mh-100" style="height:400px;">
                 <div class="col-md-4">
-
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
-
                 </div>
                 <div class="col-md-8">
                     <div class="row row-eq-height mh-100" style="height:200px;">
                         <div class="col-md-3">
                             <div class="card card-image mb-3 pb-auto"
                                  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                 </div>
@@ -69,21 +61,17 @@
                         <div class="col-md-3">
                             <div class="card card-image mb-3"
                                  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card card-image mb-3"
                                  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -91,48 +79,38 @@
                         <div class="col-md-3">
                             <div class="card card-image mb-3"
                                  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card card-image mb-3"
                                  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card card-image mb-3"
                                  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card card-image mb-3"
                                  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                                     <h5 class="h5-reponsive"> Marketing</h5>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </section>
         <section class="story_update my-5">
             <div class="row">
@@ -315,10 +293,8 @@
                             </tr>
                             </tbody>
                             <!--Table body-->
-
                         </table>
                         <!--Table-->
-
                     </div>
                 </div>
                 <div class="col-lg-4 d-none d-lg-block">
@@ -329,11 +305,9 @@
                         <div class="col-md-12 table-responsive">
                             <!--Table-->
                             <table class="table">
-
                                 <!--Table head-->
                                 <thead>
                                 <tr>
-
                                     <th class="th-lg">Lorem ipsum dolor</th>
                                     <th class="th-lg">1</th>
                                 </tr>
@@ -372,12 +346,10 @@
                                 </tr>
                                 </tbody>
                                 <!--Table body-->
-
                             </table>
                             <!--Table-->
                         </div>
                     </div>
-
                     <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">
                         Thể Loại <i class="fab fa-gripfire"></i></h4>
                     <hr class="between-sections mt-0">
@@ -396,7 +368,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="story_full my-5">
             <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện Đã
@@ -407,116 +378,92 @@
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card card-image mb-3"
                          style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-
                     </div>
                 </div>
-
             </div>
-
         </section>
     </div>
 @endsection
