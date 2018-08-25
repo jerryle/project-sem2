@@ -1,4 +1,4 @@
-<footer class="page-footer font-small blue pt-4">
+<footer class="page-footer font-small blue-gradient pt-4">
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
 

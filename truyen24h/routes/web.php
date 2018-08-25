@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('layouts.home.dashboard');
 });
+Route::get('/test', function () {
+    return view('layouts.home.profile');
+});
 Route::get('/quanly', function() {
     return view('admin');
 });

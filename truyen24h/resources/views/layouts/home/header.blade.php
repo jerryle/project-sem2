@@ -30,7 +30,7 @@
                             {{__('auth.account')}}
                         </a>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('login') }}"><i
                                     class="fas fa-sign-in-alt"></i> {{ __('auth.login') }}</a>
                             <a class="dropdown-item" href="{{ route('register') }}"><i

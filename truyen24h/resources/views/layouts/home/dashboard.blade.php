@@ -1,5 +1,4 @@
 @extends('layouts.user.master')
-
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -26,535 +25,380 @@
 
 
         </div>
-
-        <section class="magazine-section my-5">
+        <section class="magazine-section my-5 d-none d-lg-block">
             <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện hot <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
-
             <div class="row row-eq-height mh-100" style="height:400px;">
                 <div class="col-md-4">
 
-                        <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                <h5 class="h5-reponsive"> Marketing</h5>
-                              </div>
-
+                    {{-- <div class="card hoverable">
+                        <div class="card-image">
+                            <div class="view overlay hm-white-slight z-depth-1">
+                                <div id="yourElement"></div>
+                                <a href="#">
+                                    <div class="mask waves-effect"></div>
+                                </a>
+                            </div>
                         </div>
+                        <div class="card-content">
+                            <h5>Card title</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda delectus officia quia, sequi eum perspiciatis architecto. Ullam voluptatum, facere nihil quidem.</p>
+                        </div>
+                    </div> --}}
 
+
+                    <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-8">
                     <div class="row row-eq-height mh-100" style="height:200px;">
                         <div class="col-md-3">
-                            <div class="card card-image mb-3 pb-auto" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
-                            </div>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
 
-                            </div>
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
 
-                            </div>
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
 
-                            </div>
+                           </div>
                         </div>
                     </div>
                     <div class="row row-eq-height mh-100" style="height:200px;">
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                            </div>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
+
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
 
-                            </div>
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
 
-                            </div>
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                    <h5 class="h5-reponsive"> Marketing</h5>
-                                  </div>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               </div>
 
-                            </div>
+                           </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </section>
         <section class="story_update my-5">
             <div class="row">
-                <div class="col-md-8">
-                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện Mới
+                <div class="col-lg-8">
+                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Truyện Mới
                         Cập Nhật <i class="fab fa-gripfire"></i></h4>
-                    <hr class="between-sections mt-0">
-                    <div class="row justify-content-left">
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <!--Table-->
-                                <table class="table table-hover table-fixed">
+                    {{-- <hr class="between-sections mt-0"> --}}
+                    <div class="list-group list-group-flush">
+                        <a class="list-group-item list-group-item-action waves-effect">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="flex-grow-1">Bắc Minh Thần Công</span>
+                                <span class="genre flex-shrink-1">Võ Hiệp</span>
+                                <span class="w-25 text-right author flex-shrink-1 d-none d-sm-block">Thiên Tàm Thổ Đậu</span>
 
-                                    <!--Table head-->
-                                    <thead>
-                                    <tr>
-                                        <th class="th-lg">Tên Truyện</th>
-                                        <th class="th-sm">Thể Loại</th>
-                                        <th class="th-sm">Chương</th>
-                                        <th class="th-sm">Thời Gian</th>
-                                    </tr>
-                                    </thead>
-                                    <!--Table head-->
-
-                                    <!--Table body-->
-                                    <tbody>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trò chơi luân hồi</td>
-                                        <td>
-                                            <div class="d-flex flex-wrap">
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                                <div class="m-1 badge badge-pill blue-gradient">The loai 1</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#">Chương 1</a>
-                                        </td>
-                                        <td>1 phút trước</td>
-                                    </tr>
-                                    </tbody>
-                                    <!--Table body-->
-
-                                </table>
-                                <!--Table-->
                             </div>
-                        </div>
+                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                <span class="author">Hư Trúc</span>
+                            </div> --}}
+                        </a>
+                        <a class="list-group-item list-group-item-action waves-effect">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="flex-grow-1">Thiên Sơn Chiết Mai Thủ</span>
+                                <span class="genre flex-shrink-1">Võ Hiệp</span>
+                                <span class="author w-25 text-right flex-shrink-1 d-none d-sm-block">Hư Trúc</span>
+
+                            </div>
+                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                <span class="author">Hư Trúc</span>
+                            </div> --}}
+                        </a>
+                        <a class="list-group-item list-group-item-action waves-effect">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="flex-grow-1">Sinh Tử Phù</span>
+                                <span class="genre flex-shrink-1">Võ Hiệp</span>
+                                <span class="author w-25 text-right flex-shrink-1 d-none d-sm-block">Hư Trúc</span>
+
+                            </div>
+                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                <span class="author">Hư Trúc</span>
+                            </div> --}}
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện
-                        Đang Đọc <i class="fab fa-gripfire"></i></h4>
-                    <hr class="between-sections mt-0">
+                <div class="col-lg-4 d-none d-lg-block">
+                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Bảng xếp hạng <i class="fab fa-gripfire"></i></h4>
+                    {{-- <hr class="between-sections mt-0"> --}}
+
                     <div class="row justify-content-center">
-                        <div class="col-md-12 table-responsive">
-                            <!--Table-->
-                            <table class="table">
+                        <div class="col-md-12 table-responsive-sm">
+                            <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab">Tuần</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#panel6" role="tab">Tháng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">Năm</a>
+                                </li>
+                            </ul>
 
-                                <!--Table head-->
-                                <thead>
-                                <tr>
+                            <div class="tab-content">
+                                <!--Panel 1-->
+                                <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
+                                    <div class="list-group list-group-flush">
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Bắc Minh Thần Công</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
-                                    <th class="th-lg">Lorem ipsum dolor</th>
-                                    <th class="th-lg">1</th>
-                                </tr>
-                                </thead>
-                                <!--Table head-->
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Thiên Sơn Chiết Mai Thủ</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
-                                <!--Table body-->
-                                <tbody>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <th scope="row">1</th>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <th scope="row">1</th>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <th scope="row">1</th>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <th scope="row">1</th>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <th scope="row">1</th>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <th scope="row">1</th>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <th scope="row">1</th>
-                                </tr>
-                                </tbody>
-                                <!--Table body-->
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Sinh Tử Phù</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
-                            </table>
-                            <!--Table-->
-                        </div>
-                    </div>
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/.Panel 1-->
+                                <!--Panel 2-->
+                                <div class="tab-pane fade" id="panel6" role="tabpanel">
+                                    <div class="list-group list-group-flush">
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Bắc Minh Thần Công 2</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
-                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">
-                        Thể Loại <i class="fab fa-gripfire"></i></h4>
-                    <hr class="between-sections mt-0">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12 table-responsive">
-                            <div class="d-flex flex-wrap">
-                                <div class="m-2 badge badge-pill blue-gradient">The loai 1</div>
-                                <div class="m-2 badge badge-pill blue-gradient">The loai 1</div>
-                                <div class="m-2 badge badge-pill blue-gradient">The loai 1</div>
-                                <div class="m-2 badge badge-pill blue-gradient">The loai 1</div>
-                                <div class="m-2 badge badge-pill blue-gradient">The loai 1</div>
-                                <div class="m-2 badge badge-pill blue-gradient">The loai 1</div>
-                                <div class="m-2 badge badge-pill blue-gradient">The loai 1</div>
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Thiên Sơn Chiết Mai Thủ 2</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+
+
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Sinh Tử Phù 2</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+
+
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/.Panel 2-->
+                                <!--Panel 3-->
+                                <div class="tab-pane fade" id="panel7" role="tabpanel">
+                                    <div class="list-group list-group-flush">
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Bắc Minh Thần Công 3</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+
+
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Thiên Sơn Chiết Mai Thủ 3</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+
+
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                        <a class="list-group-item list-group-item-action waves-effect">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="flex-grow-1">Sinh Tử Phù 3</span>
+                                                <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+
+
+                                            </div>
+                                            {{-- <div  class="d-flex justify-content-between align-items-center">
+                                                <span class="author">Hư Trúc</span>
+                                            </div> --}}
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/.Panel 3-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="story_full my-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện Đã
-                        Hoàn Thành <i
-                            class="fab fa-gripfire"></i></h4>
-                    <hr class="between-sections mt-0">
-                    <div class="row justify-content-center">
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-                            <!-- Small news -->
-                            {{--<div class="single-news mb-3">--}}
-                                {{--<!-- Title -->--}}
-                                {{--<div class="d-flex justify-content-between">--}}
-                                    {{--<div class="col-11 text-truncate pl-0 mb-3">--}}
-                                        {{--<a>Continue</a>--}}
-                                    {{--</div>--}}
-                                    {{--<a><i class="fa fa-angle-double-right"></i></a>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                            <!-- Small news -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-
+            <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Truyện Đã
+                Hoàn Thành <i
+                    class="fab fa-gripfire"></i></h4>
+            <hr class="between-sections mt-0">
+            <div class="row justify-content-left row-eq-height">
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
-                        <div class="col-md-3">
-                            <!-- Image -->
-                            <div class="view overlay rounded z-depth-2 mb-4">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg"
-                                     alt="Sample image">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <!-- Title -->
-                            <div class="d-flex justify-content-between">
-                                <div class="col-11 text-truncate pl-0 mb-3">
-                                    <a class="font-weight-bold">This is title</a>
-                                </div>
-                            </div>
-                            <!-- Featured news -->
-
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4">
+                    <div class="card card-image mb-3"
+                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive"> Marketing</h5>
                         </div>
                     </div>
                 </div>
