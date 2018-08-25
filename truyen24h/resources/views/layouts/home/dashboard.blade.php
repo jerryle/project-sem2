@@ -147,7 +147,7 @@
         <section class="story_update my-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge blue">Truyện Mới
+                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Truyện Mới
                         Cập Nhật <i class="fab fa-gripfire"></i></h4>
                     {{-- <hr class="between-sections mt-0"> --}}
                     <div class="list-group list-group-flush">
@@ -187,7 +187,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 d-none d-lg-block">
-                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge peach-gradient">Bảng xếp hạng <i class="fab fa-gripfire"></i></h4>
+                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Bảng xếp hạng <i class="fab fa-gripfire"></i></h4>
                     {{-- <hr class="between-sections mt-0"> --}}
 
                     <div class="row justify-content-center">
@@ -325,7 +325,7 @@
             </div>
         </section>
         <section class="story_full my-5">
-            <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện Đã
+            <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Truyện Đã
                 Hoàn Thành <i
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
