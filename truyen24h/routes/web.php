@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('layouts.home.dashboard');
 });
+
+Auth::routes();
+
 Route::get('/test', function () {
     return view('layouts.home.profile');
 });
@@ -21,6 +24,6 @@ Route::get('/quanly', function() {
     return view('admin');
 });
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/profile', 'UserController@show')->name('profile');
