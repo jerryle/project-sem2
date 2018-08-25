@@ -23,6 +23,7 @@ class GenreController extends Controller
      */
     public function create()
     {
+        // 
         //
     }
 
