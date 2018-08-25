@@ -14,12 +14,10 @@
             </div>
             <div class="row profile-photo">
                 <div class="col-md-2">
-                    <nav class="nav flex-column lighten-3 py-4 mb-r font-weight-bold z-depth-1">
-                        <a class="nav-link active indigo-text" href="#">Active</a>
-                        <a class="nav-link indigo-text" href="#">Link 1</a>
-                        <a class="nav-link indigo-text" href="#">Link 2</a>
-                        <a class="nav-link indigo-text" href="#">Link 3</a>
-                    </nav>
+                    <div class="list-group">
+                        <a href="#" class="item text blue-text h3-responsive mb-2"><i class="fas fa-home"></i> Trang Chủ</a>
+                        <a href="#" class="item text blue-text h3-responsive mb-2"><i class="fas fa-edit"></i> Đăng Truyện</a>
+                    </div>
                 </div>
                 <div class="col-md-10">
                     <div class="row">
@@ -59,21 +57,53 @@
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs md-tabs nav-justified blue-gradient" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i class="fa fa-user"></i> Profile</a>
+                                    <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i class="fa fa-user"></i> Giới Thiệu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fa fa-heart"></i> Follow</a>
+                                    <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fa fa-heart"></i> Nhóm</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-envelope"></i> Mail</a>
+                                    <a class="nav-link" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-envelope"></i> Sửa Thông Tin</a>
                                 </li>
                             </ul>
                             <!-- Tab panels -->
                             <div class="tab-content">
                                 <!--Panel 1-->
-                                <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
-                                    <br>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                                <div class="row tab-pane fade in show active" id="panel5" role="tabpanel">
+                                    <div class="table-responsive">
+                                        <!--Table-->
+                                        <table class="table">
+
+                                            <!--Table head-->
+                                            <thead>
+                                            <tr>
+                                                <th>Tên Người Dùng:</th>
+                                                <th></th>
+                                            </tr>
+                                            </thead>
+                                            <!--Table head-->
+
+                                            <!--Table body-->
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">Email:</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Nhóm:</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ngày Sinh:</th>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                            <!--Table body-->
+
+                                        </table>
+                                        <!--Table-->
+
+                                    </div>
                                 </div>
                                 <!--/.Panel 1-->
                                 <!--Panel 2-->
@@ -91,9 +121,9 @@
                                 <!--/.Panel 3-->
                             </div>
 
-                            <div>
-                                <button class="btn blue-gradient">Cập Nhật Thông Tin</button>
-                            </div>
+                            {{--<div>--}}
+                                {{--<button class="btn blue-gradient">Cập Nhật Thông Tin</button>--}}
+                            {{--</div>--}}
                         </div>
 
                     </div>
