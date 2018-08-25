@@ -159,7 +159,10 @@ return [
         // Truyen24h\Providers\BroadcastServiceProvider::class,
         Truyen24h\Providers\EventServiceProvider::class,
         Truyen24h\Providers\RouteServiceProvider::class,
-
+        /**
+         * T24 Providers
+         */
+        Truyen24h\Providers\T24RegisterProvider::class,
     ],
 
     /*

@@ -40,8 +40,8 @@
                                     <!--Card content-->
                                     <div class="card-body card-body-cascade text-center">
                                         <!--Title-->
-                                        <h4 class="card-title"><strong>Billy Cullen</strong></h4>
-                                        <h5>Web developer</h5>
+                                        <h4 class="card-title"><strong>{{$users->name}}</strong></h4>
+                                    <h5>Rank Admin: {{$users->adminLevel}} </h5>
 
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
                                             sunt, quod quibusdam.

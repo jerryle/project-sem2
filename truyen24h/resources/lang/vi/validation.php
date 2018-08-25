@@ -142,5 +142,6 @@ return [
     */
 
     'attributes' => [],
+    'without_spaces' => ':attribute không được có khoảng trống',
 
 ];
