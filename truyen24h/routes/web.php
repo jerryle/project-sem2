@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('layouts.home.dashboard');
-});
+})->name('index');
 
 Auth::routes();
 
@@ -29,4 +29,4 @@ Route::get('/quanly', function() {
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/profile', 'UserController@show')->name('profile');
+Route::get('/profile/{username}', 'UserController@show')->name('profile');

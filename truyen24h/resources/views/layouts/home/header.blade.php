@@ -60,12 +60,12 @@
                         <a id="navbarDropdown" class="nav-link dropdown-toggle waves-effect waves-light" href="#"
                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <img src="{{asset('admin/img/faces/default.jpg')}}" alt="avatar"
-                                 class="rounded-circle z-depth-0"> {{ Auth::user()->name }} <span
+                                 class="rounded-circle z-depth-0"> {{ Auth::user()->username }} <span
                                 class="fa fa-caret-down"></span>
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a href="{{route('profile',Auth::user()->id)}}" class="dropdown-item">
+                            <a href="{{route('profile',Auth::user()->username)}}" class="dropdown-item">
                                 {{ __('navbar.profile')}}
                             </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"

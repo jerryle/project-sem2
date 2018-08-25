@@ -24,7 +24,7 @@ return [
     'password' => 'Password',
     'rememberme' => 'Remember Me',
     'email' => 'Email address',
-    'name' => 'Full name',
+    'username' => 'Username',
     'password-confirm' => 'Password confirm',
     'logout' => 'Logout',
     'account' => 'Account',

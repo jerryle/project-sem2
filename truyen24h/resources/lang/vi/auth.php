@@ -24,7 +24,7 @@ return [
     'password' => 'Mật khẩu',
     'rememberme' => 'Nhớ Tài Khoản',
     'email' => 'Địa chỉ email',
-    'name' => 'Tên người dùng',
+    'username' => 'Tên tài khoản',
     'password-confirm' => 'Xác nhận mật khẩu',
     'logout' => 'Đăng xuất',
     'account' => 'Tài Khoản',
