@@ -18,7 +18,7 @@ class CreateUserSubStoriesTable extends Migration
             $table->unsignedInteger('userId');
             $table->unsignedInteger('storyId');
             $table->foreign('userId')->references('id')->on('users');
-            $tbale->foreign('storyId')->references('id')->on('stories');
+            $table->foreign('storyId')->references('id')->on('stories');
             $table->timestamps();
         });
     }

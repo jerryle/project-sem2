@@ -17,7 +17,7 @@ class CreateStoryChaptersTable extends Migration
             $table->increments('id');
             $table->string('name',191)->default('None');
             $table->unsignedInteger('number')->default(0);
-            $table->text('content')->default('None');
+            $table->text('content');
             $table->unsignedInteger('storyId');
             $table->foreign('storyId')->references('id')->on('stories');
             $table->timestamps();
