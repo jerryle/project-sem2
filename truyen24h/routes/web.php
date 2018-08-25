@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('layouts.home.profile');
 });
+Route::get('/story', function () {
+    return view('layouts.home.story');
+});
 Route::get('/quanly', function() {
     return view('admin');
 });
