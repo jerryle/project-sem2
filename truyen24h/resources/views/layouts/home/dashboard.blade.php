@@ -58,7 +58,6 @@
                 <div class="col-md-8">
                     <div class="row row-eq-height mh-100" style="height:200px;">
                         <div class="col-md-3">
-\
                             <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
                                 style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
