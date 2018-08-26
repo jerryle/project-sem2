@@ -52,7 +52,26 @@
     
                     </li> --}}
                 @else
-                    <li class="nav-item avatar dropdown show">
+                
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-info waves-effect px-4" href="{{route('profile',Auth::user()->username)}}">
+                            <i class="fas fa-user-circle mr-1"></i>{{ Auth::user()->username }}
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary waves-effect px-3" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                            style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
+                    {{-- <li class="nav-item avatar dropdown show">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle waves-effect waves-light" href="#"
                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <img src="{{asset('admin/img/faces/default.jpg')}}" alt="avatar"
@@ -75,7 +94,7 @@
                                 @csrf
                             </form>
                         </div>
-                    </li>
+                    </li> --}}
                 @endguest
             </ul>
         {{-- </div> --}}
