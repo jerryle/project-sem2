@@ -1,67 +1,28 @@
-<footer class="page-footer font-small blue-gradient pt-4">
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
 
-        <!-- Grid row -->
-        <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3">
-
-                <!-- Content -->
-                <h5 class="text-uppercase">Footer Content</h5>
-                <p>Here you can use rows and columns here to organize your footer content.</p>
-
-            </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">Trang Chủ</a>
-                    </li>
-                    <li>
-                        <a href="#!">Thể Loại</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">Thông Tin</a>
-                    </li>
-                    <li>
-                        <a href="#!">Liên Hệ</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
+        <!-- Footer Elements -->
+        <div class="container">
+    
+          <!-- Call to action -->
+          <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+              <h5 class="mb-1">Tạo tài khoản chỉ mất vài giây</h5>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!" class="btn btn-outline-white btn-rounded">{{ __('auth.register') }}</a>
+            </li>
+          </ul>
+          <!-- Call to action -->
+    
         </div>
-        <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="#"> Truyen24h.</a>
-    </div>
-    <!-- Copyright -->
-</footer>
+        <!-- Footer Elements -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="http://sa-mp.vn"> NON-GIT TEAM</a>
+        </div>
+        <!-- Copyright -->
+    
+      </footer>
+      <!-- Footer -->

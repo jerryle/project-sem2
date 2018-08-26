@@ -37,7 +37,7 @@
         - Thay layouts của admin để đồng bộ MDB
      --}}
     @include('layouts.home.header')
-    <main class="dashboard-main">
+    <main class="t24-content-m">
         @yield('content')
     </main>
     @include('layouts.home.footer')

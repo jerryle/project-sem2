@@ -1,7 +1,7 @@
 @extends('layouts.user.master')
 
 @section('content')
-<div class="container">
+<div class="container my-6">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <section class="form-gradient">
@@ -41,7 +41,7 @@
                             
                             <div class="md-form">
                                 {{-- <input type="text" id="Form-email3" class="form-control"> --}}
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
                                     @if ($errors->has('email'))
                                         <span class="invalid-feedback" role="alert">
