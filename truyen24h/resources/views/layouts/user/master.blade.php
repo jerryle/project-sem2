@@ -31,11 +31,6 @@
 </head>
 <body>
 <div id="app">
-    {{--       
-        Phase 1:
-        - Sửa lại navbar và footer
-        - Thay layouts của admin để đồng bộ MDB
-     --}}
     @include('layouts.home.header')
     <main class="t24-content-m">
         @yield('content')
