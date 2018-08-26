@@ -3,7 +3,7 @@
         <div class="logo">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{--{{ config('app.name') }}--}}
-                <a href="#" class=""><img src="{{asset('logo.png')}}" alt=""></a>
+                <a href="{{route('index')}}" class=""><img src="{{asset('logo.png')}}" alt=""></a>
             </a>
         </div>
         <div class="search-form">
