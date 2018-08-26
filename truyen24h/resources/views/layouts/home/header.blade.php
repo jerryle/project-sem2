@@ -54,13 +54,13 @@
                 @else
                 
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-info waves-effect px-4" href="{{route('profile',Auth::user()->username)}}">
+                        <a class="nav-link btn btn-outline-info waves-effect px-4" href="{{route('profile',Auth::user()->username)}}" alt="Hồ sơ cá nhân" title="Hồ sơ cá nhân">
                             <i class="fas fa-user-circle mr-1"></i>{{ Auth::user()->username }}
                         </a>
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-primary waves-effect px-3" href="{{ route('logout') }}"
+                        <a class="nav-link btn btn-outline-primary waves-effect px-3" href="{{ route('logout') }}" alt="Đăng xuất" title="Đăng xuất"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                             <i class="fas fa-sign-out-alt"></i>
@@ -126,7 +126,20 @@
                 </ul>
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto nav-flex-icons">
-
+                    @if(Auth::check())
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                    <i class="fas fa-heart mr-1"></i>Truyện Theo Dõi
+                            </a>
+    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-file-upload mr-1"></i>Đăng Truyện
+                            </a>
+    
+                        </li>
+                    @endif
                 </ul>
             </div>
         </div>
