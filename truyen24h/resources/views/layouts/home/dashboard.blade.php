@@ -30,7 +30,7 @@
                     class="fab fa-gripfire"></i></h4>
             <hr class="between-sections mt-0">
             <div class="row row-eq-height mh-100" style="height:400px;">
-                <div class="col-md-4">
+                <div class="col-md-4 top-1">
 
                     {{-- <div class="card hoverable">
                         <div class="card-image">
@@ -48,99 +48,139 @@
                     </div> --}}
 
 
-                    <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                    <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0"
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                            Thế Giới Thứ Chín
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="row row-eq-height mh-100" style="height:200px;">
+                    <div class="t24-top-hot row row-eq-height mh-100" style="height:400px;">
                         <div class="col-md-3">
-                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverablemb card-image waves-effect waves-light rgba-white-slight rounded-0"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
 
-                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                   Thế Giới Thứ Chín
                                </div>
 
                            </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
 
-                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                   Thế Giới Thứ Chín
                                </div>
 
                            </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
 
-                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                   Thế Giới Thứ Chín
                                </div>
 
                            </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
 
-                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
-                               </div>
-
-                           </div>
-                        </div>
-                    </div>
-                    <div class="row row-eq-height mh-100" style="height:200px;">
-                        <div class="col-md-3">
-
-                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                   Thế Giới Thứ Chín
                                </div>
 
                            </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
 
-                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
-                               </div>
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                    Thế Giới Thứ Chín
+                                </div>
 
-                           </div>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
 
-                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
-                               </div>
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                    Thế Giới Thứ Chín
+                                </div>
 
-                           </div>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
-                                style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
 
-                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                   <h5 class="h5-reponsive">Bách Luyện Thành Thần</h5>
-                               </div>
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                    Thế Giới Thứ Chín
+                                </div>
 
-                           </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
+
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                    Thế Giới Thứ Chín
+                                </div>
+
+                            </div>
                         </div>
                     </div>
+                    {{-- <div class="row row-eq-height mh-100" style="height:200px;">
+                        <div class="col-md-3">
+
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
+
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
+                               </div>
+
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
+
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
+                               </div>
+
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
+
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
+                               </div>
+
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight"
+                                style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
+
+                               <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                                   <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
+                               </div>
+
+                           </div>
+                        </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
@@ -332,73 +372,73 @@
             <div class="row justify-content-left row-eq-height">
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
                     <div class="card card-image mb-3"
-                         style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+                         style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                            <h5 class="h5-reponsive"> Marketing</h5>
+                            <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
                         </div>
                     </div>
                 </div>
