@@ -9,12 +9,12 @@
                 <div class="col-md-4 table-responsive-sm">
                     <!--Featured image-->
                     <div class="view overlay rounded z-depth-2 waves-light mb-3">
-                        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="" class="card-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="" class="card-img">
                     </div>
-                    <p>Người đăng:
+                    <p>Người Đăng:
                         <a>
                             <strong>Carine Fox</strong>
-                        </a>, 19/08/2018</p>
+                        </a>, 19/08/2018.</p>
                     <p>Thể Loại:
                         <a>
                             <strong>Kiếm Hiệp</strong>
@@ -31,6 +31,9 @@
                         <strong>This is title of the Story!</strong>
                     </h3>
                     <p>Description: Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                        minus id quod maxime
+                        placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
+                        debitis aut rerum. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
                         minus id quod maxime
                         placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
                         debitis aut rerum.</p>
