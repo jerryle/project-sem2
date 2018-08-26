@@ -30,3 +30,4 @@ Route::get('/quanly', function() {
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile/{username}', 'UserController@show')->name('profile');
+Route::get('/story/{name}', 'StoryController@show')->name('story');
