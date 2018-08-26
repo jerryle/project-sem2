@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from demos.creative-tim.com/material-dashboard-pro/examples/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Mar 2017 21:29:18 GMT -->
+
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="{{asset('admin/img/apple-icon.png')}}" />
@@ -20,13 +21,14 @@
     <link href="{{asset('admin/css/demo.css')}}" rel="stylesheet" />
     <!--     Fonts and icons     -->
     <link href="../../../maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+    />
 </head>
 
 <body>
     <div class="wrapper">
         <div class="sidebar" data-active-color="rose" data-background-color="black" data-image="{{asset('admin/img/sidebar-1.jpg')}}">
- 
+
             <div class="logo">
                 <a href="http://truyen24h.info/" class="simple-text">
                     Truyen24H
@@ -53,8 +55,7 @@
                                     <a href="#">Thông tin cá nhân</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         Đăng Xuất
                                     </a>
@@ -113,7 +114,8 @@
                         </button>
                         <a class="navbar-brand" href="#"> Trang quản lý </a>
                     </div>
-                    {{-- <div class="collapse navbar-collapse">
+                    {{--
+                    <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
@@ -170,9 +172,7 @@
                 </div>
             </nav>
             <div class="content">
-                {{-- begin content --}}
-                @yield('admin-dashboard')
-                {{-- end content --}}
+                {{-- begin content --}} @yield('admin-dashboard') {{-- end content --}}
             </div>
             <footer class="footer">
                 <div class="container-fluid">
@@ -211,7 +211,8 @@
             </footer>
         </div>
     </div>
-    {{-- <div class="fixed-plugin">
+    {{--
+    <div class="fixed-plugin">
         <div class="dropdown show-dropdown">
             <a href="#" data-toggle="dropdown">
                 <i class="fa fa-cog fa-2x"> </i>
@@ -294,8 +295,10 @@
                 </li>
                 <li class="header-title">Thank you for 95 shares!</li>
                 <li class="button-container">
-                    <button id="twitter" class="btn btn-social btn-twitter btn-round"><i class="fa fa-twitter"></i> &middot; 45</button>
-                    <button id="facebook" class="btn btn-social btn-facebook btn-round"><i class="fa fa-facebook-square"> &middot;</i>50</button>
+                    <button id="twitter" class="btn btn-social btn-twitter btn-round">
+                        <i class="fa fa-twitter"></i> &middot; 45</button>
+                    <button id="facebook" class="btn btn-social btn-facebook btn-round">
+                        <i class="fa fa-facebook-square"> &middot;</i>50</button>
                 </li>
             </ul>
         </div>
@@ -344,7 +347,7 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="{{asset('admin/js/demo.js')}}"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         // Javascript method's body can be found in assets/js/demos.js
         demo.initDashboardPageCharts();
