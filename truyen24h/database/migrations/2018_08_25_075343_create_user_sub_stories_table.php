@@ -15,10 +15,10 @@ class CreateUserSubStoriesTable extends Migration
     {
         Schema::create('user_sub_stories', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('userId');
-            $table->unsignedInteger('storyId');
-            $table->foreign('userId')->references('id')->on('users');
-            $table->foreign('storyId')->references('id')->on('stories');
+            $table->unsignedInteger('user_id');
+            $table->unsignedInteger('story_id');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('story_id')->references('id')->on('stories');
             $table->timestamps();
         });
     }

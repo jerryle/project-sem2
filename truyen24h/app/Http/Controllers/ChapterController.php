@@ -4,7 +4,7 @@ namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class GroupsController extends Controller
+class ChapterController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->unsignedTinyInteger('status')->default(1);
-            $table->unsignedTinyInteger('adminLevel')->default(0);
+            $table->unsignedTinyInteger('admin_level')->default(0);
         });
     }
 

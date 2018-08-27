@@ -3,7 +3,7 @@
 namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Truyen24h\Genres;
+use Truyen24h\Genre;
 
 class GenreController extends Controller
 {
@@ -14,7 +14,7 @@ class GenreController extends Controller
      */
     public function index()
     {
-        $genres = Genres::all();
+        $genres = Genre::all();
         return view('admin.genre.list')->with('genres', $genres);
     }
 
@@ -41,7 +41,7 @@ class GenreController extends Controller
             'description' => 'required|min:3|max:191',
         ]);
 
-        $genre = new Genres;
+        $genre = new Genre;
         $genre->name = $request->input('name');
         $genre->description = $request->input('description');
 
