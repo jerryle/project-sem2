@@ -52,7 +52,7 @@ class UserController extends Controller
             redirect()->route('index');
         }
         
-        return view('layouts.home.profile')->with('users', $user);
+        return view('pages.profile')->with('users', $user);
     }
 
     /**

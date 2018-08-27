@@ -53,16 +53,16 @@
                 <ul class="collapsible collapsible-accordion">
                     <li>
                         <a class="collapsible-header waves-effect arrow-r">
-                            <i class="fa fa-chevron-right"></i> Submit blog
+                            <i class="fa fa-chevron-right"></i>Truyện và thể loại
                             <i class="fa fa-angle-down rotate-icon"></i>
                         </a>
                         <div class="collapsible-body">
                             <ul>
                                 <li>
-                                    <a href="#" class="waves-effect">Submit listing</a>
+                                    <a href="{{route('admin.genre.create')}}" class="waves-effect">Thêm / Sửa / Xóa thể loại</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="waves-effect">Registration form</a>
+                                    <a href="#" class="waves-effect">Thêm / Sửa / Xóa truyện</a>
                                 </li>
                             </ul>
                         </div>

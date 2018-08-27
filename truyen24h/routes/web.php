@@ -22,10 +22,12 @@ Route::get('/story', function () {
     return view('pages.story');
 });
 
-Route::group(['middleware' => ['adminauth']], function () {
-    Route::get('/quanly', function() {
+Route::group(['middleware' => ['adminauth'], 'prefix' => 'quanly', 'name' => 'admin'], function () {
+    Route::get('', function() {
         return view('admin.dashboard');
     });
+
+    Route::resource('/genre', 'GenreController', ['as' => 'admin']);
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

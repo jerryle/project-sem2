@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Ho_Chi_Minh',
 
     /*
     |--------------------------------------------------------------------------
@@ -159,6 +159,7 @@ return [
         // Truyen24h\Providers\BroadcastServiceProvider::class,
         Truyen24h\Providers\EventServiceProvider::class,
         Truyen24h\Providers\RouteServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
         /**
          * T24 Providers
          */
@@ -211,7 +212,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
