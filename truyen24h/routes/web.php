@@ -22,8 +22,8 @@ Route::get('/story', function () {
     return view('pages.story');
 });
 Route::get('/quanly', function() {
-    return view('admin');
-});
+    return view('admin.dashboard');
+})->middleware('adminauth');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
