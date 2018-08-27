@@ -1,4 +1,4 @@
-@extends('layouts.user.master') @section('content')
+@extends('layouts.master') @section('content')
 <div class="container">
     <!--Section: Blog v.1-->
     <section class="py-4 text-left text-lg-left">

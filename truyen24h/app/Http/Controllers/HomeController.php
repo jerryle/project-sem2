@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => 'guest']);
     }
 
     /**
@@ -23,12 +23,20 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if(auth()->user()->adminLevel == 0)
+        return view('pages.index');
+    }
+
+    /**
+     * Show the application dashboard for guest.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function guest()
+    {
+        if(!auth()->guest())
         {
-            return view('layouts.home.dashboard');
+            return redirect()->route('home');
         }
-        else {
-            return view('layouts.admin.dashboard');
-        }
+        else return view('pages.index');
     }
 }
