@@ -21,11 +21,11 @@ Route::get('/test', function () {
 Route::get('/story', function () {
     return view('pages.story');
 });
-Route::get('/chapter', function () {
-    return view('pages.chapter');
-});
-Route::get('/quanly', function() {
-    return view('admin');
+
+Route::group(['middleware' => ['adminauth']], function () {
+    Route::get('/quanly', function() {
+        return view('admin.dashboard');
+    });
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
