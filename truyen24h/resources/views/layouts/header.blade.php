@@ -140,4 +140,9 @@
             </div>
         </div>
     </nav>
-    </div
+</div>
+<ol class="breadcrumb navbar-breadcrumb">
+    <div class="container breadcrumb-container">
+        Đọc truyện online, đọc truyện chữ, truyện full, truyện hay. Tổng hợp đầy đủ và cập nhật liên tục. 
+    </div>
+</ol>

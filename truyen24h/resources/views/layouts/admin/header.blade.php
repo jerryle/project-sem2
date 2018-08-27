@@ -150,7 +150,7 @@
         </div>
         <!-- Breadcrumb-->
         <div class="breadcrumb-dn mr-auto">
-            <p>Material Design for Bootstrap</p>
+        <p>Trang quản lý | {{ config('app.name') }}</p>
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
             <li class="nav-item">
