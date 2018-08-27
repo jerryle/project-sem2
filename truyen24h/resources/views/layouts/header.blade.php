@@ -1,14 +1,14 @@
-<div class="top-nav navbar pt-6 navbar-expand-sm">
+<div class="top-nav navbar pt-6 navbar-expand-md">
     <div class="container">
         <a class="navbar-brand" href="{{route('index')}}">
             <img src="{{ asset('image/logo.png') }}"  height="40">
         </a>
-        {{--
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
             aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-            <span class="navbar-toggler-icon"></span>
-        </button> --}} {{--
-        <div class="collapse navbar-collapse" id="navbarSupportedContent2"> --}}
+            <i class="fas fa-bars"></i>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
 
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav justify-content-center mr-auto">
@@ -54,14 +54,14 @@
                 </li> --}} @else
 
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-info waves-effect px-4" href="{{route('profile',Auth::user()->username)}}" alt="Hồ sơ cá nhân"
+                    <a class="nav-link btn btn-outline-info btn-sm waves-effect px-4" href="{{route('profile',Auth::user()->username)}}" alt="Hồ sơ cá nhân"
                         title="Hồ sơ cá nhân">
-                        <i class="fas fa-user-circle mr-1"></i>{{ Auth::user()->username }}
+                        <i class="fas fa-user-circle mr-1"></i>
+                        <p class="d-none d-lg-inline">{{ Auth::user()->username }}</p>
                     </a>
-
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary waves-effect px-3" href="{{ route('logout') }}" alt="Đăng xuất" title="Đăng xuất"
+                    <a class="nav-link btn btn-outline-primary btn-sm waves-effect px-3" href="{{ route('logout') }}" alt="Đăng xuất" title="Đăng xuất"
                         onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                         <i class="fas fa-sign-out-alt"></i>
@@ -94,15 +94,15 @@
                     </div>
                 </li> --}} @endguest
             </ul>
-            {{-- </div> --}}
+            </div>
     </div>
 </div>
 <div class="main-navbar mt-auto">
-    <nav class="navbar navbar-expand-sm navbar-dark unique-color-dark">
+    <nav class="navbar navbar-expand-md navbar-dark unique-color-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
