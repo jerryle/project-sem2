@@ -15,10 +15,10 @@ class CreateStoryGenresTable extends Migration
     {
         Schema::create('story_genres', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('storyId');
-            $table->unsignedInteger('genreId');
-            $table->foreign('storyId')->references('id')->on('stories');
-            $table->foreign('genreId')->references('id')->on('genres');
+            $table->unsignedInteger('story_id');
+            $table->unsignedInteger('genre_id');
+            $table->foreign('story_id')->references('id')->on('stories');
+            $table->foreign('genre_id')->references('id')->on('genres');
             $table->timestamps();
         });
     }

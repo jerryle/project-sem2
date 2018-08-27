@@ -4,7 +4,7 @@ namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class StoryChaptersController extends Controller
+class StoryGenreController extends Controller
 {
     /**
      * Display a listing of the resource.

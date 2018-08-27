@@ -18,8 +18,8 @@ class CreateStoriesTable extends Migration
             $table->string('title',191)->default('None')->unique();
             $table->string('details',500)->default('None');
             $table->string('image',255)->nullable();
-            $table->unsignedInteger('uploadedBy');
-            $table->foreign('uploadedBy')->references('id')->on('users');
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->string('author', 128)->nullable();
             $table->unsignedInteger('view_count')->default(0);
             $table->unsignedInteger('sub_count')->default(0);

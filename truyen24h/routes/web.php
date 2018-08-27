@@ -22,8 +22,8 @@ Route::get('/story', function () {
     return view('pages.story');
 });
 
-Route::group(['middleware' => ['adminauth'], 'prefix' => 'quanly', 'name' => 'admin'], function () {
-    Route::get('', function() {
+Route::group(['middleware' => ['adminauth'], 'prefix' => 'admincp', 'name' => 'admin'], function () {
+    Route::get('/', function() {
         return view('admin.dashboard');
     });
 

@@ -18,8 +18,8 @@ class CreateGroupsTable extends Migration
             $table->string('name',191);
             $table->string('description', 255);
             $table->string('image', 255);
-            $table->unsignedInteger('ownerId');
-            $table->foreign('ownerId')->references('id')->on('users');
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedTinyInteger('status')->default(0);
             $table->timestamps();
         });
