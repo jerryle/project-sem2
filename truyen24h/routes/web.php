@@ -21,6 +21,9 @@ Route::get('/test', function () {
 Route::get('/story', function () {
     return view('pages.story');
 });
+Route::get('/chapter', function () {
+    return view('pages.chapter');
+});
 Route::get('/quanly', function() {
     return view('admin');
 });
