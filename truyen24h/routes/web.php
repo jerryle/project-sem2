@@ -11,17 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.home.dashboard');
-})->name('index');
+Route::get('/', 'HomeController@guest')->name('index');
 
 Auth::routes();
 
 Route::get('/test', function () {
-    return view('layouts.home.profile');
+    return view('pages.profile');
 });
 Route::get('/story', function () {
-    return view('layouts.home.story');
+    return view('pages.story');
 });
 Route::get('/quanly', function() {
     return view('admin');

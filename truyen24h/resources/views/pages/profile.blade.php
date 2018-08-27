@@ -1,4 +1,4 @@
-@extends('layouts.user.master') @section('content')
+@extends('layouts.master') @section('content')
 <div class="card-body">
     <div class="container-fluid text-left text-md-left">
 
