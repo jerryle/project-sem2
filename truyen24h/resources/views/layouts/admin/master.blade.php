@@ -35,14 +35,14 @@
 <body class="fixed-sn navy-blue-skin">
     <div id="app">
         @include('layouts.admin.header')
-        <main class="t24-content-m">
-                <div class="container-fluid">
-            @include('inc.message')
-            
-            @yield('content')
-                </div>
+        <main class="t24-admin-content-m">
+            <div class="container-fluid">
+                @include('inc.message')
+                
+                @yield('content')
+            </div>
         </main>
-        {{-- @include('layouts.footer') --}}
+        @include('layouts.footer')
     </div>
 </body>
 
