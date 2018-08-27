@@ -1,7 +1,7 @@
 <div class="top-nav navbar pt-6 navbar-expand-sm">
     <div class="container">
         <a class="navbar-brand" href="{{route('index')}}">
-            <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="">
+            <img src="{{ asset('image/logo.png') }}"  height="40">
         </a>
         {{--
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"

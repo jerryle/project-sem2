@@ -7,7 +7,8 @@
             <li>
                 <div class="logo-wrapper waves-light">
                     <a href="#">
-                        <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center">
+                        {{-- <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"> --}}
+                        <img src="{{ asset('image/logo2.png') }}" class="img-fluid flex-center">
                     </a>
                 </div>
             </li>
