@@ -1,25 +1,6 @@
 @extends('layouts.master') @section('content')
 <div class="container">
-    <div class="row justify-content-center">
 
-        {{-- Status / Alert --}} @if (session('status'))
-        <div class="alert alert-success" role="alert">
-            {{ session('status') }}
-        </div>
-        @endif
-
-        <div class="flash-message">
-            @foreach (['danger', 'warning', 'success', 'info'] as $msg) @if(Session::has('alert-' . $msg))
-
-            <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }}
-                <a href="javascript:void(0)" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            </p>
-            {{Session::forget('alert-' . $msg)}} @endif @endforeach
-        </div>
-        {{-- End Status / Alert --}}
-
-
-    </div>
     <section class="magazine-section my-5 d-none d-lg-block">
         <h4 class="h4-responsive font-weight-bold text-left text-uppercase badge aqua-gradient">Truyện hot
             <i class="fab fa-gripfire"></i>

@@ -3,6 +3,7 @@
 namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Truyen24h\Genres;
 
 class GenreController extends Controller
 {
@@ -13,7 +14,8 @@ class GenreController extends Controller
      */
     public function index()
     {
-        //
+        $genres = Genres::all();
+        return view('admin.genre.list')->with('genres', $genres);
     }
 
     /**
@@ -23,8 +25,7 @@ class GenreController extends Controller
      */
     public function create()
     {
-        // 
-        //
+        return view('admin.genre.create');
     }
 
     /**
@@ -35,7 +36,17 @@ class GenreController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:50|min:3|unique:genres',
+            'description' => 'required|min:3|max:191',
+        ]);
+
+        $genre = new Genres;
+        $genre->name = $request->input('name');
+        $genre->description = $request->input('description');
+
+        $genre->save();
+        return redirect()->route('admin.genre.create')->with('success','Thể loại mới đã được tạo thành công!');
     }
 
     /**

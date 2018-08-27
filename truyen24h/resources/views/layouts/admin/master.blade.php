@@ -17,6 +17,7 @@
     <script src="{{ asset('mdb/js/bootstrap.min.js') }}" defer></script>
     <script src="{{ asset('mdb/js/mdb.min.js') }}" defer></script>
     <script src="{{ asset('mdb/js/modules/cards.js') }}" defer></script>
+    <script src="{{ asset('js/admin.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -35,18 +36,14 @@
     <div id="app">
         @include('layouts.admin.header')
         <main class="t24-content-m">
+                <div class="container-fluid">
+            @include('inc.message')
+            
             @yield('content')
+                </div>
         </main>
-        @include('layouts.footer')
+        {{-- @include('layouts.footer') --}}
     </div>
-
-    <script>
-        // SideNav Button Initialization
-        $(".button-collapse").sideNav();
-        // SideNav Scrollbar Initialization
-        var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-        Ps.initialize(sideNavScrollbar);
-    </script>
 </body>
 
 </html>

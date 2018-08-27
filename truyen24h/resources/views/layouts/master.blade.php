@@ -35,6 +35,7 @@
     <div id="app">
         @include('layouts.header')
         <main class="t24-content-m">
+            @include('inc.message')
             @yield('content')
         </main>
         @include('layouts.footer')
