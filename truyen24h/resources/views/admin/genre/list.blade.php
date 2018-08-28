@@ -29,7 +29,7 @@
         </div>
         <div class="card-body mx-4 mt-4">
                 <div class="btn-group d-flex justify-content-end" role="group" aria-label="Các nút trang thể loại">
-                        <a href="{{route('admin.genre.create')}}" class="btn btn-indigo" role="button"><i class="fas fa-plus-square mr-1"></i>Tạo mới</a>
+                        <a href="{{route('admin.genre.create')}}" class="btn btn-indigo btn-sm" role="button"><i class="fas fa-plus-square mr-1"></i>Tạo mới</a>
                     </div>
 
     @if(count($genres) > 0)
