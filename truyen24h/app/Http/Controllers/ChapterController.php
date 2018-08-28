@@ -4,6 +4,7 @@ namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Truyen24h\Chapter;
+use Truyen24h\Story;
 
 class ChapterController extends Controller
 {
@@ -74,6 +75,8 @@ class ChapterController extends Controller
     public function show($id)
     {
         $chapter = Chapter::findOrFail($id);
+        $story = Story::findOrFail($chapter->story_id);
+        $story->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
         
         return view('pages.chapter')->with('chapter', $chapter);
     }

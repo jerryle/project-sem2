@@ -4,6 +4,7 @@ namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Truyen24h\Story;
+use \CyrildeWit\EloquentViewable\Support\Period;
 
 class HomeController extends Controller
 {
@@ -24,10 +25,26 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $hotStories = Story::where('status',1)->orderBy('view_count', 'desc')->take(9)->get();
+        $hotStories = Story::orderByViewsCount()->take(9)->get();
         $stories = Story::where('status',1)->paginate(20);
 
-        return view('pages.index')->with('top_hot_stories', $hotStories)->with('stories',$stories);
+        // $hot7dStories
+        $tdStories = Story::get()->sortByDesc(function($story, $key) {
+            return $story->getViews(Period::pastWeeks(1));
+        })->take(5);
+        $tmStories = Story::get()->sortByDesc(function($story, $key) {
+            return $story->getViews(Period::pastMonths(1));
+        })->take(5);
+        $tyStories = Story::get()->sortByDesc(function($story, $key) {
+            return $story->getViews(Period::pastYears(1));
+        })->take(5);
+
+        return view('pages.index')
+        ->with('top_hot_stories', $hotStories)
+        ->with('stories',$stories)
+        ->with('top_d_stories', $tdStories)
+        ->with('top_m_stories', $tmStories)
+        ->with('top_y_stories', $tyStories);
     }
 
     /**
@@ -37,7 +54,7 @@ class HomeController extends Controller
      */
     public function guest()
     {
-        $hotStories = Story::where('status',1)->orderBy('view_count', 'desc')->take(9)->get();
+        $hotStories = Story::orderByViewsCount()->take(9)->get();
         $stories = Story::where('status',1)->paginate(20);
         if(!auth()->guest())
         {

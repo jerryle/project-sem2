@@ -47,6 +47,7 @@
                 {{--
                 <hr class="between-sections mt-0"> --}}
                 <div class="list-group list-group-flush">
+                   
                     <a class="list-group-item list-group-item-action waves-effect">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="flex-grow-1">Bắc Minh Thần Công</span>
@@ -110,9 +111,10 @@
                             <!--Panel 1-->
                             <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
                                 <div class="list-group list-group-flush">
-                                    <a class="list-group-item list-group-item-action waves-effect">
+                                    @foreach($top_d_stories as $story)
+                                <a class="list-group-item list-group-item-action waves-effect" href="{{route('view.story',$story->id)}}">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="flex-grow-1">Bắc Minh Thần Công</span>
+                                            <span class="flex-grow-1">{{$story->title}}</span>
                                             <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
                                         </div>
@@ -121,28 +123,7 @@
                                             <span class="author">Hư Trúc</span>
                                         </div> --}}
                                     </a>
-                                    <a class="list-group-item list-group-item-action waves-effect">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="flex-grow-1">Thiên Sơn Chiết Mai Thủ</span>
-                                            <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
-
-                                        </div>
-                                        {{--
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="author">Hư Trúc</span>
-                                        </div> --}}
-                                    </a>
-                                    <a class="list-group-item list-group-item-action waves-effect">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="flex-grow-1">Sinh Tử Phù</span>
-                                            <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
-
-                                        </div>
-                                        {{--
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="author">Hư Trúc</span>
-                                        </div> --}}
-                                    </a>
+                                    @endforeach
                                 </div>
                             </div>
                             <!--/.Panel 1-->
