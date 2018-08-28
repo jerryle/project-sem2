@@ -7,6 +7,11 @@ use Truyen24h\Genre;
 
 class GenreController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('adminauth', ['except' => ['show','index']]);
+    }
+
     /**
      * Display a listing of the resource.
      *

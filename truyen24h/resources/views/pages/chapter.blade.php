@@ -1,11 +1,19 @@
 @extends('layouts.master')
+
+@section('header')
+{{-- <script>
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+    CKEDITOR.replace( 'editor1' );
+</script> --}}
+@endsection
 @section('content')
     <div class="container">
         <div class="media mt-4 mb-2 px-1">
             <img class="card-img-100 d-flex z-depth-1 mr-3" src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="Generic placeholder image">
             <div class="media-body">
-                <a class="text blue-text h2-responsive" href="#">Thế Giới Thứ Chín </a>
-                <p>(Đang cập nhật).</p>
+                <a class="text blue-text h2-responsive" href="#">{{\Truyen24h\Story::findOrFail($chapter->story_id)->title}} </a>
+                <p>(Đang cập nhật)</p>
                 <!--Facebook-->
                 <a class="fb-ic mr-3"><i class="fab fa-facebook-square"></i></a>
                 <!--Twitter-->
@@ -15,10 +23,14 @@
             </div>
         </div>
         <div class="detail mb-4 text-center">
-            <i class="font-weight-bold">Chương 1: What is Lorem Ipsum?</i>
+        <i class="font-weight-bold">Chương {{$chapter->number}}: {{$chapter->name}}</i>
             <hr class="between-sections mt-0">
             <p class="text-left">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                @if($chapter->name !== 'None')
+                    {!!$chapter->content!!}
+                @else
+                    Nội dung chương chưa được cập nhật
+                @endif
             </p>
             <!--Pagination dark-->
             <nav>

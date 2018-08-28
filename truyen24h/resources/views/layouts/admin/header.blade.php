@@ -7,7 +7,8 @@
             <li>
                 <div class="logo-wrapper waves-light">
                     <a href="{{route('index')}}">
-                        {{-- <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"> --}}
+                        {{--
+                        <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"> --}}
                         <img src="{{ asset('image/logo2.png') }}" class="img-fluid flex-center">
                     </a>
                 </div>
@@ -52,15 +53,15 @@
             <!-- Side navigation links -->
             <li>
                 <ul class="collapsible collapsible-accordion">
-                        <li>
-                                <a class="waves-effect">
-                                        <i class="fas fa-home mr-1"></i>Trang chủ
-                                </a>
-                               
-                            </li>
+                    <li>
+                        <a class="waves-effect">
+                            <i class="fas fa-home mr-1"></i>Trang chủ
+                        </a>
+
+                    </li>
                     <li>
                         <a data-toggle="collapse" class="collapsible-header waves-effect arrow-r {{$current_menu == 'quan-ly' ? 'active' : ''}}">
-                                <i class="fas fa-toolbox mr-1"></i>Quản lý
+                            <i class="fas fa-toolbox mr-1"></i>Quản lý
                             <i class="fa fa-angle-down rotate-icon"></i>
                         </a>
                         <div class="collapsible-body">
@@ -70,6 +71,9 @@
                                 </li>
                                 <li>
                                     <a href="{{route('admin.story.index')}}" class="waves-effect {{$sub_current_menu == 'story' ? 'current-menu-item' : ''}}">Truyện</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('admin.chapter.index')}}" class="waves-effect {{$sub_current_menu == 'chapter' ? 'current-menu-item' : ''}}">Chương truyện</a>
                                 </li>
                             </ul>
                         </div>
@@ -91,11 +95,11 @@
         </div>
         <!-- Breadcrumb-->
         <div class="breadcrumb-dn mr-auto">
-        <p>Trang quản lý | {{ config('app.name') }}</p>
+            <p>Trang quản lý | {{ config('app.name') }}</p>
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
-            @yield('button')
-            {{--<li class="nav-item">
+            @yield('button') {{--
+            <li class="nav-item">
                 <a class="nav-link">
                     <i class="fa fa-envelope"></i>
                     <span class="clearfix d-none d-sm-inline-block">Contact</span>
@@ -120,9 +124,9 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 
-                    {{-- <a class="dropdown-item" href="#">{{ __('auth.logout') }}</a> --}}
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
+                    {{--
+                    <a class="dropdown-item" href="#">{{ __('auth.logout') }}</a> --}}
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
                         <i class="fas fa-sign-out-alt"></i>{{ __('auth.logout') }}
                     </a>
