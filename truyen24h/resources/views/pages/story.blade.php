@@ -49,41 +49,16 @@
             <div class="col-md-8">
                 <h3 class="text blue-text h2-responsive mt-1">Danh Sách Chương </h3>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action waves-effect">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="flex-grow-1">
-                                <strong>Chương 1:</strong> Chuyển kiếp sống lại</span>
-                            <span class="genre flex-shrink-1 d-none d-sm-block">1 month</span>
-                        </div>
-                    </a>
-                    <a class="list-group-item list-group-item-action waves-effect">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="flex-grow-1">
-                                <strong>Chương 2:</strong> Ta mang các ngươi đi giết người</span>
-                            <span class="genre flex-shrink-1 d-none d-sm-block">1 month</span>
-                        </div>
-                    </a>
-                    <a class="list-group-item list-group-item-action waves-effect">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="flex-grow-1">
-                                <strong>Chương 3:</strong> Đi lên trên chín tầng trời kia</span>
-                            <span class="genre flex-shrink-1 d-none d-sm-block">1 month</span>
-                        </div>
-                    </a>
-                    <a class="list-group-item list-group-item-action waves-effect">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="flex-grow-1">
-                                <strong>Chương 4:</strong> Xây dựng lại Ma Vân Môn</span>
-                            <span class="genre flex-shrink-1 d-none d-sm-block">1 week</span>
-                        </div>
-                    </a>
-                    <a class="list-group-item list-group-item-action waves-effect">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="flex-grow-1">
-                                <strong>Chương 5:</strong> Hai môn tranh chấp, Diệp Thần được lợi</span>
-                            <span class="genre flex-shrink-1  d-none d-sm-block">1 week</span>
-                        </div>
-                    </a>
+                    @foreach($chapters as $chapter)
+                        <a class="list-group-item list-group-item-action waves-effect">
+                        <a href="{{route('view.chapter',$chapter->id)}}">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="flex-grow-1">
+                                <strong>Chương {{$chapter->number}}:</strong> {{$chapter->name}}</span>
+                                <span class="genre flex-shrink-1 d-none d-sm-block">{{$chapter->updated_at->format('m-d-Y H:i:s')}}</span>
+                            </div></a>
+                        </a>
+                    @endforeach
                 </div>
             </div>
 

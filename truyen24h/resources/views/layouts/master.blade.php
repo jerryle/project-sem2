@@ -18,6 +18,7 @@
     <script src="{{ asset('mdb/js/mdb.min.js') }}" defer></script>
     <script src="{{ asset('mdb/js/modules/cards.js') }}" defer></script>
 
+    @yield('header')
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">

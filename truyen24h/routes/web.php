@@ -19,7 +19,8 @@ Route::get('/test', function () {
     return view('pages.profile');
 });
 
-Route::get('/story/{id}', 'StoryController@show')->name('view.story');
+Route::get('/truyen/{id}', 'StoryController@show')->name('view.story');
+Route::get('/doc-truyen/{id}', 'ChapterController@show')->name('view.chapter');
 
 Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'admin'], function () {
     Route::get('/', function() {
@@ -28,6 +29,7 @@ Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'adm
 
     Route::resource('/genre', 'GenreController', ['as' => 'admin']);
     Route::resource('/story', 'StoryController', ['as' => 'admin']);
+    Route::resource('/chapter', 'ChapterController', ['as' => 'admin']);
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -4,6 +4,7 @@ namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Truyen24h\Story;
+use Truyen24h\Chapter;
 
 class StoryController extends Controller
 {
@@ -75,8 +76,10 @@ class StoryController extends Controller
         $story = Story::findOrFail($id);
         $story->view_count += 1;
         $story->save();
+
+        $chapters = Chapter::where('story_id','=',$story->id)->orderBy('updated_at','desc')->get();
         
-        return view('pages.story')->with('story', $story);
+        return view('pages.story')->with('story', $story)->with('chapters',$chapters);
     }
 
     /**

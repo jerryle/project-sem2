@@ -1,4 +1,4 @@
-@extends('layouts.admin.master', [ 'current_menu' => 'quan-ly', 'sub_current_menu' => 'story' ]) @section('header')
+@extends('layouts.admin.master', [ 'current_menu' => 'quan-ly', 'sub_current_menu' => 'chapter' ]) @section('header')
 <!-- MDBootstrap Datatables  -->
 <link href="{{asset('mdb/css/addons/datatables.min.css')}}" rel="stylesheet">
 <!-- MDBootstrap Datatables  -->
@@ -7,7 +7,7 @@
 <script src="{{ asset('js/table.js') }}" defer></script>
 @endsection @section('button')
 <li class="nav-item">
-    <a class="nav-link" href="{{route('admin.story.index')}}">
+    <a class="nav-link" href="{{route('admin.chapter.index')}}">
         <i class="fas fa-list-alt mr-1"></i>
         <span class="clearfix d-none d-sm-inline-block">Danh sách thể loại</span>
     </a>
@@ -19,37 +19,32 @@
 
         {{--
         <div class="row d-flex justify-content-center"> --}}
-            <h3 class="h3-reponsive white-text text-uppercase">Danh sách truyện</h3>
+            <h3 class="h3-reponsive white-text text-uppercase">Danh sách chương truyện</h3>
             {{-- </div> --}}
     </div>
     <div class="card-body mx-4 mt-4">
         <div class="btn-group d-flex justify-content-end" role="group" aria-label="Các nút trang thể loại">
-            <a href="{{route('admin.story.create')}}" class="btn btn-indigo" role="button">
+            <a href="{{route('admin.chapter.create')}}" class="btn btn-indigo btn-sm" role="button">
                 <i class="fas fa-plus-square mr-1"></i>Tạo mới</a>
         </div>
 
-        @if(count($stories) > 0)
+        @if(count($chapters) > 0)
         <table id="dtMaterialDesignExample" class="table table-striped table-responsive-md table-sm table-editable" cellspacing="0"
             width="100%">
             <thead>
                 <tr>
-                    <th class="th-sm">Tên tiêu đề
+                    <th class="th-sm">Chương số
                         <i class="fa fa-sort float-right" aria-hidden="true"></i>
                     </th>
-                    {{--
-                    <th class="th-sm">Mô tả
+                    <th class="th-sm">Tên chương
                         <i class="fa fa-sort float-right" aria-hidden="true"></i>
-                    </th> --}}
+                    </th>
+                    <th class="th-sm">Truyện
+                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                    </th>
                     <th class="th-sm">Người đăng
                         <i class="fa fa-sort float-right" aria-hidden="true"></i>
                     </th>
-                    <th class="th-sm">Tác giả
-                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
-                    </th>
-                    {{--
-                    <th class="th-sm">Ảnh bìa
-                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
-                    </th> --}}
                     <th class="th-sm">Thời gian tạo
                         <i class="fa fa-sort float-right" aria-hidden="true"></i>
                     </th>
@@ -59,22 +54,19 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($stories as $story)
+                @foreach ($chapters as $chapter)
                 <tr>
-                    <td>{{$story->title}}</td>
-                    {{--
-                    <td>{{$story->details}}</td> --}}
-                    <td>{{\Truyen24h\User::findorFail($story->user_id)->username}}</td>
-                    <td>{{$story->author}}</td>
-                    {{--
-                    <td>{{\Cloudder::show($story->image, ["width" => 100, "height" => 100])}}</td> --}}
-                    <td>{{$story->created_at}}</td>
+                    <td>{{$chapter->number}}</td>
+                    <td>{{$chapter->name}}</td>
+                    <td>{{\Truyen24h\Story::findOrFail($chapter->story_id)->title}}</td>
+                    <td>{{\Truyen24h\User::findOrFail($chapter->user_id)->username}}</td>
+                    <td>{{$chapter->created_at}}</td>
                     <td>
 
                         <a href="#" class="text-danger">
                             <i class="fas fa-trash-alt"></i>
                         </a>
-                        <a href="{{route('admin.story.edit',$story->id)}}" class="text-info">
+                        <a href="{{route('admin.chapter.edit',$chapter->id)}}" class="text-info">
                             <i class="fas fa-edit"></i>
                         </a>
 
@@ -101,7 +93,7 @@
             </tfoot> --}}
         </table>
         @else
-        <h1>Chưa có truyện nào</h1>
+        <h1>Chưa có chương truyện nào</h1>
         @endif
     </div>
 </div>
