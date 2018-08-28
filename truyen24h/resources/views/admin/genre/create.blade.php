@@ -36,8 +36,8 @@
                 </div>
 
                 <div class="md-form">
-                    <input id="description" type="text" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" name="description"
-                        required> @if ($errors->has('description'))
+                    <textarea id="description" type="text" class="md-textarea form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" name="description"
+                        required></textarea> @if ($errors->has('description'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('description') }}</strong>
                     </span>

@@ -7,150 +7,36 @@
         </h4>
         <hr class="between-sections mt-0">
         <div class="row row-eq-height mh-100" style="height:400px;">
-            <div class="col-md-4 top-1">
+            @foreach($top_hot_stories as $story) @if($loop->first)
 
-                {{--
-                <div class="card hoverable">
-                    <div class="card-image">
-                        <div class="view overlay hm-white-slight z-depth-1">
-                            <div id="yourElement"></div>
-                            <a href="#">
-                                <div class="mask waves-effect"></div>
-                            </a>
+            <div class="col-md-4 top-1">
+                <a href="{{route('view.story',$story->id)}}">
+                    <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url({{$story->image}});">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                            {{$story->title}}
                         </div>
                     </div>
-                    <div class="card-content">
-                        <h5>Card title</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto
-                            incidunt dolore assumenda delectus officia quia, sequi eum perspiciatis architecto. Ullam voluptatum,
-                            facere nihil quidem.</p>
-                    </div>
-                </div> --}}
-
-
-                <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                        Thế Giới Thứ Chín
-                    </div>
-                </div>
             </div>
+            </a>
+            @break @endif @endforeach
             <div class="col-md-8">
                 <div class="t24-top-hot row row-eq-height mh-100" style="height:400px;">
+                    @foreach($top_hot_stories as $story) @if($loop->index != 0)
+
                     <div class="col-md-3">
-                        <div class="card hoverablemb card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
+                        <a href="{{route('view.story',$story->id)}}">
+                            <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url({{$story->image}});">
 
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                                Thế Giới Thứ Chín
+                                <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
+                                    {{$story->title}}
+                                </div>
+
                             </div>
-
-                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                                Thế Giới Thứ Chín
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                                Thế Giới Thứ Chín
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                                Thế Giới Thứ Chín
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                                Thế Giới Thứ Chín
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                                Thế Giới Thứ Chín
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                                Thế Giới Thứ Chín
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
-                                Thế Giới Thứ Chín
-                            </div>
-
-                        </div>
-                    </div>
+                    </a>
+                    @endif @endforeach
                 </div>
-                {{--
-                <div class="row row-eq-height mh-100" style="height:200px;">
-                    <div class="col-md-3">
-
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card hoverable card-image waves-effect waves-light rgba-white-slight" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-
-                            <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                                <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> --}}
             </div>
-        </div>
     </section>
     <section class="story_update my-5">
         <div class="row">
@@ -355,70 +241,18 @@
         </h4>
         <hr class="between-sections mt-0">
         <div class="row justify-content-left row-eq-height">
+            @foreach($stories as $story)
             <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
+                <a href="{{route('view.story',$story->id)}}">
+                    <div class="card card-image mb-3" style="background-image: url({{$story->image}});">
+                        <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
+                            <h5 class="h5-reponsive">{{$story->title}}</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4">
-                <div class="card card-image mb-3" style="background-image: url(https://yycdn.vietnvl.com/novels/26a53158d7.jpg);">
-                    <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
-                        <h5 class="h5-reponsive">Thế Giới Thứ Chín</h5>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
-</div>
-@endsection
+    </div>
+    @endsection

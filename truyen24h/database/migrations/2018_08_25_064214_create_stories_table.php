@@ -16,7 +16,7 @@ class CreateStoriesTable extends Migration
         Schema::create('stories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title',191)->default('None')->unique();
-            $table->string('details',500)->default('None');
+            $table->string('details',1024)->default('None');
             $table->string('image',255)->nullable();
             $table->unsignedInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');

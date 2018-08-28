@@ -118,7 +118,7 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
-
+      
     'providers' => [
 
         /*
@@ -164,6 +164,8 @@ return [
          * T24 Providers
          */
         Truyen24h\Providers\T24RegisterProvider::class,
+        JD\Cloudder\CloudderServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
     ],
 
     /*
@@ -214,6 +216,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
     ],
 
 ];

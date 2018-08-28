@@ -59,17 +59,17 @@
                                
                             </li>
                     <li>
-                        <a class="collapsible-header waves-effect arrow-r {{$current_menu == 'quan-ly' ? 'active' : ''}}">
+                        <a data-toggle="collapse" class="collapsible-header waves-effect arrow-r {{$current_menu == 'quan-ly' ? 'active' : ''}}">
                                 <i class="fas fa-toolbox mr-1"></i>Quản lý
                             <i class="fa fa-angle-down rotate-icon"></i>
                         </a>
                         <div class="collapsible-body">
                             <ul>
-                                <li class="collapse show">
+                                <li>
                                     <a href="{{route('admin.genre.index')}}" class="waves-effect {{$sub_current_menu == 'genre' ? 'current-menu-item' : ''}}">Thể loại</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="waves-effect">Truyện</a>
+                                    <a href="{{route('admin.story.index')}}" class="waves-effect {{$sub_current_menu == 'story' ? 'current-menu-item' : ''}}">Truyện</a>
                                 </li>
                             </ul>
                         </div>

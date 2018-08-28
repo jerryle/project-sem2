@@ -7,6 +7,11 @@ use Truyen24h\Story;
 
 class StoryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('adminauth', ['except' => ['show','index']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -36,7 +41,27 @@ class StoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'title' => 'required|max:191|min:10|unique:stories',
+            'details' => 'required|min:3|max:500',
+            'author' => 'required|min:3|max:128',
+            // 'image' => 'required|mimes:jpg,png,bmp,jpeg|between:1,7000',
+        ]);
+
+        $story = new Story;
+        $story->title = $request->title;
+        $story->details = $request->details;
+        $story->user_id = auth()->user()->id;
+        $story->author = $request->author;
+        // if ($request->hasFile('image')) {
+        //     //get name image
+        //     $filename = Carbon\Carbon::now();
+        //     $story->image = $filename;
+        //     //upload image
+        //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
+        // }
+        $story->save();
+        return redirect()->route('admin.story.index')->with('success','Truyện mới đã được đăng thành công!');
     }
 
     /**
@@ -47,7 +72,11 @@ class StoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $story = Story::findOrFail($id);
+        $story->view_count += 1;
+        $story->save();
+        
+        return view('pages.story')->with('story', $story);
     }
 
     /**
@@ -58,7 +87,8 @@ class StoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $story = Story::findOrFail($id);
+        return view('admin.story.edit')->with('story', $story);
     }
 
     /**
@@ -70,7 +100,28 @@ class StoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request->validate([
+            'title' => 'required|max:191|min:10',
+            'details' => 'required|min:3|max:1024',
+            'author' => 'required|min:3|max:128',
+            'image' => 'required',
+        ]);
+
+        $story = Story::findOrFail($id);
+        $story->title = $request->title;
+        $story->details = $request->details;
+        // $story->user_id = auth()->user()->id;
+        $story->author = $request->author;
+        $story->image = $request->image;
+        // if ($request->hasFile('image')) {
+        //     //get name image
+        //     $filename = Carbon\Carbon::now();
+        //     $story->image = $filename;
+        //     //upload image
+        //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
+        // }
+        $story->save();
+        return redirect()->route('admin.story.index')->with('success','Truyện đã được sửa thành công!');
     }
 
     /**

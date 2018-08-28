@@ -8,12 +8,12 @@
             <div class="col-md-4 table-responsive-sm">
                 <!--Featured image-->
                 <div class="view overlay rounded z-depth-2 waves-light mb-3">
-                    <img src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="" class="card-img">
+                    <img src="{{$story->image}}" alt="" class="card-img img-fluid">
                 </div>
                 <p>Người Đăng:
                     <a>
-                        <strong>Carine Fox</strong>
-                    </a>, 19/08/2018.</p>
+                        <strong>{{\Truyen24h\User::findOrFail($story->user_id)->username}}</strong>
+                    </a>, {{$story->created_at->format('d-m-Y')}}.</p>
                 <p>Thể Loại:
                     <a>
                         <strong>Kiếm Hiệp</strong>
@@ -21,7 +21,7 @@
                 </p>
                 <p>Tác Giả:
                     <a>
-                        <strong>Jerri Le</strong>
+                        <strong>{{$story->author}}</strong>
                     </a>
                 </p>
             </div>
@@ -29,14 +29,17 @@
             <!--Grid column-->
             <div class="col-md-8 table-responsive-sm">
                 <h3 class="mb-4 font-weight-bold dark-grey-text">
-                    <strong>This is title of the Story!</strong>
+                    <strong>{{$story->title}}</strong>
                 </h3>
-                <p>Description: Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-                    maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
-                    debitis aut rerum. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-                    id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
-                    officiis debitis aut rerum.</p>
-                <a mdbBtn color="success" class="mb-3 waves-light" mdbWavesEffect>Read more ... </a>
+                <p class="genre">Lượt xem: {{$story->view_count}}<p>
+                <p>
+                    @if($story->details != 'None')
+                    {{$story->details}}
+                    @else 
+                        Chưa có nội dung
+                    @endif
+                </p>
+                <a mdbBtn color="success" class="mb-3 waves-light">Read more ... </a>
             </div>
             <!--Grid column-->
         </div>
