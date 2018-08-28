@@ -11,16 +11,15 @@
 |
 */
 
-Route::get('/', 'HomeController@guest')->name('index');
+Route::get('/', 'HomeController@index')->name('index');
 
 Auth::routes();
 
 Route::get('/test', function () {
     return view('pages.profile');
 });
-Route::get('/story', function () {
-    return view('pages.story');
-});
+
+Route::get('/story/{id}', 'StoryController@show')->name('view.story');
 
 Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'admin'], function () {
     Route::get('/', function() {
@@ -28,6 +27,7 @@ Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'adm
     })->name('admin.index');
 
     Route::resource('/genre', 'GenreController', ['as' => 'admin']);
+    Route::resource('/story', 'StoryController', ['as' => 'admin']);
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
