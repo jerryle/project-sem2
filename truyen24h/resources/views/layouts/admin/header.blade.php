@@ -54,82 +54,16 @@
                 <ul class="collapsible collapsible-accordion">
                     <li>
                         <a class="collapsible-header waves-effect arrow-r">
-                            <i class="fa fa-chevron-right"></i>Truyện và thể loại
+                                <i class="fas fa-toolbox mr-1"></i>Quản lý
                             <i class="fa fa-angle-down rotate-icon"></i>
                         </a>
                         <div class="collapsible-body">
                             <ul>
                                 <li>
-                                    <a href="{{route('admin.genre.create')}}" class="waves-effect">Thêm / Sửa / Xóa thể loại</a>
+                                    <a href="{{route('admin.genre.index')}}" class="waves-effect">Thể loại</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="waves-effect">Thêm / Sửa / Xóa truyện</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="collapsible-header waves-effect arrow-r">
-                            <i class="fa fa-hand-pointer-o"></i> Instruction
-                            <i class="fa fa-angle-down rotate-icon"></i>
-                        </a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li>
-                                    <a href="#" class="waves-effect">For bloggers</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">For authors</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="collapsible-header waves-effect arrow-r">
-                            <i class="fa fa-eye"></i> About
-                            <i class="fa fa-angle-down rotate-icon"></i>
-                        </a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li>
-                                    <a href="#" class="waves-effect">Introduction</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">Monthly meetings</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="collapsible-header waves-effect arrow-r">
-                            <i class="fa fa-envelope-o"></i> Contact me
-                            <i class="fa fa-angle-down rotate-icon"></i>
-                        </a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li>
-                                    <a href="#" class="waves-effect">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">Write a message</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">Write a message</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">Write a message</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="waves-effect">Write a message</a>
+                                    <a href="#" class="waves-effect">Truyện</a>
                                 </li>
                             </ul>
                         </div>
@@ -154,7 +88,8 @@
         <p>Trang quản lý | {{ config('app.name') }}</p>
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
-            <li class="nav-item">
+            @yield('button')
+            {{--<li class="nav-item">
                 <a class="nav-link">
                     <i class="fa fa-envelope"></i>
                     <span class="clearfix d-none d-sm-inline-block">Contact</span>
@@ -166,7 +101,6 @@
                     <span class="clearfix d-none d-sm-inline-block">Support</span>
                 </a>
             </li>
-            {{--
             <li class="nav-item">
                 <a class="nav-link">
                     <i class="fa fa-user"></i>

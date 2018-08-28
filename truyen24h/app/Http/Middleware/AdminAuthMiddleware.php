@@ -17,7 +17,7 @@ class AdminAuthMiddleware
     {
         if(auth()->check())
         {
-            if(auth()->user()->adminLevel > 0) return $next($request);
+            if(auth()->user()->admin_level > 0) return $next($request);
         }
         return redirect()->route('index');
     }

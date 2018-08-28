@@ -1,12 +1,23 @@
-@extends('layouts.admin.master') @section('content')
+@extends('layouts.admin.master') 
+@section('button')
+    <li class="nav-item">
+    <a class="nav-link" href="{{route('admin.genre.index')}}">
+                <i class="fas fa-list-alt mr-1"></i>
+            <span class="clearfix d-none d-sm-inline-block">Danh sách thể loại</span>
+        </a>
+    </li>
+@endsection
+
+@section('content')
 
 
 {{-- <section class="form-gradient"> --}}
     <div class="card">
-        <div class="card-header primary-color lighten-1">
+        <div class="card-header unique-color-dark">
 
             {{-- <div class="row d-flex justify-content-center"> --}}
                 <h3 class="h3-reponsive white-text text-uppercase">Tạo thể loại truyện mới</h3>
+        
             {{-- </div> --}}
         </div>
         <div class="card-body mx-4 mt-4">
