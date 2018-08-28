@@ -6,7 +6,7 @@
             <!-- Logo -->
             <li>
                 <div class="logo-wrapper waves-light">
-                    <a href="#">
+                    <a href="{{route('index')}}">
                         {{-- <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"> --}}
                         <img src="{{ asset('image/logo2.png') }}" class="img-fluid flex-center">
                     </a>
@@ -52,6 +52,12 @@
             <!-- Side navigation links -->
             <li>
                 <ul class="collapsible collapsible-accordion">
+                        <li>
+                                <a class="waves-effect">
+                                        <i class="fas fa-home mr-1"></i>Trang chủ
+                                </a>
+                               
+                            </li>
                     <li>
                         <a class="collapsible-header waves-effect arrow-r">
                                 <i class="fas fa-toolbox mr-1"></i>Quản lý

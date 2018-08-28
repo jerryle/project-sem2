@@ -68,7 +68,8 @@ class GenreController extends Controller
      */
     public function edit($id)
     {
-        //
+        $selectedGenre = Genre::findOrFail($id);
+        return view('admin.genre.edit')->with('genre', $selectedGenre);
     }
 
     /**
@@ -80,7 +81,18 @@ class GenreController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:50|min:3|unique:genres',
+            'description' => 'required|min:3|max:191',
+        ]);
+
+        $genre = Genre::findOrFail($id);
+
+        $genre->name = $request->name;
+        $genre->description = $request->description;
+        $genre->save();
+        return redirect()->route('admin.genre.index')->with('success','Đã sửa thể loại thành công!');
+
     }
 
     /**

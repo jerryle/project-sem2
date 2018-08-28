@@ -25,7 +25,7 @@ Route::get('/story', function () {
 Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'admin'], function () {
     Route::get('/', function() {
         return view('admin.dashboard');
-    });
+    })->name('admin.index');
 
     Route::resource('/genre', 'GenreController', ['as' => 'admin']);
 });
