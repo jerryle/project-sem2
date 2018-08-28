@@ -166,6 +166,7 @@ return [
         Truyen24h\Providers\T24RegisterProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
+        CyrildeWit\EloquentViewable\EloquentViewableServiceProvider::class,
     ],
 
     /*

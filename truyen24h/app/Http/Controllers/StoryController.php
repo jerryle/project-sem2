@@ -74,8 +74,9 @@ class StoryController extends Controller
     public function show($id)
     {
         $story = Story::findOrFail($id);
-        $story->view_count += 1;
-        $story->save();
+        // $story->view_count += 1;
+        // $story->save();
+        $story->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
 
         $chapters = Chapter::where('story_id','=',$story->id)->orderBy('updated_at','desc')->get();
         

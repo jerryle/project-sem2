@@ -31,7 +31,7 @@
                 <h3 class="mb-4 font-weight-bold dark-grey-text">
                     <strong>{{$story->title}}</strong>
                 </h3>
-                <p class="genre">Lượt xem: {{$story->view_count}}<p>
+                <p class="genre">Lượt xem: {{$story->getViews()}}<p>
                 <p>
                     @if($story->details != 'None')
                     {{$story->details}}
