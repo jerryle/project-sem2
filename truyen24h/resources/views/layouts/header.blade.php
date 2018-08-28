@@ -123,6 +123,15 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto nav-flex-icons">
                     @if(Auth::check())
+                    @if(Auth::user()->admin_level > 0)
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{route('admin.index')}}">
+                                <i class="fas fa-skull mr-1"></i>Admin CP
+                            </a>
+    
+                        </li>
+                    @endif
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-heart mr-1"></i>Truyện Theo Dõi
