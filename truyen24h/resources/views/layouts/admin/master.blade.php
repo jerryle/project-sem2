@@ -16,7 +16,10 @@
     <script src="{{ asset('mdb/js/popper.min.js') }}" defer></script>
     <script src="{{ asset('mdb/js/bootstrap.min.js') }}" defer></script>
     <script src="{{ asset('mdb/js/mdb.min.js') }}" defer></script>
-    <script src="{{ asset('mdb/js/modules/cards.js') }}" defer></script>
+
+    <!-- Custom js & css files with blade -->
+    @yield('header')
+
     <script src="{{ asset('js/admin.js') }}" defer></script>
 
     <!-- Fonts -->

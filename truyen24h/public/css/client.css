@@ -4,11 +4,13 @@ font-size: 0.8rem; }
 .t24-content-m {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    min-height: 500px;
 }
 
 .t24-admin-content-m {
     margin-top: 1rem;
     margin-bottom: 6rem;
+    min-height: 500px;
 }
 
 .form-gradient .header {

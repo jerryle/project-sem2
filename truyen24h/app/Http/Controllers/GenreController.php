@@ -46,7 +46,7 @@ class GenreController extends Controller
         $genre->description = $request->input('description');
 
         $genre->save();
-        return redirect()->route('admin.genre.create')->with('success','Thể loại mới đã được tạo thành công!');
+        return redirect()->route('admin.genre.index')->with('success','Thể loại mới đã được tạo thành công!');
     }
 
     /**

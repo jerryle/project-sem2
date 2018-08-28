@@ -15,12 +15,12 @@
                 <div class="col-md-2 d-none d-lg-block">
                     <div class="list-group">
                         <a href="#" class="list-group-item active waves-effect">
-                            Cras justo odio
+                            Thông tin chung
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action waves-effect">Dapibus ac facilisis in</a>
-                        <a href="#" class="list-group-item list-group-item-action waves-effect">Morbi leo risus</a>
-                        <a href="#" class="list-group-item list-group-item-action waves-effect">Porta ac consectetur ac</a>
-                        <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                        <a href="#" class="list-group-item list-group-item-action waves-effect">Truyện theo dõi</a>
+                        <a href="#" class="list-group-item list-group-item-action waves-effect">Nhóm dịch</a>
+                        <a href="#" class="list-group-item list-group-item-action waves-effect">Bảo mật tài khoản</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled">Nạp tiền</a>
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-12">
