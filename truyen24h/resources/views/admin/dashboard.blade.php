@@ -1,4 +1,8 @@
-@extends('layouts.admin.master') @section('content')
+@extends('layouts.admin.master', [
+'current_menu' => 'bakery-form',
+'sub_current_menu' => 'dashboard'
+])
+@section('content')
 
 <div class="container-fluid">
     <h2>Advanced Double Navigation with fixed SideNav & non-fixed Navbar:</h2>

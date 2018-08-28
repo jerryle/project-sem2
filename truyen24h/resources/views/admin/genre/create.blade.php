@@ -1,4 +1,7 @@
-@extends('layouts.admin.master') 
+@extends('layouts.admin.master', [
+'current_menu' => 'quan-ly',
+'sub_current_menu' => 'genre'
+])
 @section('button')
     <li class="nav-item">
     <a class="nav-link" href="{{route('admin.genre.index')}}">
