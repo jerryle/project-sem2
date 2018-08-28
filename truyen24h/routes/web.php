@@ -22,7 +22,7 @@ Route::get('/story', function () {
     return view('pages.story');
 });
 
-Route::group(['middleware' => ['adminauth'], 'prefix' => 'admincp', 'name' => 'admin'], function () {
+Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'admin'], function () {
     Route::get('/', function() {
         return view('admin.dashboard');
     });
