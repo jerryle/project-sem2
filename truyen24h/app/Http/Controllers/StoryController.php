@@ -3,6 +3,7 @@
 namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Truyen24h\Story;
 
 class StoryController extends Controller
 {
@@ -13,7 +14,8 @@ class StoryController extends Controller
      */
     public function index()
     {
-        //
+        $stories = Story::all();
+        return view('admin.story.list')->with('stories', $stories);
     }
 
     /**
@@ -23,7 +25,7 @@ class StoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.story.create');
     }
 
     /**

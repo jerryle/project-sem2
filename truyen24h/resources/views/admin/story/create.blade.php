@@ -20,29 +20,44 @@
 
             {{-- <div class="row d-flex justify-content-center"> --}}
                 <h3 class="h3-reponsive white-text text-uppercase">Đăng truyện mới</h3>
-        
+
             {{-- </div> --}}
         </div>
         <div class="card-body mx-4 mt-4">
-            <form action="{{route('admin.genre.store')}}" method="POST">
+            <form action="{{route('admin.story.store')}}" method="POST">
                 @csrf
                 <div class="md-form">
-                    <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" required autofocus> @if ($errors->has('name'))
+                    <input id="title" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="title" required autofocus> @if ($errors->has('title'))
                     <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('name') }}</strong>
+                        <strong>{{ $errors->first('title') }}</strong>
                     </span>
                     @endif
-                    <label for="name">Tên thể loại</label>
+                    <label for="name">Tên truyện</label>
                 </div>
 
                 <div class="md-form">
-                    <input id="description" type="text" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" name="description"
-                        required> @if ($errors->has('description'))
+                    <textarea id="detail" class="form-control{{ $errors->has('detail') ? ' is-invalid' : '' }}" name="detail"
+                              required></textarea>
+                    @if ($errors->has('detail'))
                     <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('description') }}</strong>
+                        <strong>{{ $errors->first('detail') }}</strong>
                     </span>
                     @endif
                     <label for="description">Mô tả</label>
+                </div>
+
+                <div class="md-form">
+                    <input type="file" name="images">
+                    <label for="name">Hình ảnh</label>
+                </div>
+
+                <div class="md-form">
+                    <input id="author" type="text" class="form-control{{ $errors->has('author') ? ' is-invalid' : '' }}" name="author" required autofocus> @if ($errors->has('author'))
+                        <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('author') }}</strong>
+                    </span>
+                    @endif
+                    <label for="name">Tên truyện</label>
                 </div>
 
                 <!--Grid row-->
