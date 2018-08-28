@@ -60,8 +60,8 @@
                         <td>{{$genre->created_at}}</td>
                         <td>
 
-                                <a href="{{route('admin.genre.destroy',$genre->id)}}" class="text-info"><i class="fas fa-edit"></i></a>
-                                <a href="{{route('admin.genre.edit',$genre->id)}}" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                <a href="{{route('admin.genre.edit',$genre->id)}}" class="text-info"><i class="fas fa-edit"></i></a>
 
                         </td>
                     </tr>
