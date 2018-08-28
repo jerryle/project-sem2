@@ -53,14 +53,14 @@
             <li>
                 <ul class="collapsible collapsible-accordion">
                     <li>
-                        <a class="collapsible-header waves-effect arrow-r">
+                        <a class="collapsible-header waves-effect arrow-r {{$current_menu == 'quan-ly' ? 'active' : ''}}">
                                 <i class="fas fa-toolbox mr-1"></i>Quản lý
                             <i class="fa fa-angle-down rotate-icon"></i>
                         </a>
                         <div class="collapsible-body">
                             <ul>
-                                <li>
-                                    <a href="{{route('admin.genre.index')}}" class="waves-effect">Thể loại</a>
+                                <li class="collapse show">
+                                    <a href="{{route('admin.genre.index')}}" class="waves-effect {{$sub_current_menu == 'genre' ? 'current-menu-item' : ''}}">Thể loại</a>
                                 </li>
                                 <li>
                                     <a href="#" class="waves-effect">Truyện</a>

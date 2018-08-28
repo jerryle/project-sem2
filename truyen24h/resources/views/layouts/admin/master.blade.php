@@ -37,7 +37,8 @@
 
 <body class="fixed-sn navy-blue-skin">
     <div id="app">
-        @include('layouts.admin.header')
+        @include('layouts.admin.header', ['current_menu' => $current_menu,
+'sub_current_menu' => $sub_current_menu])
         <main class="t24-admin-content-m">
             <div class="container-fluid">
                 @include('inc.message')

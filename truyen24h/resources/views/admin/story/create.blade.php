@@ -1,12 +1,12 @@
 @extends('layouts.admin.master', [
 'current_menu' => 'quan-ly',
-'sub_current_menu' => 'genre'
+'sub_current_menu' => 'story'
 ])
 @section('button')
     <li class="nav-item">
     <a class="nav-link" href="{{route('admin.genre.index')}}">
                 <i class="fas fa-list-alt mr-1"></i>
-            <span class="clearfix d-none d-sm-inline-block">Danh sách thể loại</span>
+            <span class="clearfix d-none d-sm-inline-block">Danh sách truyện</span>
         </a>
     </li>
 @endsection
@@ -19,7 +19,7 @@
         <div class="card-header unique-color-dark">
 
             {{-- <div class="row d-flex justify-content-center"> --}}
-                <h3 class="h3-reponsive white-text text-uppercase">Tạo thể loại truyện mới</h3>
+                <h3 class="h3-reponsive white-text text-uppercase">Đăng truyện mới</h3>
         
             {{-- </div> --}}
         </div>
@@ -48,7 +48,7 @@
                 <!--Grid row-->
                 <div class="mr-auto">
                     <div class="text-center">
-                        <button type="submit" class="btn btn-grey z-depth-1a">Tạo mới</button>
+                        <button type="submit" class="btn btn-grey z-depth-1a">Đăng truyện</button>
                     </div>
                 </div>
 

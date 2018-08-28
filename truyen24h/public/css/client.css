@@ -136,3 +136,9 @@ color: #4f4f4f; }
     text-overflow: ellipsis;
     /* font-family: roboto condensed,sans-serif; */
 }
+
+.current-menu-item {
+    color: black!important;
+    background-color: white!important;
+    font-family: bold!important;
+}
