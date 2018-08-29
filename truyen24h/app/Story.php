@@ -5,12 +5,18 @@ namespace Truyen24h;
 use Illuminate\Database\Eloquent\Model;
 use CyrildeWit\EloquentViewable\Viewable;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
 class Story extends Model
 {
 
     use Viewable;
     use Sluggable;
+    use SluggableScopeHelpers;
+
+    protected $fillable = [
+        'title',
+    ];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -24,6 +30,11 @@ class Story extends Model
                 'source' => 'title'
             ]
         ];
+    }
+
+    public function getRouteKeyName()
+    {
+        return $this->slug;
     }
 
 

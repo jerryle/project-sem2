@@ -19,8 +19,8 @@ Route::get('/test', function () {
     return view('pages.profile');
 });
 
-Route::get('/truyen/{id}', 'StoryController@show')->name('view.story');
-Route::get('/doc-truyen/{id}', 'ChapterController@show')->name('view.chapter');
+Route::get('/truyen/{slug}', 'StoryController@show')->name('view_story');
+Route::get('/doc-truyen/{slug}', 'ChapterController@show')->name('view_chapter');
 
 Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'admin'], function () {
     Route::get('/', function() {

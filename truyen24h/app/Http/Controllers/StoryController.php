@@ -71,9 +71,9 @@ class StoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $story = Story::findOrFail($id);
+        $story = Story::findBySlugOrFail($slug);
         // $story->view_count += 1;
         // $story->save();
         $story->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));

@@ -74,7 +74,7 @@ class ChapterController extends Controller
      */
     public function show($id)
     {
-        $chapter = Chapter::findOrFail($id);
+        $chapter = Chapter::findBySlugOrFail($id);
         $story = Story::findOrFail($chapter->story_id);
         $story->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
         
