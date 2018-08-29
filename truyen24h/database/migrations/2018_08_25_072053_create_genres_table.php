@@ -18,7 +18,7 @@ class CreateGenresTable extends Migration
             $table->string('name', 50)->unique();
             $table->string('description', 191)->default('None');
             $table->timestamps();
-            $table->string('slug',128);
+            $table->string('slug',128)->nullable();
         });
     }
 

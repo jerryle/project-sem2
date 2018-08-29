@@ -24,7 +24,7 @@ class CreateStoriesTable extends Migration
             $table->unsignedInteger('view_count')->default(0);
             $table->unsignedInteger('sub_count')->default(0);
             $table->unsignedTinyInteger('status')->default(0);
-            $table->string('slug',128);
+            $table->string('slug',128)->nullable();
             $table->timestamps();
         });
     }

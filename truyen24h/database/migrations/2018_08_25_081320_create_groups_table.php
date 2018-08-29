@@ -22,7 +22,7 @@ class CreateGroupsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedTinyInteger('status')->default(0);
             $table->timestamps();
-            $table->string('slug',128);
+            $table->string('slug',128)->nullable();
         });
     }
 

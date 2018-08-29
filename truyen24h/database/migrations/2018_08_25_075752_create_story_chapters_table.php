@@ -23,7 +23,7 @@ class CreateStoryChaptersTable extends Migration
             $table->unsignedInteger('story_id');
             $table->foreign('story_id')->references('id')->on('stories');
             $table->timestamps();
-            $table->string('slug',128);
+            $table->string('slug',128)->nullable();
         });
     }
 
