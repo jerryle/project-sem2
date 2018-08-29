@@ -13,7 +13,7 @@ class CreateUserSubStoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_sub_stories', function (Blueprint $table) {
+        Schema::create('user_story', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('story_id');
@@ -30,6 +30,8 @@ class CreateUserSubStoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_sub_stories');
+        Schema::disableForeignKeyConstraints();
+        Schema::dropIfExists('user_story');
+        Schema::enableForeignKeyConstraints();
     }
 }

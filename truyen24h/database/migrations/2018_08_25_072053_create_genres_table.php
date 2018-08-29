@@ -18,6 +18,7 @@ class CreateGenresTable extends Migration
             $table->string('name', 50)->unique();
             $table->string('description', 191)->default('None');
             $table->timestamps();
+            $table->string('slug',128)->nullable();
         });
     }
 
@@ -28,7 +29,8 @@ class CreateGenresTable extends Migration
      */
     public function down()
     {
-        // 
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('genres');
+        Schema::enableForeignKeyConstraints();
     }
 }

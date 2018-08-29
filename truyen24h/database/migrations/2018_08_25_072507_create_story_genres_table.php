@@ -13,7 +13,7 @@ class CreateStoryGenresTable extends Migration
      */
     public function up()
     {
-        Schema::create('story_genres', function (Blueprint $table) {
+        Schema::create('story_genre', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('story_id');
             $table->unsignedInteger('genre_id');
@@ -30,6 +30,8 @@ class CreateStoryGenresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('story_genres');
+        Schema::disableForeignKeyConstraints();
+        Schema::dropIfExists('story_genre');
+        Schema::enableForeignKeyConstraints();
     }
 }
