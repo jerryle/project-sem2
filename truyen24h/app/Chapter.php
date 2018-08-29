@@ -7,7 +7,23 @@ use Illuminate\Database\Eloquent\Model;
 class Chapter extends Model
 {
     //
-    protected $table = "story_chapters";
+    protected $table = "chapters";
+
+    use Sluggable;
+
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'name'
+            ]
+        ];
+    }
 
     public function story()
     {

@@ -13,7 +13,7 @@ class CreateStoryChaptersTable extends Migration
      */
     public function up()
     {
-        Schema::create('story_chapters', function (Blueprint $table) {
+        Schema::create('chapters', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',191)->default('None');
             $table->unsignedInteger('number')->default(0);
@@ -23,6 +23,7 @@ class CreateStoryChaptersTable extends Migration
             $table->unsignedInteger('story_id');
             $table->foreign('story_id')->references('id')->on('stories');
             $table->timestamps();
+            $table->string('slug',128);
         });
     }
 
@@ -33,6 +34,8 @@ class CreateStoryChaptersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('story_chapters');
+        Schema::disableForeignKeyConstraints();
+        Schema::dropIfExists('chapters');
+        Schema::enableForeignKeyConstraints();
     }
 }

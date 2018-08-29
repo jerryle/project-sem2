@@ -4,11 +4,27 @@ namespace Truyen24h;
 
 use Illuminate\Database\Eloquent\Model;
 use CyrildeWit\EloquentViewable\Viewable;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Story extends Model
 {
 
     use Viewable;
+    use Sluggable;
+
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
 
 
     public function chapters()
@@ -18,12 +34,12 @@ class Story extends Model
 
     public function genres()
     {
-        return $this->belongsToMany('Truyen24h\Genre');
+        return $this->belongsToMany('Truyen24h\Genre', 'story_genre');
     }
 
-    public function user()
+    public function users()
     {
-        return $this->belongsTo('Truyen24h\User');
+        return $this->belongsToMany('Truyen24h\User');
     }
 
 }

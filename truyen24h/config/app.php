@@ -167,6 +167,7 @@ return [
         JD\Cloudder\CloudderServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
         CyrildeWit\EloquentViewable\EloquentViewableServiceProvider::class,
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
     ],
 
     /*

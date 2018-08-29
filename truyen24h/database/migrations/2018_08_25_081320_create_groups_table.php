@@ -22,6 +22,7 @@ class CreateGroupsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedTinyInteger('status')->default(0);
             $table->timestamps();
+            $table->string('slug',128);
         });
     }
 
@@ -32,6 +33,8 @@ class CreateGroupsTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('groups');
+        Schema::enableForeignKeyConstraints();
     }
 }
