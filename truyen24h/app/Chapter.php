@@ -3,6 +3,8 @@
 namespace Truyen24h;
 
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
 class Chapter extends Model
 {
@@ -10,6 +12,7 @@ class Chapter extends Model
     protected $table = "chapters";
 
     use Sluggable;
+    use SluggableScopeHelpers;
 
     /**
      * Return the sluggable configuration array for this model.
@@ -23,6 +26,11 @@ class Chapter extends Model
                 'source' => 'name'
             ]
         ];
+    }
+
+    public function getRouteKeyName()
+    {
+        return $this->slug;
     }
 
     public function story()

@@ -10,7 +10,7 @@
             @foreach($top_hot_stories as $story) @if($loop->first)
 
             <div class="col-md-4 top-1">
-                <a href="{{route('view.story',$story->id)}}">
+                <a href="{{route('view_story',$story->getRouteKeyName())}}">
                     <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url({{$story->image}});">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
                             {{$story->title}}
@@ -24,7 +24,7 @@
                     @foreach($top_hot_stories as $story) @if($loop->index != 0)
 
                     <div class="col-md-3">
-                        <a href="{{route('view.story',$story->id)}}">
+                        <a href="{{route('view_story',$story->getRouteKeyName())}}">
                             <div class="card hoverable card-image waves-effect waves-light rgba-white-slight rounded-0" style="background-image: url({{$story->image}});">
 
                                 <div class="text-white text-center rgba-black-strong pt-3 mt-auto story-title">
@@ -112,7 +112,7 @@
                             <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
                                 <div class="list-group list-group-flush">
                                     @foreach($top_d_stories as $story)
-                                <a class="list-group-item list-group-item-action waves-effect" href="{{route('view.story',$story->id)}}">
+                                <a class="list-group-item list-group-item-action waves-effect" href="{{route('view_story',$story->getRouteKeyName())}}">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="flex-grow-1">{{$story->title}}</span>
                                             <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
@@ -224,7 +224,7 @@
         <div class="row justify-content-left row-eq-height">
             @foreach($stories as $story)
             <div class="col-lg-2 col-md-3 col-4">
-                <a href="{{route('view.story',$story->id)}}">
+                <a href="{{route('view_story',$story->getRouteKeyName())}}">
                     <div class="card card-image mb-3" style="background-image: url({{$story->image}});">
                         <div class="text-white text-center rgba-black-strong pt-3 mt-auto">
                             <h5 class="h5-reponsive">{{$story->title}}</h5>

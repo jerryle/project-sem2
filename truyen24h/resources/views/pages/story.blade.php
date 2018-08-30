@@ -50,8 +50,8 @@
                 <h3 class="text blue-text h2-responsive mt-1">Danh Sách Chương </h3>
                 <div class="list-group list-group-flush">
                     @foreach($chapters as $chapter)
-                        <a href="{{route('view.chapter',$chapter->id)}}" class="list-group-item list-group-item-action waves-effect">
-                        {{-- <a href="{{route('view.chapter',$chapter->id)}}"> --}}
+                        <a href="{{route('view_chapter',$chapter->getRouteKeyName())}}" class="list-group-item list-group-item-action waves-effect">
+                       
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="flex-grow-1">
                                 <strong>Chương {{$chapter->number}}:</strong> {{$chapter->name}}</span>
