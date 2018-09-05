@@ -4,7 +4,9 @@ namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Truyen24h\Story;
+use Truyen24h\Genre;
 use \CyrildeWit\EloquentViewable\Support\Period;
+use Illuminate\Support\Facades\View;
 
 class HomeController extends Controller
 {
@@ -15,7 +17,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth', ['except' => ['guest']]);
     }
 
     /**
@@ -27,24 +29,21 @@ class HomeController extends Controller
     {
         $hotStories = Story::orderByViewsCount()->take(9)->get();
         $stories = Story::where('status',1)->paginate(20);
+        $genres = Genre::take(20)->get();
+        $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
 
-        // $hot7dStories
-        $tdStories = Story::get()->sortByDesc(function($story, $key) {
-            return $story->getViews(Period::pastWeeks(1));
-        })->take(5);
-        $tmStories = Story::get()->sortByDesc(function($story, $key) {
-            return $story->getViews(Period::pastMonths(1));
-        })->take(5);
-        $tyStories = Story::get()->sortByDesc(function($story, $key) {
-            return $story->getViews(Period::pastYears(1));
-        })->take(5);
+        // BXH
+        // $tdStories = Story::get()->sortByDesc(function($story, $key) {
+        //     return $story->getViews(Period::pastWeeks(1));
+        // })->take(5);
+        // $tmStories = Story::get()->sortByDesc(function($story, $key) {
+        //     return $story->getViews(Period::pastMonths(1));
+        // })->take(5);
+        // $tyStories = Story::get()->sortByDesc(function($story, $key) {
+        //     return $story->getViews(Period::pastYears(1));
+        // })->take(5);
 
-        return view('pages.index')
-        ->with('top_hot_stories', $hotStories)
-        ->with('stories',$stories)
-        ->with('top_d_stories', $tdStories)
-        ->with('top_m_stories', $tmStories)
-        ->with('top_y_stories', $tyStories);
+        return View::make('pages.index', compact('hotStories', 'stories', 'genres', 'updatedStories'));
     }
 
     /**
@@ -56,10 +55,13 @@ class HomeController extends Controller
     {
         $hotStories = Story::orderByViewsCount()->take(9)->get();
         $stories = Story::where('status',1)->paginate(20);
+        $genres = Genre::take(20)->get();
+        $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
+        
         if(!auth()->guest())
         {
-            return redirect()->route('home')->with('top_hot_stories', $hotStories)->with('stories',$stories);
+            return redirect()->route('home')->with(compact('hotStories', 'stories', 'genres', 'updatedStories'));
         }
-        else return view('pages.index')->with('top_hot_stories', $hotStories)->with('stories',$stories);
+        else return View::make('pages.index', compact('hotStories', 'stories', 'genres', 'updatedStories'));
     }
 }

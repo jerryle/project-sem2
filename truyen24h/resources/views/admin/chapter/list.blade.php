@@ -1,11 +1,17 @@
-@extends('layouts.admin.master', [ 'current_menu' => 'quan-ly', 'sub_current_menu' => 'chapter' ]) @section('header')
+@extends('layouts.admin.master', [ 'current_menu' => 'quan-ly', 'sub_current_menu' => 'chapter' ])
+@section('header')
 <!-- MDBootstrap Datatables  -->
 <link href="{{asset('mdb/css/addons/datatables.min.css')}}" rel="stylesheet">
-<!-- MDBootstrap Datatables  -->
-<script src="{{asset('mdb/js/addons/datatables.min.js')}}" defer></script>
 
-<script src="{{ asset('js/table.js') }}" defer></script>
-@endsection @section('button')
+@endsection
+@section('scripts')
+<!-- MDBootstrap Datatables  -->
+<script src="{{asset('mdb/js/addons/datatables.min.js')}}"></script>
+
+<script src="{{ asset('js/table.js') }}"></script>
+@endsection
+
+@section('button')
 <li class="nav-item">
     <a class="nav-link" href="{{route('admin.chapter.index')}}">
         <i class="fas fa-list-alt mr-1"></i>

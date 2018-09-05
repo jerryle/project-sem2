@@ -3,6 +3,8 @@
 namespace Truyen24h;
 
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
 class Genre extends Model
 {
@@ -25,5 +27,10 @@ class Genre extends Model
     public function stories()
     {
         return $this->belongsToMany('Truyen24h\Story');
+    }
+
+    public function getRouteKeyName()
+    {
+        return $this->slug;
     }
 }
