@@ -142,3 +142,7 @@ color: #4f4f4f; }
     background-color: white!important;
     font-family: bold!important;
 }
+
+.genre-list .col {
+    padding: 20px;
+}

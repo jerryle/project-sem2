@@ -11,13 +11,7 @@
 
     <title>{{ config('app.name') }} | Admin Dashboard</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}" defer></script>
-    <script src="{{ asset('mdb/js/popper.min.js') }}" defer></script>
-    <script src="{{ asset('mdb/js/bootstrap.min.js') }}" defer></script>
-    <script src="{{ asset('mdb/js/mdb.min.js') }}" defer></script>
-
-    <!-- Custom js & css files with blade -->
+    <!-- Custom css files with blade -->
     @yield('header')
 
     <script src="{{ asset('js/admin.js') }}" defer></script>
@@ -48,6 +42,14 @@
         </main>
         @include('layouts.footer')
     </div>
+
+    <!-- Scripts -->
+    <script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/popper.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/mdb.min.js') }}"></script>
+    @yield('scripts')
+    @include('inc.message')
 </body>
 
 </html>

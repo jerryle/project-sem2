@@ -11,13 +11,6 @@
 
     <title>{{ config('app.name') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}" defer></script>
-    <script src="{{ asset('mdb/js/popper.min.js') }}" defer></script>
-    <script src="{{ asset('mdb/js/bootstrap.min.js') }}" defer></script>
-    <script src="{{ asset('mdb/js/mdb.min.js') }}" defer></script>
-    <script src="{{ asset('mdb/js/modules/cards.js') }}" defer></script>
-
     @yield('header')
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -37,12 +30,20 @@
     <div id="app">
         @include('layouts.header')
         <main class="t24-content-m">
-            @include('inc.message')
             @yield('content')
         </main>
         @include('layouts.footer')
     </div>
 
+    <!-- Scripts -->
+    <script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/popper.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/mdb.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/modules/cards.js') }}"></script>
+
+    @yield('scripts')
+    @include('inc.message')
 </body>
 
 </html>

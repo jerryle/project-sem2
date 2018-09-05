@@ -20,7 +20,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="http://sa-mp.vn"> NON-GIT TEAM</a>
+        <a href="http://horizonz.tech"> NON-GIT TEAM & HORIZONZ.TECH</a>
     </div>
     <!-- Copyright -->
 
