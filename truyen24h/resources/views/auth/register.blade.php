@@ -48,7 +48,7 @@
                             <!--Grid column-->
                             <div class="col-md-7">
                                 <p class="font-small grey-text d-flex justify-content-end mt-3">Đã có tài khoản rồi?
-                                    <a href="{{route('register')}}" class="white-text ml-1 font-weight-bold">
+                                    <a href="{{route('login')}}" class="white-text ml-1 font-weight-bold">
                                         Đăng nhập</a>
                                 </p>
                             </div>
