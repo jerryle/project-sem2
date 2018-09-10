@@ -1,66 +1,86 @@
 @extends('auth.master')
 @section('main')
-    <!--Grid row-->
-    <div class="row mt-5">
-        <!--Grid column-->
-        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
-            <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.1s">Đăng ký ngay! </h1>
-            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.1s">
-            <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.1s">Truyện24h - Đọc truyện online, đọc truyện chữ, truyện hay. Website luôn cập nhật những bộ truyện mới thuộc các thể loại đặc sắc như truyện tiên hiệp, truyện kiếm hiệp, hay truyện ngôn tình một cách nhanh nhất. Hỗ trợ mọi thiết bị như di động và máy tính bảng.</h6>
+<!--Grid row-->
+<div class="row mt-5">
+    <!--Grid column-->
+    <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+        <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.1s">Đăng ký ngay! </h1>
+        <hr class="hr-light wow fadeInLeft" data-wow-delay="0.1s">
+        <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.1s">Truyện24h - Đọc truyện online, đọc truyện chữ, truyện
+            hay. Website luôn cập nhật những bộ truyện mới thuộc các thể loại đặc sắc như truyện tiên hiệp, truyện kiếm
+            hiệp, hay truyện ngôn tình một cách nhanh nhất. Hỗ trợ mọi thiết bị như di động và máy tính bảng.</h6>
 
-        </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="col-md-6 col-xl-5 mb-4">
-            <!--Form-->
-            <div class="card wow fadeInRight" data-wow-delay="0.1s">
-                <div class="card-body">
-                    <!--Header-->
-                    <div class="text-center">
-                        <h3 class="white-text text-uppercase">{{ __('auth.register') }}</h3>
-                        <hr class="hr-light">
-                    </div>
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div class="col-md-6 col-xl-5 mb-4">
+        <!--Form-->
+        <div class="card wow fadeInRight" data-wow-delay="0.1s">
+            <div class="card-body">
+                <!--Header-->
+                <div class="text-center">
+                    <h3 class="white-text text-uppercase">{{ __('auth.register') }}</h3>
+                    <hr class="hr-light">
+                </div>
+                <form action="{{ route('register') }}" method="POST" aria-label="{{ __('auth.register') }}">
+                    @csrf
                     <!--Body-->
                     <div class="md-form">
-                        <i class="fa fa-user prefix white-text active"></i>
-                        <input type="text" id="form3" class="white-text form-control">
-                        <label for="form3" class="active">Tên tài khoản</label>
+                        <i class="fa fa-user prefix white-text"></i>
+                        <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}"
+                            name="username" value="{{ old('username') }}" required autofocus>
+                        @if($errors->has('username'))
+                        <span class="text-danger" role="alert">
+                            <strong>{{ $errors->first('username') }}</strong>
+                        </span>
+                        @endif
+                        <label for="username">{{ __('auth.username' )}}</label>
                     </div>
                     <div class="md-form">
                         <i class="fa fa-envelope prefix white-text active"></i>
-                        <input type="email" id="form2" class="white-text form-control">
-                        <label for="form2" class="active">Email</label>
+                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                            name="email" value="{{ old('email') }}" required> @if ($errors->has('email'))
+                        <span class="white-danger" role="alert">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                        @endif
+                        <label for="email">{{ __('auth.email') }}</label>
+
                     </div>
                     <div class="md-form">
                         <i class="fa fa-lock prefix white-text active"></i>
-                        <input type="password" id="form4" class="white-text form-control">
-                        <label for="form4">Mật khẩu</label>
+                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                            name="password" required> @if ($errors->has('password'))
+                        <span class="white-text" role="alert">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
+                        @endif
+                        <label for="password">{{ __('auth.password') }}</label>
                     </div>
                     <div class="md-form">
                         <i class="fa fa-lock prefix white-text active"></i>
-                        <input type="password" id="form4" class="white-text form-control">
-                        <label for="form4">Nhập lại mật khẩu</label>
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
+                            required>
+                        <label for="password-confirm">{{ __('auth.password-confirm') }}</label>
+
                     </div>
                     <div class="text-center mt-4">
-                        <button class="btn btn-indigo">Gửi Thông Tin</button>
-                        <hr class="hr-light mb-3 mt-4">
+                        <button type="submit" class="btn purple-gradient btn-lg">{{__('auth.register')}}</button>
+                        <hr>
                         <div class="inline-ul text-center d-flex justify-content-center">
-                            <!--Grid column-->
-                            <div class="col-md-7">
-                                <p class="font-small grey-text d-flex justify-content-end mt-3">Đã có tài khoản rồi?
-                                    <a href="{{route('login')}}" class="white-text ml-1 font-weight-bold">
-                                        Đăng nhập</a>
-                                </p>
-                            </div>
-                            <!--Grid column-->
+                            <p class="font-small grey-text d-flex justify-content-end mt-3">{{__('auth.user-exists')}}
+                                <a href="{{route('login')}}" class="white-text ml-1 font-weight-bold">
+                                    {{ __('auth.login') }}</a>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
-            <!--/.Form-->
         </div>
-        <!--Grid column-->
+        <!--/.Form-->
     </div>
-    <!--Grid row-->
+    <!--Grid column-->
+</div>
+<!--Grid row-->
 
 @endsection
