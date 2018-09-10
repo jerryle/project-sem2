@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <!--Header-->
                     <div class="text-center">
-                        <h3 class="white-text"> Đăng Ký</h3>
+                        <h3 class="white-text text-uppercase">{{ __('auth.register') }}</h3>
                         <hr class="hr-light">
                     </div>
                     <!--Body-->
