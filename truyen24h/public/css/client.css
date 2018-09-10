@@ -154,8 +154,10 @@ color: #4f4f4f; }
     background-image: url('http://qidian.qpic.cn/qidian_common/349573/78fce8716a866511419f688546de7f67/0');
 }
 
-.header2 .search-h2{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
+.list-group-item {
+    background-color: transparent!important;
+}
+
+.list-group a:hover, .list-group button:hover {
+    color: #2196f3!important;
 }
