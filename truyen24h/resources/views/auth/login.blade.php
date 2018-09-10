@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-4">
-                        <button type="submit" class="btn btn-indigo">{{ __('auth.login')}}</button>
+                        <button type="submit" class="btn purple-gradient btn-lg">{{ __('auth.login')}}</button>
                         <hr class="hr-light mb-3 mt-4">
                         <div class="inline-ul text-center d-flex justify-content-center">
                             <p class="font-small grey-text d-flex justify-content-end mt-3">{{ __('auth.user-new') }}

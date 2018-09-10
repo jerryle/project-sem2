@@ -27,7 +27,7 @@
                     <!--Body-->
                     <div class="md-form">
                         <i class="fa fa-user prefix white-text"></i>
-                        <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}"
+                        <input id="username" type="text" class="white-text form-control{{ $errors->has('username') ? ' is-invalid' : '' }}"
                             name="username" value="{{ old('username') }}" required autofocus>
                         @if($errors->has('username'))
                         <span class="text-danger" role="alert">
@@ -38,7 +38,7 @@
                     </div>
                     <div class="md-form">
                         <i class="fa fa-envelope prefix white-text active"></i>
-                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                        <input id="email" type="email" class="white-text form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                             name="email" value="{{ old('email') }}" required> @if ($errors->has('email'))
                         <span class="white-danger" role="alert">
                             <strong>{{ $errors->first('email') }}</strong>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="md-form">
                         <i class="fa fa-lock prefix white-text active"></i>
-                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                        <input id="password" type="password" class="white-text form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                             name="password" required> @if ($errors->has('password'))
                         <span class="white-text" role="alert">
                             <strong>{{ $errors->first('password') }}</strong>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="md-form">
                         <i class="fa fa-lock prefix white-text active"></i>
-                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
+                        <input id="password-confirm" type="password" class="white-text form-control" name="password_confirmation"
                             required>
                         <label for="password-confirm">{{ __('auth.password-confirm') }}</label>
 
