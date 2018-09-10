@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 
 class StoriesTableSeeder extends Seeder
 {
-    /**
+    /**php
      * Run the database seeds.
      *
      * @return void

@@ -118,34 +118,12 @@
 
                             {{--</div>--}}
 
+                                <!-- Sign up button -->
+                                <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                                        type="submit"><strong>Đăng ký</strong>
+                                </button>
+                                <p>Đã có tài khoản rồi?
+                                    <a href="{{route('login')}}" target="_blank"> Đăng nhập</a>.</p>
 
-                            {{--<!--Grid row-->--}}
-                            {{--<div class="row d-flex align-items-center mb-4">--}}
 
-                                {{--<!--Grid column-->--}}
-                                {{--<div class="col-md-1 col-md-5 d-flex align-items-start">--}}
-                                    {{--<div class="text-center">--}}
-                                        {{--<button type="submit" class="btn btn-grey btn-rounded z-depth-1a">{{ __('auth.register-btn') }}</button>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                                {{--<!--Grid column-->--}}
-
-                                {{--<!--Grid column-->--}}
-                                {{--<div class="col-md-7">--}}
-                                    {{--<p class="font-small grey-text d-flex justify-content-end mt-3">{{__('auth.user-exists')}}--}}
-                                        {{--<a href="{{route('login')}}" class="dark-grey-text ml-1 font-weight-bold">--}}
-                                        {{--{{ __('auth.login') }}</a>--}}
-                                    {{--</p>--}}
-                                {{--</div>--}}
-                                {{--<!--Grid column-->--}}
-
-                            {{--</div>--}}
-                            {{--<!--Grid row-->--}}
-                        {{--</form>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</section>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
 @endsection
