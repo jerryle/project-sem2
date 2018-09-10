@@ -3,7 +3,7 @@
 <!--Grid row-->
 <div class="row mt-5">
     <!--Grid column-->
-    <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+    <div class="col-md-7 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
         <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.1s">Đăng ký ngay! </h1>
         <hr class="hr-light wow fadeInLeft" data-wow-delay="0.1s">
         <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.1s">Truyện24h - Đọc truyện online, đọc truyện chữ, truyện
@@ -13,7 +13,7 @@
     </div>
     <!--Grid column-->
     <!--Grid column-->
-    <div class="col-md-6 col-xl-5 mb-4">
+    <div class="col-md-5 mb-4">
         <!--Form-->
         <div class="card wow fadeInRight" data-wow-delay="0.1s">
             <div class="card-body">
