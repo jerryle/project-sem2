@@ -22,13 +22,12 @@
             </div>
         </nav>
     </div>
-    <div class="container search-h2">
-        <form class="form-inline t24-search">
+    <div class="container py-4 d-flex justify-content-center">
+        <form class="form-inline">
             @csrf
-            <div class="md-form my-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
-                       aria-label="Nhập tên truyện hoặc tên tác giả">
-            </div>
+            <input class="form-control mr-sm-2" style="width:400px;" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
+                aria-label="Nhập tên truyện hoặc tên tác giả">
+
         </form>
     </div>
 </div>
