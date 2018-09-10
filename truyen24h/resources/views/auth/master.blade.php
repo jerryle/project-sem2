@@ -60,7 +60,7 @@
     <div class="view"
          style="background-image: url('http://mdbootstrap.com/img/Photos/Others/images/91.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <!-- Mask & flexbox options-->
-        <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <div class="mask rgba-gradient h-100 d-flex justify-content-center align-items-center">
             <!-- Content -->
             <div class="container">
                 @yield('main')
