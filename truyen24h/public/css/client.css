@@ -1,3 +1,6 @@
+body {
+    background-color: #e4dece;
+}
 .form-gradient .font-small {
 font-size: 0.8rem; }
 
@@ -145,4 +148,14 @@ color: #4f4f4f; }
 
 .genre-list .col {
     padding: 20px;
+}
+
+.header2 {
+    background-image: url('http://qidian.qpic.cn/qidian_common/349573/78fce8716a866511419f688546de7f67/0');
+}
+
+.header2 .search-h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
 }
