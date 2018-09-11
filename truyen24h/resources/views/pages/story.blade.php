@@ -21,7 +21,7 @@
                         <p>Người Đăng:
                             <a>
                                 <strong>{{\Truyen24h\User::findOrFail($story->user_id)->username}}</strong>
-                            </a>, {{$story->created_at->format('d-m-Y')}}.</p>
+                            </a>, {{$story->created_at}}.</p>
                         <p class="genre">Lượt xem: <strong>{{$story->getViews()}}</strong></p>
                         <p>Thể Loại:
                             <a>

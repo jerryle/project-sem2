@@ -40,7 +40,7 @@ class Story extends Model
 
     public function chapters()
     {
-        return $this->hasMany('Truyen24h\Chapter');
+        return $this->hasMany('Truyen24h\Chapter')->orderBy('number','desc');
     }
 
     public function genres()

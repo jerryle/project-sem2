@@ -95,7 +95,7 @@
                             </td>
                             <td class="genre">
                                 @if(count($story->chapters) > 0)
-                                <span class="genre flex-shrink-1">{{$story->chapters->orderBy('number','desc')->first()->name}}</span>
+                                <span class="genre flex-shrink-1">Chương {{$story->chapters()->first()->number}}</span>
                                 @endif
                             </td>
                             <td class="author">{{$story->author}}</td>
