@@ -60,5 +60,15 @@ class Story extends Model
     public function latest($column = 'updated_at')
     {
         return $this->orderBy($column, 'desc');
-    } 
+    }
+
+    public function getCreatedAtAttribute($date)
+    {
+        return \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('H:i d/m');
+    }
+
+    public function getUpdatedAtAttribute($date)
+    {
+        return \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('H:i d/m');
+    }
 }

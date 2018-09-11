@@ -36,7 +36,7 @@
                     @endif
                     <span>Đang ra</span>
                     <em>|</em>
-                    <span>1 chương</span>
+                    <span>{{count($story->chapters)}} chương</span>
                     </p>
                 <p class="intro">{{ str_limit($story->description, 40) }}</p>
                 </div>
