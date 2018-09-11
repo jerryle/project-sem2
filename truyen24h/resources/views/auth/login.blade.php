@@ -55,7 +55,7 @@
                         <div class="form-check my-4">
                             <input class="form-check-input" type="checkbox" name="remember" id="remember"
                                 {{ old( 'remember') ? 'checked' : '' }}>
-                
+
                             <label class="form-check-label" for="remember">
                                 {{ __('auth.rememberme') }}
                             </label>
@@ -68,6 +68,12 @@
                             <p class="font-small grey-text d-flex justify-content-end mt-3">{{ __('auth.user-new') }}
                                 <a href="{{route('register')}}" class="white-text ml-1 font-weight-bold">
                                     {{ __('auth.register') }}</a>
+                            </p>
+                        </div>
+                        <div class="inline-ul text-center d-flex justify-content-center">
+                            <p class="font-small grey-text d-flex justify-content-end mt-0">{{ __('auth.reset') }}
+                                <a href="{{route('register')}}" class="white-text ml-1 font-weight-bold">
+                                    {{ __('auth.forgot') }}</a>?
                             </p>
                         </div>
                     </div>

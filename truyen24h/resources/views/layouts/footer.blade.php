@@ -3,18 +3,30 @@
 
     <!-- Footer Elements -->
     <div class="container">
-
+    @guest
         <!-- Call to action -->
-        <ul class="list-unstyled list-inline text-center py-2">
-            <li class="list-inline-item">
-                <h5 class="mb-1">Tạo tài khoản chỉ mất vài giây</h5>
-            </li>
-            <li class="list-inline-item">
-                <a href="#!" class="btn btn-outline-white btn-rounded">{{ __('auth.register') }}</a>
-            </li>
-        </ul>
+            <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                    <h5 class="mb-1">Tạo tài khoản chỉ mất vài giây</h5>
+                </li>
+                <li class="list-inline-item">
+                    <a href="{{ route('register') }}"
+                       class="btn btn-outline-white btn-rounded">{{ __('auth.register') }}</a>
+                </li>
+            </ul>
+            <!-- Call to action -->
+    @else
         <!-- Call to action -->
-
+            <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                    <h5 class="mb-1">Đăng truyện của bạn chỉ mất vài giây</h5>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#!" class="btn btn-outline-white btn-rounded">{{ __('auth.post') }}</a>
+                </li>
+            </ul>
+            <!-- Call to action -->
+        @endif
     </div>
     <!-- Footer Elements -->
 
