@@ -42,7 +42,7 @@ class ChapterController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'name' => 'required|max:191|min:10',
+            'name' => 'required|max:191|min:5',
             'content' => 'required|min:100',
             'story_id' => 'required|integer|exists:stories,id',
             'number' => 'required|integer'
@@ -103,7 +103,7 @@ class ChapterController extends Controller
     public function update(Request $request, $id)
     {
         $validatedData = $request->validate([
-            'name' => 'required|max:191|min:10',
+            'name' => 'required|max:191|min:5',
             'content' => 'required|min:100',
             'story_id' => 'required|exists:stories,id',
             'number' => 'required|integer'

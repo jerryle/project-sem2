@@ -8,9 +8,9 @@
 @section('content')
 
 <div class="media mt-4 mb-2 px-1">
-    <img class="card-img-100 d-flex z-depth-1 mr-3" src="{{$chapter->story->image}}" alt="Generic placeholder image">
+    <img class="card-img-100 d-flex z-depth-1 mr-3" src="{{$chapter->story->image}}" alt="{{$chapter->story->title}}">
     <div class="media-body">
-        <a class="text blue-text h2-responsive" href="#">{{$chapter->story->title}} </a>
+        <a class="text blue-text h2-responsive" href="#">{{$chapter->story->title}}</a>
         <p>(Đang cập nhật)</p>
 
         <a class="fb-ic mr-3"><i class="fab fa-facebook-square"></i></a>
