@@ -1,4 +1,6 @@
-@extends('layouts.master2') @section('content')
+@extends('layouts.master2',[
+    'search' => ''
+]) @section('content')
 
 <div class="card">
     <div class="card-header grey-color lighten-1">
