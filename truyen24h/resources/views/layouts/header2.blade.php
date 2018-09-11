@@ -23,10 +23,10 @@
         </nav>
     </div>
     <div class="container py-4 d-flex justify-content-center">
-        <form class="form-inline">
-            @csrf
-            <input class="form-control mr-sm-2" style="width:400px;" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
-                aria-label="Nhập tên truyện hoặc tên tác giả">
+        <form class="form-inline" action="{{ route('search') }}" method="GET">
+            
+            <input name="s" class="form-control mr-sm-2" style="width:400px;" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
+                aria-label="Nhập tên truyện hoặc tên tác giả" value="{{ isset($s) ? $s : '' }}">
 
         </form>
     </div>

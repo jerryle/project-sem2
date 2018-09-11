@@ -53,4 +53,7 @@ class Story extends Model
         return $this->belongsToMany('Truyen24h\User');
     }
 
+    public function scopeSearch($query, $s) {
+        return $query->where('slug', 'like', '%'.$s.'%');
+    }
 }

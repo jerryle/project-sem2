@@ -161,3 +161,46 @@ color: #4f4f4f; }
 .list-group a:hover, .list-group button:hover {
     color: #2196f3!important;
 }
+
+li, ol, ul {
+    list-style: none outside none!important;
+}
+
+.list-stories .story-img-box {
+    position: relative;
+    z-index: 3;
+    width: 102px;
+    height: 136px;
+    margin-right: 16px;
+}
+
+.list-stories .story-info-box {
+    width: 542px;
+    margin-top: 5px;
+}
+
+.list-stories .story-info-box p.author {
+    overflow: hidden;
+    /* height:16px; */
+    margin-bottom: 6px;
+}
+
+.list-stories .story-info-box p.author em {
+    font-family: 'Arial';
+    float:left;
+    margin: 1px 8px 0;
+    color: #e6e6e6;
+}
+
+.list-stories .story-info-box p.intro {
+    font-size: 14px;
+    line-height:24px;
+    overflow: hidden;
+    height:48px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+p {
+    word-wrap:break-word!important;
+}

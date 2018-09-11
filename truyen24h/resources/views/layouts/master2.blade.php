@@ -13,13 +13,14 @@
 
 
     @yield('header')
-<!-- Fonts -->
+    <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
-    {{-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  --}}
+    {{--
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-          crossorigin="anonymous">
+        crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('mdb/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -28,23 +29,25 @@
 </head>
 
 <body>
-<div id="app">
-    @include('layouts.header2')
-    <main class="t24-content-m">
-        @yield('content')
-    </main>
-    @include('layouts.footer')
-</div>
+    <div id="app">
+        @include('layouts.header2', ['search' => $search])
+        <main class="t24-content-m">
+            <div class="container">
+                @yield('content')
+            </div>
+        </main>
+        @include('layouts.footer')
+    </div>
 
-<!-- Scripts -->
-<script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}"></script>
-<script src="{{ asset('mdb/js/popper.min.js') }}"></script>
-<script src="{{ asset('mdb/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('mdb/js/mdb.min.js') }}"></script>
-<script src="{{ asset('mdb/js/modules/cards.js') }}"></script>
+    <!-- Scripts -->
+    <script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/popper.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/mdb.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/modules/cards.js') }}"></script>
 
-@yield('scripts')
-@include('inc.message')
+    @yield('scripts')
+    @include('inc.message')
 </body>
 
 </html>
