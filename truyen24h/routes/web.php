@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/tim-kiem', 'HomeController@search')->name('search');
+
 Route::get('/', 'HomeController@guest')->name('index');
 
 Auth::routes();

@@ -6,7 +6,7 @@
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
             aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-search"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent2">
 
@@ -18,12 +18,12 @@
             {{--
             <input class="form-control" type="text" placeholder="Nhập tên truyện hoặc tên tác giả" aria-label="Nhập tên truyện hoặc tên tác giả">
             --}}
-            <form class="form-inline t24-search">
-                @csrf
+            <form class="form-inline t24-search" action="{{ route('search') }}" method="GET">
                 <div class="md-form my-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
-                        aria-label="Nhập tên truyện hoặc tên tác giả">
+                    <input name="s" class="form-control mr-sm-2" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
+                aria-label="Nhập tên truyện hoặc tên tác giả">
                 </div>
+                
             </form>
             {{--
             <form class="form-inline my-2 my-lg-0">
