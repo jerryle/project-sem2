@@ -18,12 +18,12 @@
             {{--
             <input class="form-control" type="text" placeholder="Nhập tên truyện hoặc tên tác giả" aria-label="Nhập tên truyện hoặc tên tác giả">
             --}}
-            <form class="form-inline t24-search" action="{{ route('index') }}" method="GET">
-                @csrf
+            <form class="form-inline t24-search" action="{{ route('search') }}" method="GET">
                 <div class="md-form my-0">
-                    <input name="skey" class="form-control mr-sm-2" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
+                    <input name="s" class="form-control mr-sm-2" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
                 aria-label="Nhập tên truyện hoặc tên tác giả">
                 </div>
+                
             </form>
             {{--
             <form class="form-inline my-2 my-lg-0">
