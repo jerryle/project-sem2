@@ -14,7 +14,7 @@
                         <div class="card testimonial-card">
 
                             <!--Background color-->
-                            <div class="card-up grey lighten-1">
+                            <div class="card-up purple-gradient lighten-1">
                             </div>
 
                             <!--Avatar-->
@@ -22,7 +22,9 @@
                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg"
                                                                    alt="avatar mx-auto white" class="rounded-circle img-fluid">
                             </div>
+                            <div>
                                 <h4 class="card-title mt-1 ml-5">{{$users->username}}</h4>
+                            </div>
                         </div>
                         @yield('content')
                     </div>

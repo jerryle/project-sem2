@@ -74,13 +74,13 @@
                             <div class="col-md-12 table-responsive-sm">
                                 <ul class="nav nav-tabs nav-justified" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab">Tuần</a>
+                                        <a class="nav-link active" style="background: #f7f7f7" data-toggle="tab" href="#panel5" role="tab">Tuần</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#panel6" role="tab">Tháng</a>
+                                        <a class="nav-link" style="background: #f7f7f7" data-toggle="tab" href="#panel6" role="tab">Tháng</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">Năm</a>
+                                        <a class="nav-link" style="background: #f7f7f7" data-toggle="tab" href="#panel7" role="tab">Năm</a>
                                     </li>
                                 </ul>
 
