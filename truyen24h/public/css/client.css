@@ -201,6 +201,13 @@ li, ol, ul {
     color: #666;
 }
 
+.list-stories .story-right-info {
+    position: relative;
+    width: 224px;
+    height: 136px;
+    margin-top: 5px;
+}
+
 p {
     word-wrap:break-word!important;
 }

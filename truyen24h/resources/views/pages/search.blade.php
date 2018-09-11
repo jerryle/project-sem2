@@ -38,7 +38,10 @@
                     <em>|</em>
                     <span>1 chương</span>
                     </p>
-                    <p class="intro">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <p class="intro">{{ str_limit($story->description, 40) }}</p>
+                </div>
+                <div class="story-right-info">
+
                 </div>
                 
             </li>
