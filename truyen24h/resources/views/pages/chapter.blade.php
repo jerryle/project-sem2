@@ -1,4 +1,6 @@
-@extends('layouts.master2')
+@extends('layouts.master2', [
+    'search' => ''
+])
 
 @section('header')
 
