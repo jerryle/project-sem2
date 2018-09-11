@@ -40,7 +40,7 @@ class Story extends Model
 
     public function chapters()
     {
-        return $this->hasMany('Truyen24h\Chapter');
+        return $this->hasMany('Truyen24h\Chapter')->orderBy('number','desc');
     }
 
     public function genres()
@@ -55,5 +55,20 @@ class Story extends Model
 
     public function scopeSearch($query, $s) {
         return $query->where('slug', 'like', '%'.$s.'%');
+    }
+
+    public function latest($column = 'updated_at')
+    {
+        return $this->orderBy($column, 'desc');
+    }
+
+    public function getCreatedAtAttribute($date)
+    {
+        return \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('H:i d/m');
+    }
+
+    public function getUpdatedAtAttribute($date)
+    {
+        return \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('H:i d/m');
     }
 }

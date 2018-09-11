@@ -29,7 +29,7 @@ class HomeController extends Controller
     public function index()
     {
         $hotStories = Story::orderByViewsCount()->take(9)->get();
-        $stories = Story::where('status',1)->paginate(20);
+        $stories = Story::where('status',1)->paginate(12);
         $genres = Genre::take(20)->get();
         $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
 
@@ -55,7 +55,7 @@ class HomeController extends Controller
     public function guest(Request $request)
     {
         $hotStories = Story::orderByViewsCount()->take(9)->get();
-        $stories = Story::where('status',1)->paginate(20);
+        $stories = Story::where('status',1)->paginate(12);
         $genres = Genre::take(20)->get();
         $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
     

@@ -158,7 +158,12 @@ color: #4f4f4f; }
     background-color: transparent!important;
 }
 
-.list-group a:hover, .list-group button:hover {
+a {
+    text-decoration: none!important;
+    color: #222;
+}
+
+a:hover, .list-group a:hover, .list-group button:hover {
     color: #2196f3!important;
 }
 
@@ -187,6 +192,13 @@ li, ol, ul {
     height:48px;
     margin-bottom: 8px;
     color: #666;
+}
+
+.list-stories .story-right-info {
+    position: relative;
+    width: 224px;
+    height: 136px;
+    margin-top: 5px;
 }
 
 p {

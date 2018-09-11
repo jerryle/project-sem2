@@ -45,31 +45,73 @@
     @endif
     <section class="story_update my-5">
         <div class="row">
-            <div class="col-lg-8">
-                <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Truyện Mới Cập Nhật
-                    <i class="fab fa-gripfire"></i>
-                </h4>
+            <div class="col-lg-9">
+                <div class="d-flex justify-content-between">
+
+                    <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Truyện Mới Cập Nhật
+                        <i class="fab fa-gripfire"></i>
+                    </h4>
+                    <a href="">
+                        <h5 class="h5-responsive text-right">Xem thêm</h5>
+                    </a>
+                </div>
+
                 @if(count($updatedStories) > 0)
-                <div class="list-group list-group-flush">
+                {{-- <div class="list-group list-group-flush">
                     @foreach($updatedStories as $story)
                     <a href="{{route('view_story', $story->getRouteKeyName())}}" class="list-group-item list-group-item-action waves-effect">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="flex-grow-1"><strong>{{$story->title}}</strong></span>
+                        <div class="flex-fill align-items-center">
+                            <span class="flex-grow-1"><strong>{{str_limit($story->title, 23)}}</strong></span>
                             @if(count($story->genres) > 0)
                             <span class="genre flex-shrink-1">{{$story->genres->first()->name}}</span>
                             @endif
-                            <span class="text-right author flex-shrink-1 d-none d-sm-block">{{$story->author}}</span>
+                            <span class="text-left author flex-shrink-1 d-none d-sm-block mr-2">{{$story->author}}</span>
+                            <span class="text-right genre flex-shrink-1 d-none d-sm-block">{{$story->updated_at}}</span>
                         </div>
                     </a>
                     @endforeach
-                </div>
+                </div> --}}
+                <table class="table table-sm">
+                    {{-- <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead> --}}
+                    <tbody>
+                        @foreach($updatedStories as $story)
+                        <tr>
+                            <td class="genre">
+                                @if(count($story->genres) > 0)
+                                <span class="genre flex-shrink-1">{{$story->genres->first()->name}}</span>
+                                @endif
+                            </td>
+                            <td>
+                                <a href="{{route('view_story', $story->getRouteKeyName())}}">
+                                    <strong>{{str_limit($story->title,40)}}</strong>
+                                </a>
+                            </td>
+                            <td class="genre">
+                                @if(count($story->chapters) > 0)
+                                <span class="genre flex-shrink-1">Chương {{$story->chapters()->first()->number}}</span>
+                                @endif
+                            </td>
+                            <td class="author">{{$story->author}}</td>
+                            <td class="text-right genre">{{$story->updated_at}}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+
 
                 @else
                 Hiện chưa có truyện nào
 
                 @endif
             </div>
-            <div class="col-lg-4 d-none d-lg-block">
+            <div class="col-lg-3 d-none d-lg-block">
                 <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Thể loại
                     <i class="fab fa-gripfire"></i>
                 </h4>
@@ -95,9 +137,15 @@
         </div>
     </section>
     <section class="story_full my-5">
-        <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Truyện Đã Hoàn Thành
-            <i class="fab fa-gripfire"></i>
-        </h4>
+        <div class="d-flex justify-content-between">
+
+            <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Truyện Đã Hoàn Thành
+                <i class="fab fa-gripfire"></i>
+            </h4>
+            <a href="">
+                <h5 class="h5-responsive text-right">Xem thêm</h5>
+            </a>
+        </div>
         <hr class="between-sections mt-0">
         <div class="row justify-content-left js-equal-height">
             @foreach($stories as $story)
