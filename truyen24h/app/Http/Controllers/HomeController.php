@@ -31,7 +31,7 @@ class HomeController extends Controller
         $hotStories = Story::orderByViewsCount()->take(9)->get();
         $stories = Story::where('status',1)->paginate(12);
         $genres = Genre::take(20)->get();
-        $updatedStories = Story::latest()->take(10)->get();
+        $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
 
         // BXH
         // $tdStories = Story::get()->sortByDesc(function($story, $key) {
@@ -57,7 +57,7 @@ class HomeController extends Controller
         $hotStories = Story::orderByViewsCount()->take(9)->get();
         $stories = Story::where('status',1)->paginate(12);
         $genres = Genre::take(20)->get();
-        $updatedStories = Story::latest()->take(10)->get();
+        $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
     
         if(!auth()->guest())
         {
