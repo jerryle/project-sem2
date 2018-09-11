@@ -7,6 +7,7 @@ use Truyen24h\Story;
 use Truyen24h\Genre;
 use \CyrildeWit\EloquentViewable\Support\Period;
 use Illuminate\Support\Facades\View;
+use Cocur\Slugify\Slugify;
 
 class HomeController extends Controller
 {
@@ -17,7 +18,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['guest']]);
+        $this->middleware('auth', ['except' => ['guest','search']]);
     }
 
     /**
@@ -51,17 +52,27 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function guest()
+    public function guest(Request $request)
     {
         $hotStories = Story::orderByViewsCount()->take(9)->get();
         $stories = Story::where('status',1)->paginate(20);
         $genres = Genre::take(20)->get();
         $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
-        
+    
         if(!auth()->guest())
         {
             return redirect()->route('home')->with(compact('hotStories', 'stories', 'genres', 'updatedStories'));
         }
         else return View::make('pages.index', compact('hotStories', 'stories', 'genres', 'updatedStories'));
+    }
+
+    public function search(Request $request)
+    {
+        $s = $request->s;
+       
+        $results = Story::search(str_slug($s))
+            ->paginate(20);
+
+        return view('pages.search', compact('results', 's'));
     }
 }
