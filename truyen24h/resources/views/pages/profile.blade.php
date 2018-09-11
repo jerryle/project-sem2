@@ -20,7 +20,7 @@
                             <!--Avatar-->
                             <div class="avatar ml-4 white">
                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg"
-                                                                   alt="avatar mx-auto white" class="rounded-circle img-fluid">
+                                     alt="avatar mx-auto white" class="rounded-circle img-fluid">
                             </div>
                             <div>
                                 <h4 class="card-title mt-1 ml-5">{{$users->username}}</h4>
@@ -30,7 +30,8 @@
                     </div>
                 </div>
             </div>
-    </main>
+
+            </main>
     </div>
 
 @endsection
