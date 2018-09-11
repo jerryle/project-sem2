@@ -35,7 +35,7 @@
 'sub_current_menu' => $sub_current_menu])
         <main class="t24-admin-content-m">
             <div class="container-fluid">
-                @include('inc.message')
+                {{-- @include('inc.message') --}}
                 
                 @yield('content')
             </div>
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('mdb/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('mdb/js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('mdb/js/popper.min.js') }}"></script>
     <script src="{{ asset('mdb/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('mdb/js/mdb.min.js') }}"></script>
