@@ -63,6 +63,8 @@ class ChapterController extends Controller
         //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
         // }
         $chapter->save();
+        $chapter->story->updated_at = now();
+        $chapter->story->save();
         return redirect()->route('admin.chapter.index')->with('success','Chương mới đã được đăng thành công!');
     }
 

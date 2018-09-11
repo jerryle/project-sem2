@@ -56,4 +56,9 @@ class Story extends Model
     public function scopeSearch($query, $s) {
         return $query->where('slug', 'like', '%'.$s.'%');
     }
+
+    public function orderChapters($column = 'updated_at')
+    {
+        return $this->orderBy($column, 'desc');
+    } 
 }
