@@ -57,7 +57,7 @@ class Story extends Model
         return $query->where('slug', 'like', '%'.$s.'%');
     }
 
-    public function orderChapters($column = 'updated_at')
+    public function latest($column = 'updated_at')
     {
         return $this->orderBy($column, 'desc');
     } 
