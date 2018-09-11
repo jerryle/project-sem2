@@ -1,4 +1,4 @@
-<div class="top-nav navbar pt-6 navbar-expand-md">
+    <div class="top-nav navbar pt-6 navbar-expand-md">
     <div class="container">
         <a class="navbar-brand" href="{{route('index')}}">
             <img src="{{ asset('image/logo.png') }}" height="40">
@@ -110,7 +110,7 @@
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" alt="Đăng truyện" title="Đăng truyện">
+                        <a class="nav-link" href="/admin/story/create" alt="Đăng truyện" title="Đăng truyện">
                             <i class="fas fa-file-upload mr-1"></i><p class="d-none d-sm-inline">Đăng Truyện</p>
                         </a>
 
