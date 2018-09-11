@@ -70,6 +70,12 @@
                                     {{ __('auth.register') }}</a>
                             </p>
                         </div>
+                        <div class="inline-ul text-center d-flex justify-content-center">
+                            <p class="font-small grey-text d-flex justify-content-end mt-0">{{ __('auth.reset') }}
+                                <a href="{{route('register')}}" class="white-text ml-1 font-weight-bold">
+                                    {{ __('auth.forgot') }}</a>?
+                            </p>
+                        </div>
                     </div>
                 </form>
             </div>

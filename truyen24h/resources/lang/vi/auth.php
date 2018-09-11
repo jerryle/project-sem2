@@ -18,7 +18,6 @@ return [
     'login' => 'Đăng nhập',
     'register' => 'Tạo Tài Khoản Mới',
     'register-btn' => 'Gửi Đăng Ký',
-    'forgot' => 'Quên',
     'user-exists' => 'Đã có tài khoản rồi?',
     'user-new' => 'Chưa có tài khoản?',
     'password' => 'Mật khẩu',
@@ -28,4 +27,7 @@ return [
     'password-confirm' => 'Xác nhận mật khẩu',
     'logout' => 'Đăng xuất',
     'account' => 'Tài Khoản',
+    'reset' => 'Quên',
+    'forgot' => 'mật khẩu',
+    'post' => 'Đăng ngay',
 ];
