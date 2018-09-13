@@ -5,7 +5,9 @@
 @section('title')
 {{$chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
 @endsection
-
+@section('description')
+{{'Đọc truyện '. $chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
+@endsection
 @section('stylesheets')
 <style>
     body {

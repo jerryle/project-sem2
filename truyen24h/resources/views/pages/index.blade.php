@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Đọc truyện thỏa thích')
+@section('description', 'Đọc truyện online, đọc truyện chữ 24h, truyện hay')
 @section('content')
 <div class="container">
 
