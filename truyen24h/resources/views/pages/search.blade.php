@@ -1,7 +1,9 @@
 @extends('layouts.master2', [
 'search' => isset($s) ? $s : ''
 ])
-
+@section('title')
+    {{'Kết quả tìm kiếm cho '. isset($s) ? $s : ''}}
+@endsection
 @section('content')
 
     <div class="row">
