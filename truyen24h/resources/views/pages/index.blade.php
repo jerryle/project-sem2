@@ -95,7 +95,7 @@
                             </td>
                             <td class="genre">
                                 @if(count($story->chapters) > 0)
-                                <a href="{{route('view_chapter',$chapter->getRouteKeyName())}}"><span class="genre flex-shrink-1">Chương {{$story->chapters()->first()->number}}</span></a>
+                                <a href="{{route('view_chapter',$story->chapters()->first()->getRouteKeyName())}}"><span class="genre flex-shrink-1">Chương {{$story->chapters()->first()->number}}</span></a>
                                 @endif
                             </td>
                             <td class="author">{{$story->author}}</td>
