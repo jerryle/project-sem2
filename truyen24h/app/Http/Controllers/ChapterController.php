@@ -79,8 +79,12 @@ class ChapterController extends Controller
         $chapter = Chapter::findBySlugOrFail($id);
         $story = Story::findOrFail($chapter->story_id);
         $story->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
-        $chapter->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
-        return view('pages.chapter')->with('chapter', $chapter);
+        $chapter->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));   
+
+        $previous = $chapter->story->chapters->where('number', '<', $chapter->number)->first();
+        $next = $chapter->story->chapters->where('number', '>', $chapter->number)->first();
+
+        return view('pages.chapter', compact('chapter', 'previous', 'next'));
     }
 
     /**

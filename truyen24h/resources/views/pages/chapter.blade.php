@@ -76,6 +76,27 @@
 
             @endif
         </div>
+
+        <div class="d-flex justify-content-center">
+            @if($previous)
+            <a href="{{route('view_chapter',$previous->getRouteKeyName())}}">
+                <div class="btn btn-success">Chương trước</div>
+            </a>
+            @endif
+            <select name="chapter-pagination" class="mdb-select">
+                <option value="" disabled>Chọn chương mà bạn muốn</option>
+                @foreach($chapter->story->chapters as $chap)
+                <option value="{{route('view_chapter',$chap->getRouteKeyName())}}"
+                    {{$chap->id == $chapter->id ? 'selected disabled':''}}>{{'Chương '.
+                    $chap->number . ': '. $chap->name}}</option>
+                @endforeach
+            </select>
+            @if($next)
+            <a href="{{route('view_chapter',$next->getRouteKeyName())}}">
+                    <div class="btn btn-success">Chương sau</div>
+                </a>
+            @endif
+        </div>
     </div>
 </div>
 {{-- <style type='text/css'>
@@ -150,6 +171,11 @@
 
 @section('scripts')
 <script>
+    // Material Select Initialization
+    $(document).ready(function () {
+        $('.mdb-select').material_select();
+    });
+
     $(function () {
         let width_bar = $('.width-bar');
         let show_text = width_bar.find('.show-text');
@@ -178,6 +204,11 @@
                 localStorage.setItem('chapter-width', w);
                 current_chap_width = w;
             });
+
+        let pagination = $('select[name="chapter-pagination"]');
+        pagination.change(function () {
+            window.location.replace($(this).val());
+        });
     });
 </script>
 @endsection
