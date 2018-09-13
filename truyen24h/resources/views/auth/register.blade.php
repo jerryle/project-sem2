@@ -1,4 +1,6 @@
 @extends('auth.master')
+@section('title', 'Đăng ký tài khoản')
+@section('description', 'Đọc truyện online, đọc truyện chữ 24h, truyện hay')
 @section('main')
 <!--Grid row-->
 <div class="row mt-5">

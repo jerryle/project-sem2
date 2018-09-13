@@ -1,4 +1,8 @@
-@extends('layouts.master') @section('content')
+@extends('layouts.master') 
+@section('title', 'Quên mật khẩu')
+@section('description', 'Đọc truyện online, đọc truyện chữ 24h, truyện hay')
+
+@section('content')
 <div class="container my-6">
     <div class="row justify-content-center">
         <div class="col-md-8">
