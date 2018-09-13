@@ -106,9 +106,7 @@ class ChapterController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:191|min:5',
-            'content' => 'required|min:100',
-            'story_id' => 'required|exists:stories,id',
-            'number' => 'required|integer'
+            'content' => 'required|min:100'
             // 'image' => 'required|mimes:jpg,png,bmp,jpeg|between:1,7000',
         ]);
 
@@ -124,7 +122,7 @@ class ChapterController extends Controller
         //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
         // }
         $chapter->save();
-        return redirect()->route('admin.chapter.index')->with('success','Chương mới đã được đăng thành công!');
+        return redirect()->route('admin.chapter.index')->with('success','Đã cập nhật chương truyện thành công!');
     }
 
     /**
