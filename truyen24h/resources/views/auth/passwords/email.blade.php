@@ -7,7 +7,7 @@
                     <div class="header pt-3 blue-gradient">
 
                         <div class="row d-flex justify-content-center">
-                            <h3 class="white-text mb-3 pt-3 font-weight-bold">{{ __('Reset Password') }}</h3>
+                            <h3 class="white-text mb-3 pt-3 font-weight-bold">{{ __('Lấy Lại Mật Khẩu') }}</h3>
                         </div>
 
                         {{--
@@ -47,7 +47,7 @@
                                     <strong>{{ $errors->first('email') }}</strong>
                                 </span>
                                 @endif
-                                <label for="email">{{ __('E-Mail Address') }}</label>
+                                <label for="email">{{ __('Nhập E-Mail của bạn') }}</label>
 
                             </div>
 
@@ -55,7 +55,7 @@
                             <div class="justify-content-center">
                                 <div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-grey btn-rounded z-depth-1a">{{ __('Send Password Reset Link') }}</button>
+                                        <button type="submit" class="btn btn-grey btn-rounded z-depth-1a">{{ __('Gửi Yêu Cầu') }}</button>
                                     </div>
                                 </div>
                             </div>

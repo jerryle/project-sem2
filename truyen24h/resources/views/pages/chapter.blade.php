@@ -7,8 +7,8 @@
 @endsection
 @section('content')
     <div class="row">
-        <div class="col-md-1 table-responsive-sm"></div>
-        <div class="col-md-10 table-responsive-sm">
+        <div class="col-md-1 col-sm table-responsive-sm"></div>
+        <div class="col-md-10 col-sm-12 table-responsive-sm">
             <div class="container chapter" style="background: #e5e1e1">
                 <div class="media text-center text-lg-center mt-4 mb-1 px-1">
                     <div class="media-body">
@@ -34,8 +34,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-1 table-responsive-sm"></div>
+        <div class="col-md-1 col-sm table-responsive-sm"></div>
     </div>
+
+
     <style type='text/css'>
         #bttop{border:1px solid  #4adcff;background:#24bde2;text-align:center;padding:5px;position:fixed;bottom:35px;right:10px;cursor:pointer;display:none;color:#fff;font-size:11px;font-weight:900;}
         #bttop:hover{border:1px solid #ffa789;background:#737af4;}
