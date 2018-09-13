@@ -53,7 +53,7 @@
             <h1 class="chapter-title">Chương {{$chapter->number}}: {{$chapter->name}}</h1>
             <ul class="list-info list-unstyled">
                 <li><a href="{{route('view_story',$chapter->story->getRouteKeyName())}}"><i class="fas fa-book mr-1"></i>{{$chapter->story->title}}</a></li>
-                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-fancy mr-1"></i>{{$chapter->story->author}}</a></li>
+                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-fancy mr-1"></i>{{str_limit($chapter->story->author,15)}}</a></li>
                 <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-user-ninja mr-1"></i>{{$chapter->user->username}}</a></li>
                 <li><i class="far fa-eye mr-1"></i>{{$chapter->getViews()}} lượt</li>
                 <li><i class="far fa-clock mr-1"></i>{{$chapter->updated_at}}</li>
@@ -85,10 +85,10 @@
             @endif
             <select name="chapter-pagination" class="mdb-select">
                 <option value="" disabled>Chọn chương mà bạn muốn</option>
-                @foreach($chapter->story->chapters as $chap)
+                @foreach($chapter->story->chaptersInverse as $chap)
                 <option value="{{route('view_chapter',$chap->getRouteKeyName())}}"
                     {{$chap->id == $chapter->id ? 'selected disabled':''}}>{{'Chương '.
-                    $chap->number . ': '. $chap->name}}</option>
+                    $chap->number . ': '. str_limit($chap->name,10)}}</option>
                 @endforeach
             </select>
             @if($next)

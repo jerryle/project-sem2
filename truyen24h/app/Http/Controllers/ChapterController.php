@@ -81,8 +81,8 @@ class ChapterController extends Controller
         $story->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
         $chapter->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));   
 
-        $previous = $chapter->story->chapters->where('number', '<', $chapter->number)->first();
-        $next = $chapter->story->chapters->where('number', '>', $chapter->number)->first();
+        $previous = $chapter->story->chaptersInverse->where('number', '<', $chapter->number)->last();
+        $next = $chapter->story->chaptersInverse->where('number', '>', $chapter->number)->first();
 
         return view('pages.chapter', compact('chapter', 'previous', 'next'));
     }
