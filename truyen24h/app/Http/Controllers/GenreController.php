@@ -43,7 +43,7 @@ class GenreController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:50|min:3|unique:genres',
-            'description' => 'required|min:3|max:191',
+            'description' => 'required|min:3|max:255',
         ]);
 
         $genre = new Genre;
@@ -88,7 +88,7 @@ class GenreController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:50|min:3',
-            'description' => 'required|min:3|max:191',
+            'description' => 'required|min:3|max:255',
         ]);
 
         $genre = Genre::findOrFail($id);

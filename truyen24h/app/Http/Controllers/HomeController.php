@@ -69,10 +69,12 @@ class HomeController extends Controller
     public function search(Request $request)
     {
         $s = $request->s;
-       
+        
+        $genres = Genre::all();
         $results = Story::search(str_slug($s))
             ->paginate(20);
+            
 
-        return view('pages.search', compact('results', 's'));
+        return view('pages.search', compact('results', 's', 'genres'));
     }
 }
