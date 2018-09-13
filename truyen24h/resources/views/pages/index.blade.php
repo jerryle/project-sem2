@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@section('title', 'Đọc truyện thỏa thích')
 @section('content')
 <div class="container">
 

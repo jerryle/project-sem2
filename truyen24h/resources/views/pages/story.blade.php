@@ -1,4 +1,9 @@
-@extends('layouts.master') @section('content')
+@extends('layouts.master')
+@section('title')
+    {{$story->title .' - '. $story->author}}
+@endsection
+
+@section('content')
     <div id="view-story">
         <div class="container">
             <!--Section: Blog v.1-->
