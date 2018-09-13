@@ -34,7 +34,7 @@ Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'adm
     Route::resource('/chapter', 'ChapterController', ['as' => 'admin']);
 });
 
-Route::group(['middleware' => ['auth'], 'prefix' => 'user', 'name' => 'user'], function () {
+Route::group(['middleware' => ['auth'], 'name' => 'user'], function () {
     Route::get('/doc-truyen/{slug}/edit', 'T24Controller@editChapter')->name('user.inline.chapter.edit');
     Route::put('/doc-truyen/{id}', 'T24Controller@updateChapter')->name('user.inline.chapter.update');
 });
