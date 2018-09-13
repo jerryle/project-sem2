@@ -7,7 +7,7 @@
                     <div class="header pt-3 blue-gradient">
 
                         <div class="row d-flex justify-content-center">
-                            <h3 class="white-text mb-3 pt-3 font-weight-bold">{{ __('Reset Password') }}</h3>
+                            <h3 class="white-text mb-3 pt-3 font-weight-bold">{{ __('Lấy Lại Mật Khẩu') }}</h3>
                         </div>
 
                         {{--
@@ -44,7 +44,7 @@
                                     <strong>{{ $errors->first('email') }}</strong>
                                 </span>
                                 @endif
-                                <label for="email">{{ __('E-Mail Address') }}</label>
+                                <label for="email">{{ __('Nhập E-Mail của bạn') }}</label>
 
                             </div>
 
@@ -55,12 +55,12 @@
                                     <strong>{{ $errors->first('password') }}</strong>
                                 </span>
                                 @endif
-                                <label for="password">{{ __('Password') }}</label>
+                                <label for="password">{{ __('Mật Khẩu') }}</label>
                             </div>
 
                             <div class="md-form">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                                <label for="password-confirm">{{ __('Confirm Password') }}</label>
+                                <label for="password-confirm">{{ __('Xác Nhận Mật Khẩu') }}</label>
 
                             </div>
 
@@ -71,16 +71,16 @@
                                 <!--Grid column-->
                                 <div class="col-md-1 col-md-5 d-flex align-items-start">
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-grey btn-rounded z-depth-1a">{{ __('Reset Password') }}</button>
+                                        <button type="submit" class="btn btn-grey btn-rounded z-depth-1a">{{ __('Lưu') }}</button>
                                     </div>
                                 </div>
                                 <!--Grid column-->
 
                                 <!--Grid column-->
                                 <div class="col-md-7">
-                                    <p class="font-small grey-text d-flex justify-content-end mt-3">Already have an account?
+                                    <p class="font-small grey-text d-flex justify-content-end mt-3">Đã có tài khoản?
                                         <a href="{{route('login')}}" class="dark-grey-text ml-1 font-weight-bold">
-                                        {{ __('Login') }}</a>
+                                        {{ __('Đăng nhập') }}</a>
                                     </p>
                                 </div>
                                 <!--Grid column-->

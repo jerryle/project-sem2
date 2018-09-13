@@ -50,7 +50,6 @@
         font-size: 20px;
         font-weight: 900;
     }
-
     #bttop:hover {
         border: 1px solid #ffa789;
         background: #737af4;
