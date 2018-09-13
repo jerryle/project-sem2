@@ -1,12 +1,11 @@
 @extends('layouts.master2', [
 'search' => ''
 ])
-
 @section('title')
 {{$chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
 @endsection
 @section('description')
-{{'Đọc truyện '. $chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
+{{'Sửa '. $chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
 @endsection
 @section('stylesheets')
 <style>
@@ -22,6 +21,8 @@
 </style>
 @endsection
 @section('header')
+
+<script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 
 @endsection
 @section('content')
@@ -50,31 +51,52 @@
         </div>
 
         <div id="id_chap_content" class="p-5 wiki-content w1140">
-            <h1 class="chapter-title">Chương {{$chapter->number}}: {{$chapter->name}}</h1>
-            <ul class="list-info list-unstyled">
-                <li><a href="{{route('view_story',$chapter->story->getRouteKeyName())}}"><i class="fas fa-book mr-1"></i>{{$chapter->story->title}}</a></li>
-                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-fancy mr-1"></i>{{$chapter->story->author}}</a></li>
-                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-user-ninja mr-1"></i>{{$chapter->user->username}}</a></li>
-                <li><i class="far fa-eye mr-1"></i>{{$chapter->getViews()}} lượt</li>
-                <li><i class="far fa-clock mr-1"></i>{{$chapter->updated_at}}</li>
-            </ul>
+            <form action="{{route('user.inline.chapter.update', $chapter->id)}}" method="POST">
+                @method('PUT')
+                @csrf
+                <h1 class="chapter-title">Chương {{$chapter->number}}:</h1>
+                <div class="md-form">
+                    <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
+                        name="name" value="{{$chapter->name}}" required autofocus> @if ($errors->has('name'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('name') }}</strong>
+                    </span>
+                    @endif
+                    <label for="name">Tên chương truyện</label>
+                </div>
 
+                <ul class="list-info list-unstyled">
+                    <li><a href="{{route('view_story',$chapter->story->getRouteKeyName())}}"><i class="fas fa-book mr-1"></i>{{$chapter->story->title}}</a></li>
+                    <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-fancy mr-1"></i>{{$chapter->story->author}}</a></li>
+                    <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-user-ninja mr-1"></i>{{$chapter->user->username}}</a></li>
+                    <li><i class="far fa-eye mr-1"></i>{{$chapter->getViews()}} lượt</li>
+                    <li><i class="far fa-clock mr-1"></i>{{$chapter->updated_at}}</li>
+                </ul>
 
-            @if($chapter->name !== 'None')
-            {!!$chapter->content!!}
-            @else
-            Nội dung chương chưa được cập nhật
-            @endif
+                <div class="form-group">
+                    <label for="content">Nội dung chương truyện</label>
+                    <textarea id="content" class="form-control{{ $errors->has('content') ? ' is-invalid' : '' }}" name="content"
+                        required>{{$chapter->content}}</textarea>
+                    @if ($errors->has('content'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('content') }}</strong>
+                    </span>
+                    @endif
+                    <script>
+                        CKEDITOR.replace( 'content' );
+                    </script>
+                </div>
 
-            @if(auth()->check())
+                <div class="d-flex justify-content-end">
+                   
+                        <button type="submit" class="btn btn-grey z-depth-1a">Lưu</button>
+                    
+                </div>
+            </form>
 
-            <div class="d-flex justify-content-end">
-                @if(auth()->user()->id == $chapter->user_id || auth()->user()->admin_level > 0)
-                <a href="{{route('user.inline.chapter.edit', $chapter->getRouteKeyName())}}" class="btn btn-sm btn-black">Sửa</a>
-                @endif
-            </div>
-
-            @endif
+            {{-- <div class="d-flex justify-content-end">
+                <a href="{{route('user.chapter.edit_inline', $chapter->id)}}" class="btn btn-sm btn-black">Sửa</a>
+            </div> --}}
         </div>
     </div>
 </div>
