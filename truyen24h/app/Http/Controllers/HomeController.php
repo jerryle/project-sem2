@@ -18,7 +18,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['guest','search']]);
+        $this->middleware('auth', ['except' => ['index','search']]);
     }
 
     /**
@@ -52,19 +52,19 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function guest(Request $request)
-    {
-        $hotStories = Story::orderByViewsCount()->take(9)->get();
-        $stories = Story::where('status',1)->paginate(12);
-        $genres = Genre::take(20)->get();
-        $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
+    // public function guest(Request $request)
+    // {
+    //     $hotStories = Story::orderByViewsCount()->take(9)->get();
+    //     $stories = Story::where('status',1)->paginate(12);
+    //     $genres = Genre::take(20)->get();
+    //     $updatedStories = Story::orderBy('updated_at', 'desc')->take(10)->get();
     
-        if(!auth()->guest())
-        {
-            return redirect()->route('home')->with(compact('hotStories', 'stories', 'genres', 'updatedStories'));
-        }
-        else return View::make('pages.index', compact('hotStories', 'stories', 'genres', 'updatedStories'));
-    }
+    //     // if(!auth()->guest())
+    //     // {
+    //     //     return redirect()->route('home')->with(compact('hotStories', 'stories', 'genres', 'updatedStories'));
+    //     // }
+    //     return View::make('pages.index', compact('hotStories', 'stories', 'genres', 'updatedStories'));
+    // }
 
     public function search(Request $request)
     {
