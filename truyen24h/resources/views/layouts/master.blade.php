@@ -7,9 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
 
     <title>@yield('title') - {{ config('app.name') }}</title>
+
+    <meta name="description" content="@yield('description')" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="@yield('title') - {{ config('app.name') }}">
+    <meta itemprop="description" content="@yield('description')">
+    {{-- <meta itemprop="image" content="https://lorempixel.com/400/200/"> --}}
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="@yield('title') - {{ config('app.name') }}">
+    <meta property="og:description" content="@yield('description')">
+
 
     @yield('header')
     <!-- Fonts -->
