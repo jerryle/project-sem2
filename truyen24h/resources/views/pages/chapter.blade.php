@@ -9,33 +9,47 @@
 <div class="row">
 
 
-    <div class="container px-5">
-        <div class="media text-center text-lg-center">
+    <div class="container px-5 chapter-detail">
+        {{-- <div class="media text-center text-lg-center">
             <div class="media-body">
                 <a class="purple-text h2-responsive" href="#">{{$chapter->story->title}}</a>
                 <p>
-                        <strong>Chương {{$chapter->number}}: {{$chapter->name}}</strong>
+                    <strong>Chương {{$chapter->number}}: {{$chapter->name}}</strong>
                 </p>
                 <p>
-                    Người đăng: <a href="#" class="text green-text">{{$chapter->user->username}}</a> - Lượt xem: {{$chapter->getViews()}}
+                    Người đăng: <a href="#" class="text green-text">{{$chapter->user->username}}</a> - Lượt xem:
+                    {{$chapter->getViews()}}
                 </p>
             </div>
+        </div> --}}
+
+        <div class="width-bar">
+            <div class="w1140">1140</div>
+            <div class="w960">960</div>
+            <div class="w720">720</div>
+            <span class="show-text" style="display: none;"></span>
         </div>
-        <div class="p-5" style="background: #eae7e7">
 
-            <p class="">
+        <div id="id_chap_content" class="p-5 wiki-content w1140">
+            <h1 class="chapter-title">Chương {{$chapter->number}}: {{$chapter->name}}</h1>
+            <ul class="list-info list-unstyled">
+                <li><a href="{{route('view_story',$chapter->story->getRouteKeyName())}}"><i class="fas fa-book mr-1"></i>{{$chapter->story->title}}</a></li>
+                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-square mr-1"></i>{{$chapter->user->username}}</a></li>
+                <li><i class="far fa-eye mr-1"></i>{{$chapter->getViews()}}</li>
+                <li><i class="far fa-clock mr-1"></i>{{$chapter->updated_at}}</li>
+            </ul>
 
-                @if($chapter->name !== 'None')
-                {!!$chapter->content!!}
-                @else
-                Nội dung chương chưa được cập nhật
-                @endif
-            </p>
+
+            @if($chapter->name !== 'None')
+            {!!$chapter->content!!}
+            @else
+            Nội dung chương chưa được cập nhật
+            @endif
 
         </div>
     </div>
 </div>
-<style type='text/css'>
+{{-- <style type='text/css'>
     #bttop {
         border: 1px solid #4adcff;
         background: #24bde2;
@@ -73,7 +87,7 @@
             }, 800);
         });
     });
-</script>
+</script> --}}
 
 
 {{--<div class="media mt-4 mb-2 px-1">--}}
@@ -103,4 +117,38 @@
 
     {{--</div>--}}
 
+@endsection
+
+@section('scripts')
+<script>
+    $(function () {
+        let width_bar = $('.width-bar');
+        let show_text = width_bar.find('.show-text');
+        let id_chap_content = $('#id_chap_content');
+
+        let current_chap_width = localStorage.getItem('chapter-width');
+        if (current_chap_width) {
+            id_chap_content.removeClass('w720 w960 w1140');
+            id_chap_content.addClass(current_chap_width);
+            show_text.text(current_chap_width.replace('w', '')).show();
+        }
+
+        width_bar.find('> div').hover(function () {
+                show_text.text($(this).text()).show();
+            }, function () {
+                if (current_chap_width) {
+                    show_text.text(current_chap_width.replace('w', '')).show();
+                } else {
+                    show_text.text('').hide();
+                }
+            })
+            .click(function () {
+                let w = $(this).attr('class');
+                id_chap_content.removeClass('w720 w960 w1140');
+                id_chap_content.addClass(w);
+                localStorage.setItem('chapter-width', w);
+                current_chap_width = w;
+            });
+    });
+</script>
 @endsection

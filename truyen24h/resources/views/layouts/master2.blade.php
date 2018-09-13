@@ -26,6 +26,7 @@
     <link href="{{ asset('mdb/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('mdb/css/mdb.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/client.css') }}" rel="stylesheet">
+    @yield('stylesheets')
 </head>
 
 <body>
