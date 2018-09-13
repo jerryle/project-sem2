@@ -6,12 +6,7 @@
     </a>
 </li>
 @endsection @section('header')
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js" defer></script>
-<script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js" defer></script>
-<script defer>
-    $('.ckeditor').ckeditor();
-    // $('.textarea').ckeditor(); // if class is prefered.
-</script>
+<script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 
 @endsection @section('content') {{--
 <section class="form-gradient"> --}}
@@ -20,15 +15,18 @@
 
             {{--
             <div class="row d-flex justify-content-center"> --}}
-            <h3 class="h3-reponsive white-text text-uppercase">Sửa chương truyện '{{$chapter->name.' ('.$chapter->number.')'}}'</h3>
+                <h3 class="h3-reponsive white-text text-uppercase">Sửa chương truyện '{{$chapter->name.'
+                    ('.$chapter->number.')'}}'</h3>
 
                 {{-- </div> --}}
         </div>
         <div class="card-body mx-4 mt-4">
-            <form action="{{route('admin.chapter.store')}}" method="POST">
+            <form action="{{route('admin.chapter.update')}}" method="POST">
+                @method('PUT')
                 @csrf
                 <div class="md-form">
-                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{$chapter->name}}" required autofocus> @if ($errors->has('name'))
+                    <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
+                        name="name" value="{{$chapter->name}}" required autofocus> @if ($errors->has('name'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('name') }}</strong>
                     </span>
@@ -37,8 +35,8 @@
                 </div>
 
                 {{-- <div class="md-form">
-                    <input id="story_id" type="text" class="form-control{{ $errors->has('story_id') ? ' is-invalid' : '' }}" name="story_id"
-                        required> @if ($errors->has('story_id'))
+                    <input id="story_id" type="text" class="form-control{{ $errors->has('story_id') ? ' is-invalid' : '' }}"
+                        name="story_id" required> @if ($errors->has('story_id'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('story_id') }}</strong>
                     </span>
@@ -47,7 +45,8 @@
                 </div> --}}
 
                 {{-- <div class="md-form">
-                    <input id="number" type="text" class="form-control{{ $errors->has('number') ? ' is-invalid' : '' }}" name="number" required> @if ($errors->has('number'))
+                    <input id="number" type="text" class="form-control{{ $errors->has('number') ? ' is-invalid' : '' }}"
+                        name="number" required> @if ($errors->has('number'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('number') }}</strong>
                     </span>
@@ -57,19 +56,23 @@
 
                 <div class="form-group">
                     <label for="content">Nội dung chương truyện</label>
-                <textarea id="content" class="form-control{{ $errors->has('content') ? ' is-invalid' : '' }}" name="content" required>{{$chapter->content}}</textarea>
+                    <textarea id="content" class="form-control{{ $errors->has('content') ? ' is-invalid' : '' }}" name="content"
+                        required>{{$chapter->content}}</textarea>
                     @if ($errors->has('content'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('content') }}</strong>
                     </span>
                     @endif
-
+                    <script>
+                        CKEDITOR.replace( 'content' );
+                    </script>
                 </div>
+
 
                 <!--Grid row-->
                 <div class="mr-auto">
                     <div class="text-center">
-                        <button type="submit" class="btn btn-grey z-depth-1a">Tạo mới</button>
+                        <button type="submit" class="btn btn-grey z-depth-1a">Lưu</button>
                     </div>
                 </div>
 
