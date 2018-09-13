@@ -20,7 +20,7 @@
                         </h3>
                         <p>Người Đăng:
                             <a>
-                                <strong>{{\Truyen24h\User::findOrFail($story->user_id)->username}}</strong>
+                                <strong>{{$story->user->username}}</strong>
                             </a>, {{$story->created_at}}.</p>
                         <p class="genre">Lượt xem: <strong>{{$story->getViews()}}</strong></p>
                         <p>Thể Loại:

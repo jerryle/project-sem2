@@ -26,14 +26,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-
-    public function stories()
+    public function chapters()
     {
-        return $this->belongsToMany('Truyen24h\Story');
+        return $this->hasMany('Truyen24h\Chapter');
     }
 
-    public function group()
+    public function uploadedStories()
     {
-        return $this->hasOne('Truyen\Group');
+        return $this->hasMany('Truyen24h\Story');
     }
 }

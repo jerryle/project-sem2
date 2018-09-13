@@ -48,9 +48,9 @@ class Story extends Model
         return $this->belongsToMany('Truyen24h\Genre', 'story_genre');
     }
 
-    public function users()
+    public function user()
     {
-        return $this->belongsToMany('Truyen24h\User');
+        return $this->belongsTo('Truyen24h\User');
     }
 
     public function scopeSearch($query, $s) {
