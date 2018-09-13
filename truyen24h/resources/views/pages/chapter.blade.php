@@ -1,17 +1,24 @@
 @extends('layouts.master2', [
 'search' => ''
 ])
+
+@section('title')
+{{$chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
+@endsection
+@section('description')
+{{'Đọc truyện '. $chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
+@endsection
 @section('stylesheets')
 <style>
-body {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-}
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+    }
 </style>
 @endsection
 @section('header')
@@ -77,6 +84,7 @@ body {
         font-size: 20px;
         font-weight: 900;
     }
+
     #bttop:hover {
         border: 1px solid #ffa789;
         background: #737af4;

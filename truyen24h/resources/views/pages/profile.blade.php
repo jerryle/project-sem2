@@ -1,6 +1,10 @@
 @extends('layouts.master2',[
     'search' => ''
-]) @section('content')
+])
+
+@section('title', 'Trang cá nhân')
+@section('description', 'Trang cá nhân - Truyen24h')
+@section('content')
 
     <div id="app">
         <main class="my-3" style="min-height:500px;">
