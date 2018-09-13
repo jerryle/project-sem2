@@ -7,9 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    {{--
+    <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
 
-    <title>{{ config('app.name') }}</title>
+    <title>@yield('title') - {{ config('app.name') }}</title>
+
+    <meta name="description" content="@yield('description')" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="@yield('title') - {{ config('app.name') }}">
+    <meta itemprop="description" content="@yield('description')">
+    {{--
+    <meta itemprop="image" content="https://lorempixel.com/400/200/"> --}}
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="@yield('title') - {{ config('app.name') }}">
+    <meta property="og:description" content="@yield('description')">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="{{asset('apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
+    <link rel="manifest" href="{{asset('site.webmanifest')}}">
+    <link rel="mask-icon" href="{{asset('safari-pinned-tab.svg')}}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -57,7 +82,7 @@
         </nav>
         <!-- Navbar -->
         <!-- Full Page Intro -->
-    <div class="view" style="background-image: url('{{ asset('image/background.jpg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="view" style="background-image: url('{{ asset('image/background.jpg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <!-- Mask & flexbox options-->
             <div class="mask rgba-black-strong h-100 d-flex justify-content-center align-items-center">
                 <!-- Content -->

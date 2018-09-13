@@ -1,7 +1,12 @@
 @extends('layouts.master2', [
 'search' => isset($s) ? $s : ''
 ])
-
+@section('title')
+    {{'Kết quả tìm kiếm cho '. isset($s) ? $s : ''}}
+@endsection
+@section('description')
+{{'Kết quả tìm kiếm cho '. isset($s) ? $s : ''}}
+@endsection
 @section('content')
 
     <div class="row">
@@ -41,7 +46,7 @@
                                                             class="genre flex-shrink-1"> {{$story->genres->first()->name}} </span>
                                                         <em> | </em>
                                                     @endif
-                                                    <span> 1 chương</span>
+                                                    <span>{{count($story->chapters)}} chương</span>
                                                 </p>
                                                 <p class="intro"> {{ str_limit($story->description, 40) }} </p>
                                             </div>
@@ -59,7 +64,26 @@
             @endif
         </div>
         <div class="col-md-3">
-            <h4>Thể loại</h4>
+            <h4 class="h4-responsive font-weight-bold text-left text-uppercase blue-text">Thể loại
+                <i class="fab fa-gripfire"></i>
+            </h4>
+            {{--
+            <hr class="between-sections mt-0"> --}}
+            @if(count($genres) > 0)
+
+            <div class="row justify-content-start genre-list">
+
+                @foreach ($genres as $genre)
+                <div class="col-xs-6 col-6 py-2">
+                    <a href="{{$genre->getRouteKeyName()}}" title="{{$genre->name}}">{{$genre->name}}</a>
+                </div>
+                @endforeach
+
+            </div>
+
+            @else
+            Chưa có thể loại nào
+            @endif
         </div>
     </div>
 @endsection

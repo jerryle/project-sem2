@@ -13,7 +13,7 @@
 
 Route::get('/tim-kiem', 'HomeController@search')->name('search');
 
-Route::get('/', 'HomeController@guest')->name('index');
+Route::get('/', 'HomeController@index')->name('index');
 
 Auth::routes();
 
@@ -34,6 +34,11 @@ Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'adm
     Route::resource('/chapter', 'ChapterController', ['as' => 'admin']);
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => ['auth'], 'name' => 'user'], function () {
+    Route::get('/doc-truyen/{slug}/edit', 'T24Controller@editChapter')->name('user.inline.chapter.edit');
+    Route::put('/doc-truyen/{id}', 'T24Controller@updateChapter')->name('user.inline.chapter.update');
+});
+
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile/{username}', 'UserController@show')->name('profile');

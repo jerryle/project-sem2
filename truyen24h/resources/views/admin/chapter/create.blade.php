@@ -6,12 +6,7 @@
     </a>
 </li>
 @endsection @section('header')
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js" defer></script>
-<script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js" defer></script>
-<script defer>
-    $('.ckeditor').ckeditor();
-    // $('.textarea').ckeditor(); // if class is prefered.
-</script>
+<script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 
 @endsection @section('content') {{--
 <section class="form-gradient"> --}}
@@ -57,13 +52,15 @@
 
                 <div class="form-group">
                     <label for="content">Nội dung chương truyện</label>
-                    <textarea id="content" class="ckeditor form-control{{ $errors->has('content') ? ' is-invalid' : '' }}" name="content" required></textarea>
+                    <textarea id="content" class="form-control{{ $errors->has('content') ? ' is-invalid' : '' }}" name="content" required></textarea>
                     @if ($errors->has('content'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('content') }}</strong>
                     </span>
                     @endif
-
+                    <script>
+                        CKEDITOR.replace( 'content' );
+                    </script>
                 </div>
 
                 <!--Grid row-->

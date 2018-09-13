@@ -1,12 +1,11 @@
 @extends('layouts.master2', [
 'search' => ''
 ])
-
 @section('title')
 {{$chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
 @endsection
 @section('description')
-{{'Đọc truyện '. $chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
+{{'Sửa '. $chapter->story->title .' - Chương '. $chapter->number . ': '. $chapter->name}}
 @endsection
 @section('stylesheets')
 <style>
@@ -23,9 +22,11 @@
 @endsection
 @section('header')
 
+<script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
+
 @endsection
 @section('content')
-    <div class="row">
+<div class="row">
 
 
     <div class="container px-5 chapter-detail">
@@ -50,52 +51,52 @@
         </div>
 
         <div id="id_chap_content" class="p-5 wiki-content w1140">
-            <h1 class="chapter-title">Chương {{$chapter->number}}: {{$chapter->name}}</h1>
-            <ul class="list-info list-unstyled">
-                <li><a href="{{route('view_story',$chapter->story->getRouteKeyName())}}"><i class="fas fa-book mr-1"></i>{{$chapter->story->title}}</a></li>
-                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-fancy mr-1"></i>{{str_limit($chapter->story->author,15)}}</a></li>
-                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-user-ninja mr-1"></i>{{$chapter->user->username}}</a></li>
-                <li><i class="far fa-eye mr-1"></i>{{$chapter->getViews()}} lượt</li>
-                <li><i class="far fa-clock mr-1"></i>{{$chapter->updated_at}}</li>
-            </ul>
+            <form action="{{route('user.inline.chapter.update', $chapter->id)}}" method="POST">
+                @method('PUT')
+                @csrf
+                <h1 class="chapter-title">Chương {{$chapter->number}}:</h1>
+                <div class="md-form">
+                    <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
+                        name="name" value="{{$chapter->name}}" required autofocus> @if ($errors->has('name'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('name') }}</strong>
+                    </span>
+                    @endif
+                    <label for="name">Tên chương truyện</label>
+                </div>
 
+                <ul class="list-info list-unstyled">
+                    <li><a href="{{route('view_story',$chapter->story->getRouteKeyName())}}"><i class="fas fa-book mr-1"></i>{{$chapter->story->title}}</a></li>
+                    <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-fancy mr-1"></i>{{$chapter->story->author}}</a></li>
+                    <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-user-ninja mr-1"></i>{{$chapter->user->username}}</a></li>
+                    <li><i class="far fa-eye mr-1"></i>{{$chapter->getViews()}} lượt</li>
+                    <li><i class="far fa-clock mr-1"></i>{{$chapter->updated_at}}</li>
+                </ul>
 
-            @if($chapter->name !== 'None')
-            {!!$chapter->content!!}
-            @else
-            Nội dung chương chưa được cập nhật
-            @endif
+                <div class="form-group">
+                    <label for="content">Nội dung chương truyện</label>
+                    <textarea id="content" class="form-control{{ $errors->has('content') ? ' is-invalid' : '' }}" name="content"
+                        required>{{$chapter->content}}</textarea>
+                    @if ($errors->has('content'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('content') }}</strong>
+                    </span>
+                    @endif
+                    <script>
+                        CKEDITOR.replace( 'content' );
+                    </script>
+                </div>
 
-            @if(auth()->check())
+                <div class="d-flex justify-content-end">
+                   
+                        <button type="submit" class="btn btn-grey z-depth-1a">Lưu</button>
+                    
+                </div>
+            </form>
 
-            <div class="d-flex justify-content-end">
-                @if(auth()->user()->id == $chapter->user_id || auth()->user()->admin_level > 0)
-                <a href="{{route('user.inline.chapter.edit', $chapter->getRouteKeyName())}}" class="btn btn-sm btn-black">Sửa</a>
-                @endif
-            </div>
-
-            @endif
-        </div>
-
-        <div class="d-flex justify-content-center">
-            @if($previous)
-            <a href="{{route('view_chapter',$previous->getRouteKeyName())}}">
-                <div class="btn btn-success">Chương trước</div>
-            </a>
-            @endif
-            <select name="chapter-pagination" class="mdb-select">
-                <option value="" disabled>Chọn chương mà bạn muốn</option>
-                @foreach($chapter->story->chaptersInverse as $chap)
-                <option value="{{route('view_chapter',$chap->getRouteKeyName())}}"
-                    {{$chap->id == $chapter->id ? 'selected disabled':''}}>{{'Chương '.
-                    $chap->number . ': '. str_limit($chap->name,10)}}</option>
-                @endforeach
-            </select>
-            @if($next)
-            <a href="{{route('view_chapter',$next->getRouteKeyName())}}">
-                    <div class="btn btn-success">Chương sau</div>
-                </a>
-            @endif
+            {{-- <div class="d-flex justify-content-end">
+                <a href="{{route('user.chapter.edit_inline', $chapter->id)}}" class="btn btn-sm btn-black">Sửa</a>
+            </div> --}}
         </div>
     </div>
 </div>
@@ -140,30 +141,30 @@
 </script> --}}
 
 
-    {{--<div class="media mt-4 mb-2 px-1">--}}
+{{--<div class="media mt-4 mb-2 px-1">--}}
     {{--<img class="card-img-100 d-flex z-depth-1 mr-3" src="{{$chapter->story->image}}" alt="{{$chapter->story->title}}">--}}
     {{--<div class="media-body">--}}
-    {{--<a class="text blue-text h2-responsive" href="#">{{$chapter->story->title}}</a>--}}
-    {{--<p>(Đang cập nhật)</p>--}}
+        {{--<a class="text blue-text h2-responsive" href="#">{{$chapter->story->title}}</a>--}}
+        {{--<p>(Đang cập nhật)</p>--}}
 
-    {{--<a class="fb-ic mr-3"><i class="fab fa-facebook-square"></i></a>--}}
+        {{--<a class="fb-ic mr-3"><i class="fab fa-facebook-square"></i></a>--}}
 
-    {{--<a class="tw-ic mr-3"><i class="fab fa-twitter-square"> </i></a>--}}
+        {{--<a class="tw-ic mr-3"><i class="fab fa-twitter-square"> </i></a>--}}
 
-    {{--<a class="gplus-ic mr-3"><i class="fab fa-google-plus-square"></i></a>--}}
+        {{--<a class="gplus-ic mr-3"><i class="fab fa-google-plus-square"></i></a>--}}
+        {{--</div>--}}
     {{--</div>--}}
-    {{--</div>--}}
-    {{--<div class="detail mb-4">--}}
+{{--<div class="detail mb-4">--}}
     {{--<i class="font-weight-bold">Chương {{$chapter->number}}: {{$chapter->name}}</i>--}}
     {{--
     <hr class="between-sections mt-0">--}}
     {{--<p class="text-left">--}}
-    {{--@if($chapter->name !== 'None')--}}
-    {{--{!!$chapter->content!!}--}}
-    {{--@else--}}
-    {{--Nội dung chương chưa được cập nhật--}}
-    {{--@endif--}}
-    {{--</p>--}}
+        {{--@if($chapter->name !== 'None')--}}
+        {{--{!!$chapter->content!!}--}}
+        {{--@else--}}
+        {{--Nội dung chương chưa được cập nhật--}}
+        {{--@endif--}}
+        {{--</p>--}}
 
     {{--</div>--}}
 
@@ -171,11 +172,6 @@
 
 @section('scripts')
 <script>
-    // Material Select Initialization
-    $(document).ready(function () {
-        $('.mdb-select').material_select();
-    });
-
     $(function () {
         let width_bar = $('.width-bar');
         let show_text = width_bar.find('.show-text');
@@ -204,11 +200,6 @@
                 localStorage.setItem('chapter-width', w);
                 current_chap_width = w;
             });
-
-        let pagination = $('select[name="chapter-pagination"]');
-        pagination.change(function () {
-            window.location.replace($(this).val());
-        });
     });
 </script>
 @endsection

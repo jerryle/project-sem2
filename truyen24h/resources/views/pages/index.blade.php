@@ -1,5 +1,6 @@
 @extends('layouts.master')
-
+@section('title', 'Đọc truyện thỏa thích')
+@section('description', 'Đọc truyện online, đọc truyện chữ 24h, truyện hay')
 @section('content')
 <div class="container">
 
@@ -95,7 +96,7 @@
                             </td>
                             <td class="genre">
                                 @if(count($story->chapters) > 0)
-                                <span class="genre flex-shrink-1">Chương {{$story->chapters()->first()->number}}</span>
+                                <a href="{{route('view_chapter',$story->chapters()->first()->getRouteKeyName())}}"><span class="genre flex-shrink-1">Chương {{$story->chapters()->first()->number}}</span></a>
                                 @endif
                             </td>
                             <td class="author">{{$story->author}}</td>

@@ -79,8 +79,12 @@ class ChapterController extends Controller
         $chapter = Chapter::findBySlugOrFail($id);
         $story = Story::findOrFail($chapter->story_id);
         $story->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
-        $chapter->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
-        return view('pages.chapter')->with('chapter', $chapter);
+        $chapter->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));   
+
+        $previous = $chapter->story->chaptersInverse->where('number', '<', $chapter->number)->last();
+        $next = $chapter->story->chaptersInverse->where('number', '>', $chapter->number)->first();
+
+        return view('pages.chapter', compact('chapter', 'previous', 'next'));
     }
 
     /**
@@ -106,9 +110,7 @@ class ChapterController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:191|min:5',
-            'content' => 'required|min:100',
-            'story_id' => 'required|exists:stories,id',
-            'number' => 'required|integer'
+            'content' => 'required|min:100'
             // 'image' => 'required|mimes:jpg,png,bmp,jpeg|between:1,7000',
         ]);
 
@@ -124,7 +126,7 @@ class ChapterController extends Controller
         //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
         // }
         $chapter->save();
-        return redirect()->route('admin.chapter.index')->with('success','Chương mới đã được đăng thành công!');
+        return redirect()->route('admin.chapter.index')->with('success','Đã cập nhật chương truyện thành công!');
     }
 
     /**
