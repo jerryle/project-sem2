@@ -21,7 +21,7 @@
                 {{-- </div> --}}
         </div>
         <div class="card-body mx-4 mt-4">
-            <form action="{{route('admin.chapter.update')}}" method="POST">
+            <form action="{{route('admin.chapter.update', $chapter->id)}}" method="POST">
                 @method('PUT')
                 @csrf
                 <div class="md-form">
