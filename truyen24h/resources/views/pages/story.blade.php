@@ -100,7 +100,7 @@
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <p>
                                     @if($story->details != 'None')
-                                        {{$story->details}}
+                                        {!!$story->details!!}
                                     @else
                                         Chưa có nội dung
                                     @endif
