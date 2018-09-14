@@ -81,7 +81,7 @@
                         <strong>{{ $errors->first('genres') }}</strong>
                     </span>
                     @endif
-                    <label for="genres">Label example</label>
+                    <label for="genres">Thể loại truyện</label>
                 </div>
 
                 {{--

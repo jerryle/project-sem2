@@ -57,7 +57,7 @@
                     <label for="details">Thông tin truyện</label>
                 </div>
 
-                <div class="form-group">
+                <div class="md-form">
                     
                     <select name="genres[]" id="genres" class="mdb-select{{ $errors->has('genres') ? ' is-invalid' : '' }}"
                         multiple>
@@ -77,7 +77,7 @@
                         <strong>{{ $errors->first('genres') }}</strong>
                     </span>
                     @endif
-                    <label for="genres">Label example</label>
+                    <label for="genres">Thể loại truyện</label>
                 </div>
 
                 <div class="md-form">
