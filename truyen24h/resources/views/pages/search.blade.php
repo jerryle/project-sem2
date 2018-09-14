@@ -42,8 +42,7 @@
                                                     <span>{{$story->author}} </span>
                                                     <em> | </em>
                                                     @if(count($story->genres) > 0)
-                                                        <span>
-                                                            class="genre flex-shrink-1"> {{$story->genres->first()->name}} </span>
+                                                        <span class="genre flex-shrink-1"> {{$story->genres->first()->name}} </span>
                                                         <em> | </em>
                                                     @endif
                                                     <span>{{count($story->chapters)}} chương</span>
