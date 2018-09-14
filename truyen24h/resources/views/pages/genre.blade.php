@@ -21,10 +21,10 @@
 
                                     <!--Grid column-->
                                     <div class="story-info-box col-md-9 table-responsive-sm">
-                                        <p><a class="green-text h4-responsive" href="#">{{$story->title}}</a>
-                                            <strong class="mr-2 ml-2"> - </strong> Tác giả: {{$story->author}}
+                                    <p><a class="green-text h4-responsive" href="{{route('view_story',$story->getRouteKeyName())}}">{{$story->title}}</a>
+                                            
                                         </p>
-                                        <p><i class="fas fa-pen mr-1"></i> {{$story->user->username}} <em>|</em> <i
+                                        <p>Tác giả: {{$story->author}} <em>|</em> <i class="fas fa-pen mr-1"></i> {{$story->user->username}} <em>|</em> <i
                                                 class="far fa-clock mr-1"></i>{{$story->updated_at}}</p>
 
                                         <ul class="nav lighten-4 py-0">
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="detail col-md-3 d-none d-lg-block" style="background: #a3a8ba; height: 400px">
+        <div class="detail col-md-3 d-none d-lg-block">
             <p class="mt-3">
             <h5><strong>Thể loại {{$genre->name}}</strong></h5>
             {!! $genre->description !!}
