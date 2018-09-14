@@ -87,12 +87,12 @@
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                   aria-controls="home" aria-selected="true"  style="background: #f7f7f7"><h5
+                                   aria-controls="home" aria-selected="true" style="background: #f7f7f7"><h5
                                         class="text blue-text h5-responsive mt-1">Giới Thiệu </h5></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                   aria-controls="profile" aria-selected="false"  style="background: #f7f7f7"><h5
+                                   aria-controls="profile" aria-selected="false" style="background: #f7f7f7"><h5
                                         class="text blue-text h5-responsive mt-1">Danh Sách Chương</h5></a>
                             </li>
                         </ul>
@@ -106,7 +106,8 @@
                                     @endif
                                 </p>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"  style="background: #eaeaea">
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"
+                                 style="background: #eaeaea">
                                 <div class="list-group list-group-flush">
                                     @foreach($chapters as $chapter)
                                         <a href="{{route('view_chapter',$chapter->getRouteKeyName())}}"
@@ -301,7 +302,10 @@
                     </div>
                 </div>
             </section>
+            {{--<div>--}}
 
+
+            {{--</div>--}}
         </div>
     </div>
 
