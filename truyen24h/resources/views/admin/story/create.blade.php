@@ -44,7 +44,7 @@
 
                 <div class="md-form">
                     <input id="image" type="text" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
-                name="image" value="{{old('image')}}" required> @if ($errors->has('image'))
+                        name="image" value="{{old('image')}}" required> @if ($errors->has('image'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('image') }}</strong>
                     </span>
@@ -54,13 +54,16 @@
 
                 <div class="form-group">
                     <label for="details">Thông tin truyện</label>
-                    <textarea id="details" class="form-control{{ $errors->has('details') ? ' is-invalid' : '' }}"
-                        name="details" required>{{old('details')}}</textarea>
+                    <textarea id="details" class="form-control{{ $errors->has('details') ? ' is-invalid' : '' }}" name="details"
+                        required>{{old('details')}}</textarea>
                     @if ($errors->has('details'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('details') }}</strong>
                     </span>
                     @endif
+                    <script>
+                        CKEDITOR.replace( 'details' );
+                    </script>
                 </div>
 
                 <div>
