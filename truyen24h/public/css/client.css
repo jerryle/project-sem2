@@ -435,3 +435,19 @@ p {
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     border-bottom-color:#2196f3!important;
 }
+
+/* Reponsive */
+
+@media only screen and (max-width: 400px){
+    .story_full .row .col-md-3 {
+        height: 100px;
+    }
+
+    .story_full .story-title {
+        font-size:10px;
+    }
+
+    .story_update span {
+        font-size: 12px;
+    }
+}

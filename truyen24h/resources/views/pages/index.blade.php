@@ -84,7 +84,7 @@
                     <tbody>
                         @foreach($updatedStories as $story)
                         <tr>
-                            <td class="genre">
+                            <td class="genre d-none d-md-table-cell">
                                 @if(count($story->genres) > 0)
                                 <a href="{{route('view_genre',$story->genres()->first()->getRouteKeyName())}}"><span class="genre flex-shrink-1">{{$story->genres->first()->name}}</span></a>
                                 @endif
@@ -99,8 +99,8 @@
                                 <a href="{{route('view_chapter',$story->chapters()->first()->getRouteKeyName())}}"><span class="genre flex-shrink-1">Chương {{$story->chapters()->first()->number}}</span></a>
                                 @endif
                             </td>
-                            <td class="author">{{$story->author}}</td>
-                            <td class="text-right genre">{{$story->updated_at}}</td>
+                            <td class="author d-none d-sm-table-cell">{{$story->author}}</td>
+                            <td class="text-right genre d-none d-lg-table-cell">{{$story->updated_at}}</td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -148,7 +148,7 @@
             </a>
         </div>
         <hr class="between-sections mt-0">
-        <div class="row justify-content-left js-equal-height">
+        <div class="row justify-content-left">
             @foreach($stories as $story)
             <div class="col-lg-2 col-md-3 col-xs-4 col-6">
                 <a href="{{route('view_story',$story->getRouteKeyName())}}">
