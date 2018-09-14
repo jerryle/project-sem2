@@ -51,7 +51,8 @@
                     <label for="image">Ảnh bìa</label>
                 </div>
 
-                <div class="md-form">
+                <div class="form-group">
+                    <label for="details">Thông tin truyện</label>
                     <textarea id="details" class="form-control{{ $errors->has('details') ? ' is-invalid' : '' }}" name="details"
                         required>{{$story->details}}</textarea>
                     @if ($errors->has('details'))
@@ -59,7 +60,6 @@
                         <strong>{{ $errors->first('details') }}</strong>
                     </span>
                     @endif
-                    <label for="details">Thông tin truyện</label>
                     <script>
                         CKEDITOR.replace( 'details' );
                     </script>
