@@ -108,7 +108,7 @@ class StoryController extends Controller
             'title' => 'required|max:191|min:10',
             'details' => 'required|min:3|max:1024',
             'author' => 'required|min:3|max:128',
-            'image' => 'required',
+            'genres' => 'required|exists:genres,id',
         ]);
 
         $story = Story::findOrFail($id);

@@ -68,8 +68,8 @@
                     @endif
 
                 </div>
-                <div class="form-group">
-                    <label for="genres">Label example</label>
+                <div class="md-form">
+        
                     <select name="genres[]" id="genres" class="mdb-select{{ $errors->has('genres') ? ' is-invalid' : '' }}" multiple>
                         <option value="" disabled selected>Chọn thể loại truyện</option>
                         @foreach($genres as $genre)
@@ -81,6 +81,7 @@
                         <strong>{{ $errors->first('genres') }}</strong>
                     </span>
                     @endif
+                    <label for="genres">Label example</label>
                 </div>
 
                 {{--
