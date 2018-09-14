@@ -79,12 +79,12 @@
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
-                                   aria-controls="description" aria-selected="true"  style="background: #f7f7f7"><h5
+                                   aria-controls="home" aria-selected="true"  style="background: #f7f7f7"><h5
                                         class="text blue-text h5-responsive mt-1">Giới Thiệu </h5></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="chapter-list-tab" data-toggle="tab" href="#chapter-list-list" role="tab"
-                                   aria-controls="chapter-list" aria-selected="false"  style="background: #f7f7f7"><h5
+                                <a class="nav-link" id="chapter-tab" data-toggle="tab" href="#chapter-list" role="tab"
+                                   aria-controls="profile" aria-selected="false"  style="background: #f7f7f7"><h5
                                         class="text blue-text h5-responsive mt-1">Danh Sách Chương</h5></a>
                             </li>
                         </ul>
@@ -98,7 +98,7 @@
                                     @endif
                                 </p>
                             </div>
-                            <div class="tab-pane fade" id="chapter-list" role="tabpanel" aria-labelledby="chapter-list-tab"  style="background: #eaeaea">
+                            <div class="tab-pane fade" id="chapter-list" role="tabpanel" aria-labelledby="chapter-tab"  style="background: #eaeaea">
                                 <div class="list-group list-group-flush">
                                     @foreach($chapters as $chapter)
                                         <a href="{{route('view_chapter',$chapter->getRouteKeyName())}}"
