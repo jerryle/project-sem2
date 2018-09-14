@@ -59,9 +59,16 @@
                         <p class="item">Lượt Theo Dõi: 0</p>
 
                     </div>
-                    <div class="btn btn-rounded btn-sm btn-danger"><i class="fa fa-heart mr-1"></i>Theo
-                        Dõi
+
+                    <div class="d-flex justify-content-start">
+
+                        <a href="{{route('view_chapter',$story->chaptersInverse()->first()->getRouteKeyName())}}">
+                            <div class="btn btn-rounded btn-sm btn-info">Đọc Từ Đầu</div>
+                        </a>
+                        <div class="btn btn-rounded btn-sm btn-danger"><i class="fa fa-heart mr-1"></i>Theo Dõi
+                        </div>
                     </div>
+                    
                 </div>
                 <!--Grid column-->
 
