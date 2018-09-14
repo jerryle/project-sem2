@@ -201,7 +201,7 @@ ul {
     font-size: 14px;
 }
 
-.list-stories .story-info-box p.author em {
+em {
     font-family: 'Arial';
     float: left;
     margin: 1px 8px 0;
