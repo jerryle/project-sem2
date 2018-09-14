@@ -26,76 +26,65 @@
 @endsection
 @section('content')
 <div class="row">
+    <div class="col-xs-12">
 
-
-    <div class="container px-5 chapter-detail">
-        {{-- <div class="media text-center text-lg-center">
-            <div class="media-body">
-                <a class="purple-text h2-responsive" href="#">{{$chapter->story->title}}</a>
-                <p>
-                    <strong>Chương {{$chapter->number}}: {{$chapter->name}}</strong>
-                </p>
-                <p>
-                    Người đăng: <a href="#" class="text green-text">{{$chapter->user->username}}</a> - Lượt xem:
-                    {{$chapter->getViews()}}
-                </p>
+        <div class="container px-5 chapter-detail">
+            <div class="width-bar">
+                <div class="w1140">1140</div>
+                <div class="w960">960</div>
+                <div class="w720">720</div>
+                <span class="show-text" style="display: none;"></span>
             </div>
-        </div> --}}
 
-        <div class="width-bar">
-            <div class="w1140">1140</div>
-            <div class="w960">960</div>
-            <div class="w720">720</div>
-            <span class="show-text" style="display: none;"></span>
-        </div>
-
-        <div id="id_chap_content" class="p-5 wiki-content w1140">
-            <h1 class="chapter-title">Chương {{$chapter->number}}: {{$chapter->name}}</h1>
-            <ul class="list-info list-unstyled">
-                <li><a href="{{route('view_story',$chapter->story->getRouteKeyName())}}"><i class="fas fa-book mr-1"></i>{{$chapter->story->title}}</a></li>
-                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-fancy mr-1"></i>{{str_limit($chapter->story->author,15)}}</a></li>
-                <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-user-ninja mr-1"></i>{{$chapter->user->username}}</a></li>
-                <li><i class="far fa-eye mr-1"></i>{{$chapter->getViews()}} lượt</li>
-                <li><i class="far fa-clock mr-1"></i>{{$chapter->updated_at}}</li>
-            </ul>
+            <div id="id_chap_content" class="p-5 wiki-content w1140">
+                <h1 class="chapter-title">Chương {{$chapter->number}}: {{$chapter->name}}</h1>
+                <ul class="list-info list-unstyled">
+                    <li><a href="{{route('view_story',$chapter->story->getRouteKeyName())}}"><i class="fas fa-book mr-1"></i>{{$chapter->story->title}}</a></li>
+                    <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-pen-fancy mr-1"></i>{{str_limit($chapter->story->author,15)}}</a></li>
+                    <li><a href="/tac-gia/nhat-nhi-01/"><i class="fas fa-user-ninja mr-1"></i>{{$chapter->user->username}}</a></li>
+                    <li><i class="far fa-eye mr-1"></i>{{$chapter->getViews()}} lượt</li>
+                    <li><i class="far fa-clock mr-1"></i>{{$chapter->updated_at}}</li>
+                </ul>
 
 
-            @if($chapter->name !== 'None')
-            {!!$chapter->content!!}
-            @else
-            Nội dung chương chưa được cập nhật
-            @endif
+                @if($chapter->name !== 'None')
+                {!!$chapter->content!!}
+                @else
+                Nội dung chương chưa được cập nhật
+                @endif
 
-            @if(auth()->check())
+                @if(auth()->check())
 
-            <div class="d-flex justify-content-end">
-                @if(auth()->user()->id == $chapter->user_id || auth()->user()->admin_level > 0)
-                <a href="{{route('user.inline.chapter.edit', $chapter->getRouteKeyName())}}" class="btn btn-sm btn-black">Sửa</a>
+                <div class="d-flex justify-content-end">
+                    @if(auth()->user()->id == $chapter->user_id || auth()->user()->admin_level > 0)
+                    <a href="{{route('user.inline.chapter.edit', $chapter->getRouteKeyName())}}" class="btn btn-sm btn-black">Sửa</a>
+                    @endif
+                </div>
+
                 @endif
             </div>
 
-            @endif
-        </div>
-
-        <div class="d-flex justify-content-center">
-            @if($previous)
-            <a href="{{route('view_chapter',$previous->getRouteKeyName())}}">
-                <div class="btn btn-success">Chương trước</div>
-            </a>
-            @endif
-            <select name="chapter-pagination" class="mdb-select">
-                <option value="" disabled>Chọn chương mà bạn muốn</option>
-                @foreach($chapter->story->chaptersInverse as $chap)
-                <option value="{{route('view_chapter',$chap->getRouteKeyName())}}"
-                    {{$chap->id == $chapter->id ? 'selected disabled':''}}>{{'Chương '.
-                    $chap->number . ': '. str_limit($chap->name,10)}}</option>
-                @endforeach
-            </select>
-            @if($next)
-            <a href="{{route('view_chapter',$next->getRouteKeyName())}}">
+            <div class="btn-group d-flex justify-content-center">
+                @if($previous)
+                <a href="{{route('view_chapter',$previous->getRouteKeyName())}}">
+                    <div class="btn btn-success">Chương trước</div>
+                </a>
+                @endif
+                <select name="chapter-pagination" class="mdb-select">
+                    <option value="" disabled>Chọn chương mà bạn muốn</option>
+                    @foreach($chapter->story->chaptersInverse as $chap)
+                    <option value="{{route('view_chapter',$chap->getRouteKeyName())}}"
+                        {{$chap->id == $chapter->id ? 'selected disabled':''}}>{{'Chương '.
+                        $chap->number . ': '. str_limit($chap->name,10)}}</option>
+                    @endforeach
+                </select>
+                @if($next)
+                <a href="{{route('view_chapter',$next->getRouteKeyName())}}">
                     <div class="btn btn-success">Chương sau</div>
                 </a>
-            @endif
+                @endif
+            </div>
+
         </div>
     </div>
 </div>
@@ -204,6 +193,13 @@
                 localStorage.setItem('chapter-width', w);
                 current_chap_width = w;
             });
+
+        // $(window).resize(function () {
+        //     var width = $(window).width();
+        //     if (width < 1200) {
+        //         alert('Your screen is too small');
+        //     }
+        // });
 
         let pagination = $('select[name="chapter-pagination"]');
         pagination.change(function () {
