@@ -86,7 +86,7 @@
                         <tr>
                             <td class="genre">
                                 @if(count($story->genres) > 0)
-                                <span class="genre flex-shrink-1">{{$story->genres->first()->name}}</span>
+                                <a href="{{route('view_genre',$story->genres()->first()->getRouteKeyName())}}"><span class="genre flex-shrink-1">{{$story->genres->first()->name}}</span></a>
                                 @endif
                             </td>
                             <td>
@@ -124,7 +124,7 @@
 
                     @foreach ($genres as $genre)
                     <div class="col-xs-6 col-6 py-2">
-                        <a href="{{$genre->getRouteKeyName()}}" title="{{$genre->name}}">{{$genre->name}}</a>
+                        <a href="{{route('view_genre',$genre->getRouteKeyName())}}" title="{{$genre->name}}">{{$genre->name}}</a>
                     </div>
                     @endforeach
 

@@ -9,6 +9,7 @@ use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 class Genre extends Model
 {
     use Sluggable;
+    use SluggableScopeHelpers;
 
     /**
      * Return the sluggable configuration array for this model.
@@ -26,7 +27,7 @@ class Genre extends Model
 
     public function stories()
     {
-        return $this->belongsToMany('Truyen24h\Story');
+        return $this->belongsToMany('Truyen24h\Story', 'story_genre', 'genre_id', 'story_id');
     }
 
     public function getRouteKeyName()

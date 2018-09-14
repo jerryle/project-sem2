@@ -201,9 +201,9 @@ ul {
     font-size: 14px;
 }
 
-.list-stories .story-info-box p.author em {
+em {
     font-family: 'Arial';
-    float: left;
+    /* float: left; */
     margin: 1px 8px 0;
     color: #e6e6e6;
 }
@@ -430,4 +430,8 @@ p {
 .chapter-detail .user-box .numbers b {
     display: block;
     color: #09bb07
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-bottom-color:#2196f3!important;
 }

@@ -18,11 +18,12 @@ Route::get('/', 'HomeController@index')->name('index');
 Auth::routes();
 
 Route::get('/test', function () {
-    return view('pages.profile');
+    return view('pages.genre');
 });
 
 Route::get('/truyen/{slug}', 'StoryController@show')->name('view_story');
 Route::get('/doc-truyen/{slug}', 'ChapterController@show')->name('view_chapter');
+Route::get('/the-loai/{slug}', 'GenreController@show')->name('view_genre');
 
 Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'admin'], function () {
     Route::get('/', function() {

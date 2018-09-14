@@ -50,7 +50,7 @@ class Story extends Model
 
     public function genres()
     {
-        return $this->belongsToMany('Truyen24h\Genre', 'story_genre');
+        return $this->belongsToMany('Truyen24h\Genre', 'story_genre', 'story_id', 'genre_id');
     }
 
     public function user()
