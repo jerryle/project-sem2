@@ -29,8 +29,8 @@
         height: 32px;
         text-align: center;
         line-height: 30px;
-        background: #f5f5f5;
-        color: #444;
+        background: #000;
+        color: #fff;
         cursor: pointer;
         border: 0;
         border-radius: 2px;
