@@ -9,6 +9,7 @@ use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 class Genre extends Model
 {
     use Sluggable;
+    use SluggableScopeHelpers;
 
     /**
      * Return the sluggable configuration array for this model.
