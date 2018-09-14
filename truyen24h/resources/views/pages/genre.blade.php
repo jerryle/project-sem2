@@ -10,7 +10,7 @@
                     <ul>
                         @foreach($genre->stories as $story)
                             <li>
-                                <div class="row py-3 justify-content-center">
+                                <div class="row justify-content-center">
                                     <!--Grid column-->
                                     <div class="col-md-3 table-responsive-sm">
                                         <!--Featured image-->
