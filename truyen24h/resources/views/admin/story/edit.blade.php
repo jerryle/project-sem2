@@ -64,7 +64,7 @@
                         <option value="" disabled selected>Chọn thể loại truyện</option>
                         @if(count($story->genres) > 0)
                         @foreach($genres as $genre)
-                        <option value="{{$genre->id}}" {{$story->genres()->pivot->id == $genre->id ? 'selected' : ''}}>{{$genre->name}}</option>
+                        <option value="{{$genre->id}}" {{$genre->stories()->pivot->story_id == $story->id ? 'selected' : ''}}>{{$genre->name}}</option>
                         @endforeach
                         @else
                         @foreach($genres as $genre)
