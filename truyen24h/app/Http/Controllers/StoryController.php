@@ -46,7 +46,7 @@ class StoryController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|max:191|min:10|unique:stories',
-            'details' => 'required|min:3|max:500',
+            'details' => 'required|min:3|max:2048',
             'author' => 'required|min:3|max:128',
             'genres' => 'required|exists:genres,id',
             // 'image' => 'required|mimes:jpg,png,bmp,jpeg|between:1,7000',
@@ -106,7 +106,7 @@ class StoryController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|max:191|min:10',
-            'details' => 'required|min:3|max:1024',
+            'details' => 'required|min:3|max:2048',
             'author' => 'required|min:3|max:128',
             'genres' => 'required|exists:genres,id',
         ]);
