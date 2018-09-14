@@ -49,7 +49,7 @@ class StoryController extends Controller
             'details' => 'required|min:3|max:2048',
             'author' => 'required|min:3|max:128',
             'genres' => 'required|exists:genres,id',
-            // 'image' => 'required|mimes:jpg,png,bmp,jpeg|between:1,7000',
+            'image' => 'required',
         ]);
 
         $story = new Story;
@@ -109,6 +109,7 @@ class StoryController extends Controller
             'details' => 'required|min:3|max:2048',
             'author' => 'required|min:3|max:128',
             'genres' => 'required|exists:genres,id',
+            'image' => 'required',
         ]);
 
         $story = Story::findOrFail($id);

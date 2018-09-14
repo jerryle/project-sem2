@@ -42,6 +42,16 @@
                 </div>
 
                 <div class="md-form">
+                    <input id="image" type="text" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
+                        name="image" required> @if ($errors->has('image'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('image') }}</strong>
+                    </span>
+                    @endif
+                    <label for="image">Ảnh bìa</label>
+                </div>
+
+                <div class="md-form">
                     <textarea id="details" class="ckeditor form-control{{ $errors->has('details') ? ' is-invalid' : '' }}"
                         name="details" required>{{$story->details}}</textarea>
                     @if ($errors->has('details'))
@@ -57,8 +67,9 @@
                         multiple searchable="Tìm ở đây..">
                         <option value="" disabled selected>Chọn thể loại truyện</option>
                         @if(count($story->genres) > 0)
-                        @foreach($genres as $genre)  
-                            <option value="{{$genre->id}}" {{$genre->stories->contains($story->id) == $story->id ? 'selected' : ''}}>{{$genre->name}}</option>
+                        @foreach($genres as $genre)
+                        <option value="{{$genre->id}}"
+                            {{$genre->stories->contains($story->id) == $story->id ? 'selected' : ''}}>{{$genre->name}}</option>
                         @endforeach
                         @else
                         @foreach($genres as $genre)
