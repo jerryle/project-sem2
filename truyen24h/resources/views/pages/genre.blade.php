@@ -1,4 +1,10 @@
 @extends('layouts.master2', ['search' => isset($s) ? $s : ''])
+@section('title')
+    {{'Thể loại '.$genre->name.' '}}
+@endsection
+@section('description')
+{{'Danh sách truyện thể loại '.$genre->name.' '}}
+@endsection
 @section('content')
     <div class="row">
         <div class="col-md-9">
