@@ -89,7 +89,7 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-                                <p>
+                                <p class="h4-responsive black-text">
                                     @if($story->details != 'None')
                                         {!!$story->details!!}
                                     @else
