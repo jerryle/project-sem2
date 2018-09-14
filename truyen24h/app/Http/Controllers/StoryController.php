@@ -78,7 +78,7 @@ class StoryController extends Controller
         // $story->save();
         $story->addViewWithExpiryDate(\Carbon\Carbon::now()->addHours(1));
 
-        $chapters = $story->chapters()->orderBy('number','asc')->get()->paginate(40);
+        $chapters = $story->chapters()->orderBy('number','asc')->get();
         
         return view('pages.story', compact('story', 'chapters'));
     }
