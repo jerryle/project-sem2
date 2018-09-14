@@ -21,7 +21,7 @@
                     <p><a class="green-text h4-responsive" href="#">{{$story->title}}</a>
                         <strong class="mr-2 ml-2"> - </strong> Tác giả: {{$story->author}}
                     </p>
-                    <p><i class="fas fa-pen mr-1"></i> {{$story->user->username}} <em>|</em> <i class="far fa-clock mr-1">/i>{{$story->updated_at}}</p><
+                    <p><i class="fas fa-pen mr-1"></i> {{$story->user->username}} <em>|</em> <i class="far fa-clock mr-1"></i>{{$story->updated_at}}</p>
 
                     <ul class="nav lighten-4 py-0">
                         <li class="nav-item">
@@ -46,7 +46,7 @@
             @endforeach
         </div>
     </div>
-    <div class="detail col-md-3" style="background: #a3a8ba;">
+    <div class="detail col-md-3" style="background: #a3a8ba">
         <p class="mt-3">
             <h5><strong>Thể loại {{$genre->name}}</strong></h5>
             {!! $genre->description !!}
