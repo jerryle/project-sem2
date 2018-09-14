@@ -53,26 +53,18 @@
                         {{--@endif--}}
                         {{--</p>--}}
                         {{--<a mdbBtn color="success" class="mb-3 waves-light">Read more ... </a>--}}
-                        <ul class="nav lighten-4 py-4">
-                            <li class="nav-item">
-                                <p class="item">Xem: <strong>{{$story->getViews()}}</strong></p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="mr-2 ml-2"> | </p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="item">Số Chương: </p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="mr-2 ml-2"> | </p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="item">Lượt Theo Dõi: </p>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-rounded btn-sm btn-danger"><i class="fa fa-heart mr-1"></i>Theo
+                        <div class="d-flex justify-content-start lighten-4 py-4">
+                            
+                            <p class="item">Xem: <strong>{{$story->getViews()}}</strong></p>
+                            <em> | </em>
+                            <p class="item">Số Chương: <strong>{{count($story->chapters)}}</strong></p>
+                            <em> | </em>
+                            <p class="item">Lượt Theo Dõi: 0</p>
+                            
+                        </div>
+                        <div class="btn btn-rounded btn-sm btn-danger"><i class="fa fa-heart mr-1"></i>Theo
                             Dõi
-                        </button>
+                        </div>
                     </div>
                     <!--Grid column-->
 
@@ -86,18 +78,18 @@
 
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                   aria-controls="home" aria-selected="true"  style="background: #f7f7f7"><h5
+                                <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
+                                   aria-controls="description" aria-selected="true"  style="background: #f7f7f7"><h5
                                         class="text blue-text h5-responsive mt-1">Giới Thiệu </h5></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                   aria-controls="profile" aria-selected="false"  style="background: #f7f7f7"><h5
+                                <a class="nav-link" id="chapter-list-tab" data-toggle="tab" href="#chapter-list-list" role="tab"
+                                   aria-controls="chapter-list" aria-selected="false"  style="background: #f7f7f7"><h5
                                         class="text blue-text h5-responsive mt-1">Danh Sách Chương</h5></a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
                                 <p>
                                     @if($story->details != 'None')
                                         {!!$story->details!!}
@@ -106,7 +98,7 @@
                                     @endif
                                 </p>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"  style="background: #eaeaea">
+                            <div class="tab-pane fade" id="chapter-list" role="tabpanel" aria-labelledby="chapter-list-tab"  style="background: #eaeaea">
                                 <div class="list-group list-group-flush">
                                     @foreach($chapters as $chapter)
                                         <a href="{{route('view_chapter',$chapter->getRouteKeyName())}}"
