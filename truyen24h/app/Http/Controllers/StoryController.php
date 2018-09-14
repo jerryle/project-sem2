@@ -57,6 +57,7 @@ class StoryController extends Controller
         $story->details = $request->details;
         $story->user_id = auth()->user()->id;
         $story->author = $request->author;
+        $story->image = $request->image;
  
         if($story->save()) {
             $story->genres()->attach($request->genres);
@@ -119,17 +120,6 @@ class StoryController extends Controller
         $story->author = $request->author;
         $story->image = $request->image;
 
-    
-        
-
-        
-        // if ($request->hasFile('image')) {
-        //     //get name image
-        //     $filename = Carbon\Carbon::now();
-        //     $story->image = $filename;
-        //     //upload image
-        //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
-        // }
         if($story->save()) {
             $story->genres()->detach();
             $story->genres()->attach($request->genres);
