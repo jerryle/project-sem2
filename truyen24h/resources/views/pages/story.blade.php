@@ -37,7 +37,7 @@
                     </p>
                     <div class="d-flex justify-content-start">
                         @foreach($story->genres() as $sg)
-                        <a class="btn btn-outline-primary btn-rounded btn-sm waves-effect">{{$sg->name}}</a>
+                        <a class="btn btn-outline-primary btn-rounded btn-sm waves-effect">{{$sg->pivot->name}}</a>
                         @endforeach
                     </div>
 
