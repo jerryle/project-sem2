@@ -43,7 +43,7 @@
 
                 <div class="md-form">
                     <input id="image" type="text" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
-                        name="image" required> @if ($errors->has('image'))
+                name="image" value="{{$story->image}}" required> @if ($errors->has('image'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('image') }}</strong>
                     </span>
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="md-form">
-                    <textarea id="details" class="ckeditor form-control{{ $errors->has('details') ? ' is-invalid' : '' }}"
+                    <textarea id="details" class="form-control{{ $errors->has('details') ? ' is-invalid' : '' }}"
                         name="details" required>{{$story->details}}</textarea>
                     @if ($errors->has('details'))
                     <span class="invalid-feedback" role="alert">

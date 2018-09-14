@@ -24,7 +24,7 @@
                 @csrf
                 <div class="md-form">
                     <input id="title" type="text" class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}"
-                        name="title" required autofocus> @if ($errors->has('title'))
+                        name="title" value="{{old('title')}}" required autofocus> @if ($errors->has('title'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('title') }}</strong>
                     </span>
@@ -34,7 +34,7 @@
 
                 <div class="md-form">
                     <input id="author" type="text" class="form-control{{ $errors->has('author') ? ' is-invalid' : '' }}"
-                        name="author" required> @if ($errors->has('author'))
+                        name="author" value="{{old('author')}}" required> @if ($errors->has('author'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('author') }}</strong>
                     </span>
@@ -44,7 +44,7 @@
 
                 <div class="md-form">
                     <input id="image" type="text" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
-                        name="image" required> @if ($errors->has('image'))
+                name="image" value="{{old('image')}}" required> @if ($errors->has('image'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('image') }}</strong>
                     </span>
@@ -54,8 +54,8 @@
 
                 <div class="form-group">
                     <label for="details">Thông tin truyện</label>
-                    <textarea id="details" class="ckeditor form-control{{ $errors->has('details') ? ' is-invalid' : '' }}"
-                        name="details" required></textarea>
+                    <textarea id="details" class="form-control{{ $errors->has('details') ? ' is-invalid' : '' }}"
+                        name="details" required>{{old('details')}}</textarea>
                     @if ($errors->has('details'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('details') }}</strong>
