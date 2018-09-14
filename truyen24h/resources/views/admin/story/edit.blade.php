@@ -11,12 +11,7 @@
 </li>
 @endsection
 @section('header')
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js" defer></script>
-<script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js" defer></script>
-<script defer>
-    $('.ckeditor').ckeditor();
-    // $('.textarea').ckeditor(); // if class is prefered.
-</script>
+<script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 
 @endsection
 @section('content')
@@ -57,14 +52,13 @@
                     <label for="details">Thông tin truyện</label>
                 </div>
 
-                <div class="md-form">
-                    
-                    <select name="genres[]" id="genres" class="mdb-select{{ $errors->has('genres') ? ' is-invalid' : '' }}"
-                        multiple>
+                <div>
+                    <select name="genres[]" class="mdb-select colorful-select dropdown-primary{{ $errors->has('genres') ? ' is-invalid' : '' }}"
+                        multiple searchable="Tìm ở đây..">
                         <option value="" disabled selected>Chọn thể loại truyện</option>
                         @if(count($story->genres) > 0)
-                        @foreach($genres as $genre)
-                        <option value="{{$genre->id}}" {{$genre->stories()->pivot->story_id == $story->id ? 'selected' : ''}}>{{$genre->name}}</option>
+                        @foreach($genres as $genre)  
+                            <option value="{{$genre->id}}" {{$genre->stories->contains($story->id) == $story->id ? 'selected' : ''}}>{{$genre->name}}</option>
                         @endforeach
                         @else
                         @foreach($genres as $genre)
@@ -72,12 +66,12 @@
                         @endforeach
                         @endif
                     </select>
+                    {{-- <label>Thể loại truyện</label> --}}
                     @if ($errors->has('genres'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('genres') }}</strong>
                     </span>
                     @endif
-                    <label for="genres">Thể loại truyện</label>
                 </div>
 
                 <div class="md-form">
@@ -124,9 +118,9 @@
 @endsection
 @section('scripts')
 <script>
-// Material Select Initialization
-$(document).ready(function() {
-    $('.mdb-select').material_select();
-});
-    </script>
+    // Material Select Initialization
+    $(document).ready(function () {
+        $('.mdb-select').material_select();
+    });
+</script>
 @endsection
