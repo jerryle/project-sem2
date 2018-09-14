@@ -1,14 +1,18 @@
-@extends('layouts.admin.master', [ 'current_menu' => 'quan-ly', 'sub_current_menu' => 'story' ]) @section('button')
+@extends('layouts.admin.master', [ 'current_menu' => 'quan-ly', 'sub_current_menu' => 'story' ])
+@section('button')
 <li class="nav-item">
     <a class="nav-link" href="{{route('admin.genre.index')}}">
         <i class="fas fa-list-alt mr-1"></i>
         <span class="clearfix d-none d-sm-inline-block">Danh sách truyện</span>
     </a>
 </li>
-@endsection @section('header')
+@endsection
+@section('header')
 <script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 
-@endsection @section('content') {{--
+@endsection
+
+@section('content') {{--
 <section class="form-gradient"> --}}
     <div class="card">
         <div class="card-header unique-color-dark">
@@ -94,4 +98,12 @@
             </form>
         </div>
     </div>
-    {{-- </section> --}} @endsection
+    @endsection
+    @section('scripts')
+    <script>
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+        });
+    </script>
+    @endsection
