@@ -26,7 +26,7 @@ class Genre extends Model
 
     public function stories()
     {
-        return $this->belongsToMany('Truyen24h\Story');
+        return $this->belongsToMany('Truyen24h\Story', 'story_genre', 'genre_id', 'story_id');
     }
 
     public function getRouteKeyName()
