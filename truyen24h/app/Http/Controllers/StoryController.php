@@ -5,6 +5,7 @@ namespace Truyen24h\Http\Controllers;
 use Illuminate\Http\Request;
 use Truyen24h\Story;
 use Truyen24h\Chapter;
+use Truyen24h\Genre;
 
 class StoryController extends Controller
 {
@@ -31,7 +32,8 @@ class StoryController extends Controller
      */
     public function create()
     {
-        return view('admin.story.create');
+        $genres = Genre::all();
+        return view('admin.story.create', compact('genres'));
     }
 
     /**
@@ -44,9 +46,10 @@ class StoryController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|max:191|min:10|unique:stories',
-            'details' => 'required|min:3|max:500',
+            'details' => 'required|min:3|max:2048',
             'author' => 'required|min:3|max:128',
-            // 'image' => 'required|mimes:jpg,png,bmp,jpeg|between:1,7000',
+            'genres' => 'required|exists:genres,id',
+            'image' => 'required',
         ]);
 
         $story = new Story;
@@ -54,14 +57,11 @@ class StoryController extends Controller
         $story->details = $request->details;
         $story->user_id = auth()->user()->id;
         $story->author = $request->author;
-        // if ($request->hasFile('image')) {
-        //     //get name image
-        //     $filename = Carbon\Carbon::now();
-        //     $story->image = $filename;
-        //     //upload image
-        //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
-        // }
-        $story->save();
+        $story->image = $request->image;
+ 
+        if($story->save()) {
+            $story->genres()->attach($request->genres);
+        }
         return redirect()->route('admin.story.index')->with('success','Truyện mới đã được đăng thành công!');
     }
 
@@ -92,7 +92,8 @@ class StoryController extends Controller
     public function edit($id)
     {
         $story = Story::findOrFail($id);
-        return view('admin.story.edit')->with('story', $story);
+        $genres = Genre::all();
+        return view('admin.story.edit', compact('story', 'genres'));
     }
 
     /**
@@ -106,8 +107,9 @@ class StoryController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|max:191|min:10',
-            'details' => 'required|min:3|max:1024',
+            'details' => 'required|min:3|max:2048',
             'author' => 'required|min:3|max:128',
+            'genres' => 'required|exists:genres,id',
             'image' => 'required',
         ]);
 
@@ -117,14 +119,11 @@ class StoryController extends Controller
         // $story->user_id = auth()->user()->id;
         $story->author = $request->author;
         $story->image = $request->image;
-        // if ($request->hasFile('image')) {
-        //     //get name image
-        //     $filename = Carbon\Carbon::now();
-        //     $story->image = $filename;
-        //     //upload image
-        //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
-        // }
-        $story->save();
+
+        if($story->save()) {
+            $story->genres()->detach();
+            $story->genres()->attach($request->genres);
+        }
         return redirect()->route('admin.story.index')->with('success','Truyện đã được sửa thành công!');
     }
 

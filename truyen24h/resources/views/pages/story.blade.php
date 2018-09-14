@@ -35,14 +35,11 @@
                                 <strong class="blue-text">{{$story->author}}</strong>
                             </a>
                         </p>
-                        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm waves-effect">Huyền
-                            Huyễn
-                        </button>
-                        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm waves-effect">Tiên
-                            Hiệp
-                        </button>
-                        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm waves-effect">Dị Giới
-                        </button>
+                        <div class="d-flex justify-content-start">
+                            @foreach($story->genres as $sg)
+                                <a class="btn btn-outline-primary btn-rounded btn-sm waves-effect">{{$sg->name}}</a>
+                            @endforeach
+                        </div>
 
 
                         {{--<p>--}}
@@ -53,26 +50,18 @@
                         {{--@endif--}}
                         {{--</p>--}}
                         {{--<a mdbBtn color="success" class="mb-3 waves-light">Read more ... </a>--}}
-                        <ul class="nav lighten-4 py-4">
-                            <li class="nav-item">
-                                <p class="item">Xem: <strong>{{$story->getViews()}}</strong></p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="mr-2 ml-2"> | </p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="item">Số Chương: </p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="mr-2 ml-2"> | </p>
-                            </li>
-                            <li class="nav-item">
-                                <p class="item">Lượt Theo Dõi: </p>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-rounded btn-sm btn-danger"><i class="fa fa-heart mr-1"></i>Theo
+                        <div class="d-flex justify-content-start lighten-4 py-4">
+
+                            <p class="item">Xem: <strong>{{$story->getViews()}}</strong></p>
+                            <em> | </em>
+                            <p class="item">Số Chương: <strong>{{count($story->chapters)}}</strong></p>
+                            <em> | </em>
+                            <p class="item">Lượt Theo Dõi: 0</p>
+
+                        </div>
+                        <div class="btn btn-rounded btn-sm btn-danger"><i class="fa fa-heart mr-1"></i>Theo
                             Dõi
-                        </button>
+                        </div>
                     </div>
                     <!--Grid column-->
 
@@ -86,38 +75,39 @@
 
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                   aria-controls="home" aria-selected="true" style="background: #f7f7f7"><h5
-                                        class="text blue-text h5-responsive mt-1">Giới Thiệu </h5></a>
+                                <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
+                                   aria-controls="home" aria-selected="true" style="background: #f7f7f7">
+                                    <h5 class="text blue-text h5-responsive mt-1">Giới Thiệu </h5>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                   aria-controls="profile" aria-selected="false" style="background: #f7f7f7"><h5
-                                        class="text blue-text h5-responsive mt-1">Danh Sách Chương</h5></a>
+                                <a class="nav-link" id="chapter-tab" data-toggle="tab" href="#chapter-list" role="tab"
+                                   aria-controls="profile" aria-selected="false" style="background: #f7f7f7">
+                                    <h5 class="text blue-text h5-responsive mt-1">Danh Sách Chương</h5>
+                                </a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
                                 <p>
                                     @if($story->details != 'None')
-                                        {{$story->details}}
+                                        {!!$story->details!!}
                                     @else
                                         Chưa có nội dung
                                     @endif
                                 </p>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"
+                            <div class="tab-pane fade" id="chapter-list" role="tabpanel" aria-labelledby="chapter-tab"
                                  style="background: #eaeaea">
                                 <div class="list-group list-group-flush">
                                     @foreach($chapters as $chapter)
-                                        <a href="{{route('view_chapter',$chapter->getRouteKeyName())}}"
-                                           class="list-group-item list-group-item-action waves-effect">
+                                        <a href="{{route('view_chapter',$chapter->getRouteKeyName())}}" class="list-group-item list-group-item-action waves-effect">
 
                                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="flex-grow-1">
-                                    <strong>Chương {{$chapter->number}}:</strong> {{$chapter->name}}</span>
+                                        <span class="flex-grow-1">
+                                            <strong>Chương {{$chapter->number}}:</strong> {{$chapter->name}}</span>
                                                 <span class="genre flex-shrink-1 d-none d-sm-block">{{$chapter->updated_at->format('m-d-Y
-                                    H:i:s')}}</span>
+                                            H:i:s')}}</span>
                                             </div>
                                         </a>
                                     @endforeach
@@ -140,7 +130,8 @@
                     {{--</a>--}}
                     {{--@endforeach--}}
                     {{--</div>--}}
-                    {{--</div>--}}
+                    {{--
+                </div>--}}
 
                     <div class="col-md-4 d-none d-lg-block">
                         <h5 class="text blue-text h5-responsive pt-2 pb-3">Bảng Xếp Hạng </h5>
@@ -148,19 +139,14 @@
                             <div class="col-md-12 table-responsive-sm">
                                 <ul class="nav nav-tabs nav-justified" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" style="background: #f7f7f7" data-toggle="tab"
-                                           href="#panel5"
+                                        <a class="nav-link active" style="background: #f7f7f7" data-toggle="tab" href="#panel5"
                                            role="tab">Tuần</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" style="background: #f7f7f7" data-toggle="tab"
-                                           href="#panel6"
-                                           role="tab">Tháng</a>
+                                        <a class="nav-link" style="background: #f7f7f7" data-toggle="tab" href="#panel6" role="tab">Tháng</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" style="background: #f7f7f7" data-toggle="tab"
-                                           href="#panel7"
-                                           role="tab">Năm</a>
+                                        <a class="nav-link" style="background: #f7f7f7" data-toggle="tab" href="#panel7" role="tab">Năm</a>
                                     </li>
                                 </ul>
 
@@ -171,8 +157,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Bắc Minh Thần Công</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
                                                 </div>
                                                 {{--
@@ -183,8 +168,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Thiên Sơn Chiết Mai Thủ</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
                                                 </div>
                                                 {{--
@@ -195,8 +179,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Sinh Tử Phù</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
                                                 </div>
                                                 {{--
@@ -213,8 +196,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Bắc Minh Thần Công 2</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
                                                 </div>
                                                 {{--
@@ -225,8 +207,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Thiên Sơn Chiết Mai Thủ 2</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
 
                                                 </div>
@@ -238,8 +219,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Sinh Tử Phù 2</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
 
                                                 </div>
@@ -257,8 +237,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Bắc Minh Thần Công 3</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
 
                                                 </div>
@@ -270,8 +249,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Thiên Sơn Chiết Mai Thủ 3</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
 
                                                 </div>
@@ -283,8 +261,7 @@
                                             <a class="list-group-item list-group-item-action waves-effect">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="flex-grow-1">Sinh Tử Phù 3</span>
-                                                    <span
-                                                        class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
+                                                    <span class="genre flex-shrink-1 d-none d-xl-block">Võ Hiệp</span>
 
 
                                                 </div>
@@ -302,10 +279,7 @@
                     </div>
                 </div>
             </section>
-            {{--<div>--}}
 
-
-            {{--</div>--}}
         </div>
     </div>
 
