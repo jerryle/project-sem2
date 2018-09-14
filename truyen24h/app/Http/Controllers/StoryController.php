@@ -32,7 +32,7 @@ class StoryController extends Controller
      */
     public function create()
     {
-        $genres = Genres::all();
+        $genres = Genre::all();
         return view('admin.story.create', compact('genres'));
     }
 
