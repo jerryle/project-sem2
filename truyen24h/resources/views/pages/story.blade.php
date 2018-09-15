@@ -74,8 +74,8 @@
                         </a>
                         @if(auth()->user()->id == $story->user_id || auth()->user()->admin_level > 0)
                         <a href="{{route('user.chapter.create', $story->getRouteKeyName())}}">
-                            <div class="btn btn-rounded btn-sm btn-danger">
-                                <i class="fa fa-heart mr-1"></i>Đăng chương truyện
+                            <div class="btn btn-rounded btn-sm btn-info">
+                                Đăng chương truyện
                             </div>
                         </a>
                         @endif
