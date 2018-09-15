@@ -24,7 +24,7 @@
     <div class="d-flex justify-content-start" style="position: absolute; top: 80px;">
         <div class="avatar ml-5 white"><img src="{{asset('image/default.jpg')}}" class="rounded-circle"></div>
         <div class="ml-3 d-flex flex-column">
-            <h3 class="h3-reponsive text-white font-weight-bold">Jerry</h3>
+            <h3 class="h3-reponsive text-white font-weight-bold">{{auth()->user()->username}}</h3>
         </div>
     </div>
     <div class="card-body">
