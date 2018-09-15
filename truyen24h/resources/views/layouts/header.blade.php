@@ -45,7 +45,7 @@
             @else
 
             <li class="nav-item">
-                <a class="nav-link btn btn-outline-info btn-sm waves-effect px-4" href="{{route('profile',Auth::user()->username)}}"
+                <a class="nav-link btn btn-outline-info btn-sm waves-effect px-4" href="{{route('profile')}}"
                     alt="Hồ sơ cá nhân" title="Hồ sơ cá nhân">
                     <i class="fas fa-user-circle mr-1"></i>
                     <p class="d-none d-lg-inline">{{ Auth::user()->username }}</p>
