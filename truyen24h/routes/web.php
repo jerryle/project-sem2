@@ -40,8 +40,14 @@ Route::group(['middleware' => ['auth'], 'name' => 'user'], function () {
     Route::put('/doc-truyen/{id}', 'T24Controller@updateChapter')->name('user.inline.chapter.update');
     Route::get('/follow-story/{slug}', 'T24Controller@followStory')->name('user.follow_story');
     Route::get('/markRead/{id}', 'T24Controller@markRead')->name('user.noti.mark_read');
+    Route::get('/ucp/story', 'T24Controller@createStory')->name('user.story.create');
+    Route::post('/ucp/story', 'T24Controller@storeStory')->name('user.story.store');
+    Route::get('/ucp/story/{slug}/edit', 'T24Controller@editStory')->name('user.story.edit');
+    Route::put('/ucp/story/{slug}', 'T24Controller@updateStory')->name('user.story.update');
+    Route::get('/ucp/story/list', 'T24Controller@listStory')->name('user.story.list');
+    Route::get('/ucp/story/follow-list', 'T24Controller@listFollow')->name('user.story.follow_list');
 });
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/profile/{username}', 'UserController@show')->name('profile');
+Route::get('/ucp', 'UserController@show')->name('profile');

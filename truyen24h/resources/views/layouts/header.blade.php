@@ -145,7 +145,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/story/create" alt="Đăng truyện" title="Đăng truyện">
+                    <a class="nav-link" href="{{route('user.story.create')}}" alt="Đăng truyện" title="Đăng truyện">
                         <i class="fas fa-file-upload mr-1"></i>
                         <p class="d-none d-sm-inline">Đăng Truyện</p>
                     </a>
