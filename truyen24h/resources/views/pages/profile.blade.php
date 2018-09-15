@@ -1,26 +1,25 @@
-@extends('layouts.master2',[
-    'search' => ''
-])
+@extends('layouts.master3', [
+'current_menu' => 'list',
+'search' => isset($s) ? $s : '' ])
+@section('title')
+{{'Trang cá nhân của bạn'}}
+@endsection
+@section('description')
+{{'Trang cá nhân dành cho người dùng'}}
+@endsection
+@section('header')
+<script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 
-@section('title', 'Trang cá nhân')
-@section('description', 'Trang cá nhân - Truyen24h')
+@endsection
+
 @section('content')
 
-    <div id="app">
-        <main class="my-3" style="min-height:500px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        @include('layouts.ucp.sidebar')
-                    </div>
-                    <div class="col-md-9">
-                        
-                        @yield('content')
-                    </div>
-                </div>
-            </div>
-
-            </main>
-    </div>
-
+@endsection
+@section('scripts')
+<script>
+    // Material Select Initialization
+    $(document).ready(function () {
+        $('.mdb-select').material_select();
+    });
+</script>
 @endsection
