@@ -56,7 +56,7 @@
                         <em> | </em>
                         <p class="item">Số Chương: <strong>{{$story->chapters->count()}}</strong></p>
                         <em> | </em>
-                    <p class="item">Lượt Theo Dõi: <strong>{{$story->followUsers->count()}}</strong></p>
+                        <p class="item">Lượt Theo Dõi: <strong>{{$story->followUsers->count()}}</strong></p>
 
                     </div>
 
@@ -68,7 +68,13 @@
                         @if(auth()->check())
                         <a href="{{route('user.follow_story',$story->getRouteKeyName())}}">
                             <div class="btn btn-rounded btn-sm btn-danger">
-                                <i class="fa fa-heart mr-1"></i>{{ !auth()->user()->followStories->contains($story->id) ? 'Theo Dõi' : 'Hủy Theo Dõi'}}
+                                <i class="fa fa-heart mr-1"></i>{{ !auth()->user()->followStories->contains($story->id)
+                                ? 'Theo Dõi' : 'Hủy Theo Dõi'}}
+                            </div>
+                        </a>
+                        <a href="{{route('user.chapter.create', $story->getRouteKeyName())}}">
+                            <div class="btn btn-rounded btn-sm btn-danger">
+                                <i class="fa fa-heart mr-1"></i>Đăng chương truyện
                             </div>
                         </a>
                         @endif

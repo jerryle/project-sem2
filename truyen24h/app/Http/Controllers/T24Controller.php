@@ -142,4 +142,40 @@ class T24Controller extends Controller
         $stories = auth()->user()->followStories()->get();
         return view('layouts.ucp.story.follow_list', compact('stories'));
     }
+
+    public function createChapter($slug)
+    {
+        $story = Story::findBySlugOrFail($slug);
+        return view('layouts.ucp.chapter.create', compact('story'));
+
+    }
+
+    public function storeChapter(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|max:191|min:5',
+            'content' => 'required|min:100',
+            'story_id' => 'required|integer|exists:stories,id',
+            'number' => 'required|integer'
+            // 'image' => 'required|mimes:jpg,png,bmp,jpeg|between:1,7000',
+        ]);
+
+        $chapter = new Chapter;
+        $chapter->name = $request->name;
+        $chapter->content = $request->content;
+        $chapter->number = $request->number;
+        $chapter->user_id = auth()->user()->id;
+        $chapter->story_id = $request->story_id;
+        // if ($request->hasFile('image')) {
+        //     //get name image
+        //     $filename = Carbon\Carbon::now();
+        //     $story->image = $filename;
+        //     //upload image
+        //     \Cloudder::upload($filename, $request->file('image')->getRealPath());
+        // }
+        $chapter->save();
+        $chapter->story->updated_at = now();
+        $chapter->story->save();
+        return redirect()->route('view_chapter', $chapter->getRouteKeyname())->with('success','Chương mới đã được đăng thành công!');
+    }
 }

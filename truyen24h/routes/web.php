@@ -46,6 +46,8 @@ Route::group(['middleware' => ['auth'], 'name' => 'user'], function () {
     Route::put('/ucp/story/{slug}', 'T24Controller@updateStory')->name('user.story.update');
     Route::get('/ucp/story/list', 'T24Controller@listStory')->name('user.story.list');
     Route::get('/ucp/story/follow-list', 'T24Controller@listFollow')->name('user.story.follow_list');
+    Route::get('/ucp/chapter', 'T24Controller@createChapter')->name('user.chapter.create');
+    Route::post('/ucp/chapter', 'T24Controller@storeChapter')->name('user.chapter.store');
 });
 
 // Route::get('/home', 'HomeController@index')->name('home');
