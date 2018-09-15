@@ -1,6 +1,11 @@
 @extends('layouts.master3', [ 'current_menu' => 'list', 'search' => isset($s) ? $s :
 '' ])
-
+@section('title')
+{{'Danh sách truyện của bạn'}}
+@endsection
+@section('description')
+{{'Danh sách truyện của thành viên đã đăng'}}
+@endsection
 @section('header')
 <script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 

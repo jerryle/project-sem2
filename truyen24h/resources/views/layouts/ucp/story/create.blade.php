@@ -1,13 +1,11 @@
 @extends('layouts.master3', [ 
     'current_menu' => 'list',
     'search' => isset($s) ? $s : '' ])
-@section('button')
-<li class="nav-item">
-    <a class="nav-link" href="{{route('admin.genre.index')}}">
-        <i class="fas fa-list-alt mr-1"></i>
-        <span class="clearfix d-none d-sm-inline-block">Danh sách truyện</span>
-    </a>
-</li>
+@section('title')
+{{'Đăng truyện mới'}}
+@endsection
+@section('description')
+{{'Trang đăng truyện dành cho người dùng'}}
 @endsection
 @section('header')
 <script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>

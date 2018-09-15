@@ -5,7 +5,12 @@
 <script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 
 @endsection
-
+@section('title')
+    {{'Danh sách truyện theo dõi'}}
+@endsection
+@section('description')
+{{'Danh sách truyện mà người dùng đã theo dõi'}}
+@endsection
 @section('content')
 <div class="card">
     <div class="card-header unique-color-dark">

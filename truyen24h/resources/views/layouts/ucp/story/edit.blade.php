@@ -3,7 +3,12 @@
 <script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 
 @endsection
-
+@section('title')
+    {{'Sửa truyện '.$story->title.' '}}
+@endsection
+@section('description')
+{{'Trang sửa truyện dành cho người dùng'}}
+@endsection
 @section('content') {{--
 <section class="form-gradient"> --}}
     <div class="card">

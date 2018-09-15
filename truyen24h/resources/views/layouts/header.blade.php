@@ -138,7 +138,7 @@
                 </li>
                 @endif
                 <li class="nav-item">
-                    <a class="nav-link" href="#" alt="Tủ truyện" title="Tủ truyện">
+                <a class="nav-link" href="{{route('user.story.follow_list')}}" alt="Tủ truyện" title="Tủ truyện">
                         <i class="fas fa-heart mr-1"></i>
                         <p class="d-none d-sm-inline">Truyện Theo Dõi</p>
                     </a>
