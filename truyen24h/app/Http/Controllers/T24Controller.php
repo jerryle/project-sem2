@@ -5,6 +5,7 @@ namespace Truyen24h\Http\Controllers;
 use Illuminate\Http\Request;
 use Truyen24h\Chapter;
 use Truyen24h\Story;
+use Truyen24h\Notifications\FollowNotification;
 
 class T24Controller extends Controller
 {
@@ -47,12 +48,25 @@ class T24Controller extends Controller
         if(!auth()->user()->followStories->contains($story->id))
         {
             auth()->user()->followStories()->attach($story->id);
+            auth()->user()->notify(new FollowNotification('Bạn đã theo dõi '.$story->title));
+
             return back()->with('success', 'Bạn đã theo dõi truyện này');
         }
         else {
             auth()->user()->followStories()->detach($story->id);
+            auth()->user()->notify(new FollowNotification('Bạn đã hủy theo dõi '.$story->title));
             return back()->with('success', 'Bạn đã hủy theo dõi truyện này');
         }
 
+    }
+
+    public function markRead($id)
+    {
+        if(auth()->user()->notifications->contains($id))
+        {
+            auth()->user()->notifications->find($id)->markAsRead();
+            return back()->with('success', 'Đã xem');
+        }
+        return back()->with('error', 'Lỗi');
     }
 }
