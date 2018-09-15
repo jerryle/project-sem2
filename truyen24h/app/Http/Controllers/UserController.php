@@ -44,15 +44,9 @@ class UserController extends Controller
      * @param  string $username
      * @return \Illuminate\Http\Response
      */
-    public function show($username)
+    public function show()
     {
-        $user = DB::table('users')->where('username','=',$username)->first();
-        if($user == null)
-        {
-            redirect()->route('index');
-        }
-        
-        return view('pages.profile')->with('users', $user);
+        return view('pages.profile');
     }
 
     /**

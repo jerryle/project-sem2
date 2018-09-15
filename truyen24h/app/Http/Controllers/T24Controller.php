@@ -5,6 +5,7 @@ namespace Truyen24h\Http\Controllers;
 use Illuminate\Http\Request;
 use Truyen24h\Chapter;
 use Truyen24h\Story;
+use Truyen24h\Genre;
 use Truyen24h\Notifications\FollowNotification;
 
 class T24Controller extends Controller
@@ -68,5 +69,71 @@ class T24Controller extends Controller
             return back()->with('success', 'Đã xem');
         }
         return back()->with('error', 'Lỗi');
+    }
+
+    public function createStory()
+    {
+        $genres = Genre::all();
+        return view('layouts.ucp.story.create', compact('genres'));
+    }
+
+    public function storeStory(Request $request)
+    {
+        $validatedData = $request->validate([
+            'title' => 'required|max:191|min:10|unique:stories',
+            'details' => 'required|min:3|max:2048',
+            'author' => 'required|min:3|max:128',
+            'genres' => 'required|exists:genres,id',
+            'image' => 'required',
+        ]);
+
+        $story = new Story;
+        $story->title = $request->title;
+        $story->details = $request->details;
+        $story->user_id = auth()->user()->id;
+        $story->author = $request->author;
+        $story->image = $request->image;
+ 
+        if($story->save()) {
+            $story->genres()->attach($request->genres);
+        }
+        return redirect()->route('view_story',$story->getRouteKeyName())->with('success','Truyện mới đã được đăng thành công!');
+    }
+
+    public function updateStory(Request $request, $id)
+    {
+        $validatedData = $request->validate([
+            'title' => 'required|max:191|min:10',
+            'details' => 'required|min:3|max:2048',
+            'author' => 'required|min:3|max:128',
+            'genres' => 'required|exists:genres,id',
+            'image' => 'required',
+        ]);
+
+        $story = Story::findOrFail($id);
+        $story->title = $request->title;
+        $story->details = $request->details;
+        // $story->user_id = auth()->user()->id;
+        $story->author = $request->author;
+        $story->image = $request->image;
+
+        if($story->save()) {
+            $story->genres()->detach();
+            $story->genres()->attach($request->genres);
+        }
+        return redirect()->route('view_story',$story->getRouteKeyName())->with('success','Truyện đã được sửa thành công!');
+    }
+
+    public function editStory($slug)
+    {
+        $story = Story::findBySlugOrFail($slug);
+        $genres = Genre::all();
+        return view('layouts.ucp.story.edit', compact('story', 'genres'));
+    }
+
+    public function listStory()
+    {
+        $stories = auth()->user()->uploadedStories()->get();
+        return view('layouts.ucp.story.list', compact('stories'));
     }
 }

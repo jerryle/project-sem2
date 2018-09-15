@@ -1,6 +1,5 @@
 <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold disabled">Thông tin</a>
-    <a href="#" class="list-group-item list-group-item-action waves-effect"><i class="fas fa-user mr-1"></i>Trang Cá Nhân</a>
-    <a href="#" class="list-group-item list-group-item-action waves-effect"><i class="fas fa-edit mr-1"></i>Sửa Thông Tin</a>
-    <a href="#" class="list-group-item list-group-item-action waves-effect"><i class="fas fa-key mr-1"></i>Bảo Mật Tài Khoản</a>
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold disabled">Truyện của bạn</a>
+<a href="{{route('user.story.follow_list')}}" class="list-group-item list-group-item-action waves-effect">Danh sách theo dõi</a>
+<a href="{{route('user.story.list')}}" class="list-group-item list-group-item-action waves-effect">Truyện đã đăng</a>
 </div>
