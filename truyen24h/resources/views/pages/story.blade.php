@@ -54,9 +54,9 @@
 
                         <p class="item">Xem: <strong>{{$story->getViews()}}</strong></p>
                         <em> | </em>
-                        <p class="item">Số Chương: <strong>{{count($story->chapters)}}</strong></p>
+                        <p class="item">Số Chương: <strong>{{$story->chapters->count()}}</strong></p>
                         <em> | </em>
-                        <p class="item">Lượt Theo Dõi: 0</p>
+                    <p class="item">Lượt Theo Dõi: <strong>{{$story->followUsers->count()}}</strong></p>
 
                     </div>
 
@@ -65,10 +65,15 @@
                         <a href="{{route('view_chapter',$story->chaptersInverse()->first()->getRouteKeyName())}}">
                             <div class="btn btn-rounded btn-sm btn-info">Đọc Từ Đầu</div>
                         </a>
-                        <div class="btn btn-rounded btn-sm btn-danger"><i class="fa fa-heart mr-1"></i>Theo Dõi
-                        </div>
+                        @if(auth()->check())
+                        <a href="{{route('user.follow_story',$story->getRouteKeyName())}}">
+                            <div class="btn btn-rounded btn-sm btn-danger">
+                                <i class="fa fa-heart mr-1"></i>{{ !auth()->user()->followStories->contains($story->id) ? 'Theo Dõi' : 'Hủy Theo Dõi'}}
+                            </div>
+                        </a>
+                        @endif
                     </div>
-                    
+
                 </div>
                 <!--Grid column-->
 

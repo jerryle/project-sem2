@@ -38,6 +38,7 @@ Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'adm
 Route::group(['middleware' => ['auth'], 'name' => 'user'], function () {
     Route::get('/doc-truyen/{slug}/edit', 'T24Controller@editChapter')->name('user.inline.chapter.edit');
     Route::put('/doc-truyen/{id}', 'T24Controller@updateChapter')->name('user.inline.chapter.update');
+    Route::get('/follow-story/{slug}', 'T24Controller@followStory')->name('user.follow_story');
 });
 
 // Route::get('/home', 'HomeController@index')->name('home');
