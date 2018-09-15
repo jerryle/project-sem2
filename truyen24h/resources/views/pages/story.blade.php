@@ -79,6 +79,7 @@
                             </div>
                         </a>
                         @endif
+                        @endif
                     </div>
 
                 </div>
