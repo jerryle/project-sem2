@@ -30,6 +30,30 @@
                                 <h4 class="card-title mt-1 ml-5">{{$users->username}}</h4>
                             </div>
                         </div>
+                        <div class="about text-left">
+                            <ul class="list-unstyled">
+                                <li class="sub-title text-body mt-0">
+                                    Tên:
+                                    <hr class="between-sections mt-0">
+                                </li>
+                                <li class="sub-title text-body mt-2">
+                                    Email:
+                                    <hr class="between-sections mt-0">
+                                </li>
+                                <li class="sub-title text-body mt-2">
+                                    Nhóm:
+                                    <hr class="between-sections mt-0">
+                                </li>
+                                <li class="sub-title text-body mt-2">
+                                    Ngày Tham Gia:
+                                    <hr class="between-sections mt-0">
+                                </li>
+                                <li class="sub-title text-body mt-2">
+                                    Giới Tính:
+                                    <hr class="between-sections mt-0">
+                                </li>
+                            </ul>
+                        </div>
                         @yield('content')
                     </div>
                 </div>
