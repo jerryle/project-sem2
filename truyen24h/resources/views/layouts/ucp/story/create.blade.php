@@ -1,6 +1,5 @@
 @extends('layouts.master3', [ 
-    'current_menu' => 'quan-ly', 
-    'sub_current_menu' => 'story',
+    'current_menu' => 'list',
     'search' => isset($s) ? $s : '' ])
 @section('button')
 <li class="nav-item">

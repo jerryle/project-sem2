@@ -1,4 +1,4 @@
-@extends('layouts.master3', [ 'current_menu' => 'quan-ly', 'sub_current_menu' => 'story', 'search' => isset($s) ? $s :
+@extends('layouts.master3', [ 'current_menu' => 'list', 'search' => isset($s) ? $s :
 '' ])
 
 @section('header')

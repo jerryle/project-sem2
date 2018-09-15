@@ -1,4 +1,4 @@
-@extends('layouts.master3', [ 'current_menu' => 'quan-ly', 'sub_current_menu' => 'story', 'search' => isset($s) ? $s :
+@extends('layouts.master3', [ 'current_menu' => 'follow-list', 'search' => isset($s) ? $s :
 '' ])
 
 @section('header')
@@ -12,14 +12,10 @@
 
         {{--
         <div class="row d-flex justify-content-center"> --}}
-            <h3 class="h3-reponsive white-text text-uppercase">Danh sách truyện bạn đã đăng</h3>
+            <h3 class="h3-reponsive white-text text-uppercase">Danh sách truyện bạn đang theo dõi</h3>
             {{-- </div> --}}
     </div>
     <div class="card-body mx-4 mt-4">
-        <div class="btn-group d-flex justify-content-end" role="group" aria-label="Các nút trang thể loại">
-            <a href="{{route('user.story.create')}}" class="btn btn-indigo" role="button">
-                <i class="fas fa-plus-square mr-1"></i>Tạo mới</a>
-        </div>
 
         @if(count($stories) > 0)
         <table id="dtMaterialDesignExample" class="table table-striped table-responsive-md table-sm table-editable"

@@ -59,7 +59,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        @include('layouts.ucp.sidebar')
+                        @include('layouts.ucp.sidebar', ['current_menu' => $current_menu])
                     </div>
                     <div class="col-md-9">
 
