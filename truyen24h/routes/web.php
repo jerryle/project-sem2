@@ -10,20 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/tim-kiem', 'HomeController@search')->name('search');
-
 Route::get('/', 'HomeController@index')->name('index');
 
 Auth::routes();
 
-Route::get('/test', function () {
-    return view('pages.genre');
-});
-
 Route::get('/truyen/{slug}', 'StoryController@show')->name('view_story');
 Route::get('/doc-truyen/{slug}', 'ChapterController@show')->name('view_chapter');
 Route::get('/the-loai/{slug}', 'GenreController@show')->name('view_genre');
+Route::get('/tim-kiem', 'HomeController@search')->name('search');
 
 Route::group(['middleware' => ['adminauth'], 'prefix' => 'admin', 'name' => 'admin'], function () {
     Route::get('/', function() {
@@ -52,14 +46,4 @@ Route::group(['middleware' => ['auth'], 'name' => 'user'], function () {
         Route::get('chapter/{slug}', 'T24Controller@createChapter')->name('user.chapter.create');
         Route::post('chapter', 'T24Controller@storeChapter')->name('user.chapter.store');
     });
-    // Route::get('/ucp/story', 'T24Controller@createStory')->name('user.story.create');
-    // Route::post('/ucp/story', 'T24Controller@storeStory')->name('user.story.store');
-    // Route::get('/ucp/story/{slug}/edit', 'T24Controller@editStory')->name('user.story.edit');
-    // Route::put('/ucp/story/{slug}', 'T24Controller@updateStory')->name('user.story.update');
-    // Route::get('/ucp/story/list', 'T24Controller@listStory')->name('user.story.list');
-    // Route::get('/ucp/story/follow-list', 'T24Controller@listFollow')->name('user.story.follow_list');
-    // Route::get('/ucp/chapter/{slug}', 'T24Controller@createChapter')->name('user.chapter.create');
-    // Route::post('/ucp/chapter', 'T24Controller@storeChapter')->name('user.chapter.store');
 });
-
-// Route::get('/home', 'HomeController@index')->name('home');
