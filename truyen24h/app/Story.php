@@ -37,7 +37,6 @@ class Story extends Model
         return $this->slug;
     }
 
-
     public function chapters()
     {
         return $this->hasMany('Truyen24h\Chapter')->orderBy('number','desc');
@@ -46,6 +45,10 @@ class Story extends Model
     public function chaptersInverse()
     {
         return $this->hasMany('Truyen24h\Chapter')->orderBy('number','asc');
+    }
+
+    public function followUsers() {
+        return $this->belongsToMany('Truyen24h\User', 'story_user', 'story_id', 'user_id');
     }
 
     public function genres()

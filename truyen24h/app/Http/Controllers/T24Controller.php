@@ -4,6 +4,7 @@ namespace Truyen24h\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Truyen24h\Chapter;
+use Truyen24h\Story;
 
 class T24Controller extends Controller
 {
@@ -38,5 +39,20 @@ class T24Controller extends Controller
 
         $chapter->save();
         return redirect()->route('view_chapter',$chapter->getRouteKeyName())->with('success','Đã cập nhật chương truyện thành công!');
+    }
+
+    public function followStory($slug)
+    {
+        $story = Story::findBySlugOrFail($slug);
+        if(!auth()->user()->followStories->contains($story->id))
+        {
+            auth()->user()->followStories()->attach($story->id);
+            return back()->with('success', 'Bạn đã theo dõi truyện này');
+        }
+        else {
+            auth()->user()->followStories()->detach($story->id);
+            return back()->with('success', 'Bạn đã hủy theo dõi truyện này');
+        }
+
     }
 }

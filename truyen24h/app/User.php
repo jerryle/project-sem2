@@ -35,4 +35,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('Truyen24h\Story');
     }
+
+    public function followStories()
+    {
+        return $this->belongsToMany('Truyen24h\Story', 'story_user', 'user_id', 'story_id');
+    }
 }
