@@ -190,11 +190,11 @@ a:hover,
     color: #2196f3 !important;
 }
 
-li,
+/* li,
 ol,
 ul {
     list-style: none outside none !important;
-}
+} */
 
 .list-stories .story-info-box p.author {
     overflow: hidden;

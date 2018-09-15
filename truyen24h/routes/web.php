@@ -39,6 +39,7 @@ Route::group(['middleware' => ['auth'], 'name' => 'user'], function () {
     Route::get('/doc-truyen/{slug}/edit', 'T24Controller@editChapter')->name('user.inline.chapter.edit');
     Route::put('/doc-truyen/{id}', 'T24Controller@updateChapter')->name('user.inline.chapter.update');
     Route::get('/follow-story/{slug}', 'T24Controller@followStory')->name('user.follow_story');
+    Route::get('/markRead/{id}', 'T24Controller@markRead')->name('user.noti.mark_read');
 });
 
 // Route::get('/home', 'HomeController@index')->name('home');

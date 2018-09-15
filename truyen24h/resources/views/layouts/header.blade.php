@@ -1,4 +1,4 @@
-    <div class="top-nav navbar pt-6 navbar-expand-md">
+<div class="top-nav navbar pt-6 navbar-expand-md">
     <div class="container">
         <a class="navbar-brand" href="{{route('index')}}">
             <img src="{{ asset('image/logo.png') }}" height="40">
@@ -21,9 +21,9 @@
             <form class="form-inline t24-search" action="{{ route('search') }}" method="GET">
                 <div class="md-form my-0">
                     <input name="s" class="form-control mr-sm-2" type="text" placeholder="Nhập tên truyện hoặc tên tác giả"
-                aria-label="Nhập tên truyện hoặc tên tác giả">
+                        aria-label="Nhập tên truyện hoặc tên tác giả">
                 </div>
-                
+
             </form>
             {{--
             <form class="form-inline my-2 my-lg-0">
@@ -42,7 +42,7 @@
                     <i class="fas fa-sign-in-alt mr-1"></i>{{__('auth.login')}}
                 </a>
             </li>
-             @else
+            @else
 
             <li class="nav-item">
                 <a class="nav-link btn btn-outline-info btn-sm waves-effect px-4" href="{{route('profile',Auth::user()->username)}}"
@@ -51,9 +51,29 @@
                     <p class="d-none d-lg-inline">{{ Auth::user()->username }}</p>
                 </a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle btn btn-outline-primary btn-sm px-3 " id="navbarDropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-globe"></i> <span class="badge badge-pill badge-danger">{{auth()->user()->unreadNotifications->count()}}</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    @if(auth()->user()->notifications->count())
+                    @foreach(auth()->user()->unreadNotifications as $noti)
+
+                    <a href="{{route('user.noti.mark_read', $noti->id)}}" class="dropdown-item">{{$noti->data['data']}}*</a>
+
+                    @endforeach
+                    @foreach(auth()->user()->readNotifications as $noti)
+
+                    <a class="dropdown-item">{{$noti->data['data']}}</a>
+
+                    @endforeach
+                    @endif
+                </div>
+            </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-outline-primary btn-sm waves-effect px-3" href="{{ route('logout') }}"
-                    alt="Đăng xuất" title="Đăng xuất" onclick="event.preventDefault();
+                <a class="nav-link btn btn-outline-primary btn-sm waves-effect px-3" href="{{ route('logout') }}" alt="Đăng xuất"
+                    title="Đăng xuất" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                     <i class="fas fa-sign-out-alt"></i>
                 </a>
@@ -91,32 +111,35 @@
                     </li>
                 </ul>
             </div>
-                <!-- Right Side Of Navbar -->
-                <ul class="navbar-nav ml-auto nav-flex-icons">
-                    @if(Auth::check())
-                    @if(Auth::user()->admin_level > 0)
+            <!-- Right Side Of Navbar -->
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                @if(Auth::check())
+                @if(Auth::user()->admin_level > 0)
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('admin.index')}}" alt="Admin CP" title="Admin CP">
-                            <i class="fas fa-skull mr-1"></i><p class="d-none d-md-inline">Admin CP</p>
-                        </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('admin.index')}}" alt="Admin CP" title="Admin CP">
+                        <i class="fas fa-skull mr-1"></i>
+                        <p class="d-none d-md-inline">Admin CP</p>
+                    </a>
 
-                    </li>
-                    @endif
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" alt="Tủ truyện" title="Tủ truyện">
-                            <i class="fas fa-heart mr-1"></i><p class="d-none d-sm-inline">Truyện Theo Dõi</p>
-                        </a>
+                </li>
+                @endif
+                <li class="nav-item">
+                    <a class="nav-link" href="#" alt="Tủ truyện" title="Tủ truyện">
+                        <i class="fas fa-heart mr-1"></i>
+                        <p class="d-none d-sm-inline">Truyện Theo Dõi</p>
+                    </a>
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/admin/story/create" alt="Đăng truyện" title="Đăng truyện">
-                            <i class="fas fa-file-upload mr-1"></i><p class="d-none d-sm-inline">Đăng Truyện</p>
-                        </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/story/create" alt="Đăng truyện" title="Đăng truyện">
+                        <i class="fas fa-file-upload mr-1"></i>
+                        <p class="d-none d-sm-inline">Đăng Truyện</p>
+                    </a>
 
-                    </li>
-                    @endif
-                </ul>
+                </li>
+                @endif
+            </ul>
         </div>
     </nav>
 </div>
