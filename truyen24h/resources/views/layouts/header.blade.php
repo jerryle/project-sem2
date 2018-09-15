@@ -51,13 +51,18 @@
                     <p class="d-none d-lg-inline">{{ Auth::user()->username }}</p>
                 </a>
             </li>
+            @if(auth()->user()->notifications->count())
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle btn btn-outline-primary btn-sm px-3 " id="navbarDropdownMenuLink"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-globe"></i> <span class="badge badge-pill badge-danger">{{auth()->user()->unreadNotifications->count()}}</span>
+                    <i class="fas fa-globe"></i>
+                    @if(auth()->user()->unreadNotifications->count())
+                    <span class="badge badge-pill badge-danger">{{auth()->user()->unreadNotifications->count()}}</span>
+                    @endif
                 </a>
+                @if(auth()->user()->notifications->count())
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                    @if(auth()->user()->notifications->count())
+
                     @foreach(auth()->user()->unreadNotifications as $noti)
 
                     <a href="{{route('user.noti.mark_read', $noti->id)}}" class="dropdown-item">{{$noti->data['data']}}*</a>
@@ -68,9 +73,17 @@
                     <a class="dropdown-item">{{$noti->data['data']}}</a>
 
                     @endforeach
-                    @endif
+
                 </div>
+                @endif
             </li>
+            @else
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-primary btn-sm px-3 ">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </li>
+            @endif
             <li class="nav-item">
                 <a class="nav-link btn btn-outline-primary btn-sm waves-effect px-3" href="{{ route('logout') }}" alt="Đăng xuất"
                     title="Đăng xuất" onclick="event.preventDefault();
