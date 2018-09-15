@@ -136,4 +136,10 @@ class T24Controller extends Controller
         $stories = auth()->user()->uploadedStories()->get();
         return view('layouts.ucp.story.list', compact('stories'));
     }
+
+    public function listFollow()
+    {
+        $stories = auth()->user()->followStories()->get();
+        return view('layouts.ucp.story.follow_list', compact('stories'));
+    }
 }
